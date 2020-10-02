@@ -4361,6 +4361,549 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  * @brief Base stylesheet for Manuscript, a child theme of the default theme
  *
  */
+/* CSS font families: JLMHead, JLMText, JLMMono, JLMSans, JLMLogo, JLMIcons */
+/* font-family */
+/* JLMHead */
+/* JLMHead normal normal: subheading font */
+@font-face {
+  font-family: 'JLMHead';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.ttf') format('truetype');
+}
+/* JLMHead italic normal: subheading small caps font */
+@font-face {
+  font-family: 'JLMHead';
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'smcp', 'c2sc';
+  -webkit-font-feature-settings: 'smcp', 'c2sc';
+  -moz-font-feature-settings: 'smcp', 'c2sc';
+  letter-spacing: 0.06em;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Sub555.ttf') format('truetype');
+}
+/* JLMHead normal bold: heading font */
+@font-face {
+  font-family: 'JLMHead';
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.ttf') format('truetype');
+}
+/* JLMHead italic bold: heading small caps font */
+@font-face {
+  font-family: 'JLMHead';
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'smcp', 'c2sc';
+  -webkit-font-feature-settings: 'smcp', 'c2sc';
+  -moz-font-feature-settings: 'smcp', 'c2sc';
+  letter-spacing: 0.06em;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/Langfair/Langfair-Head40.ttf') format('truetype');
+}
+/* font-family */
+/* JLMText */
+/* JLMText normal normal: text font */
+@font-face {
+  font-family: 'JLMText';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'JLMText';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact.ttf') format('truetype');
+  text-rendering: optimizeLegibility;
+}
+/* JLMText italic normal: text italic font */
+@font-face {
+  font-family: 'JLMText';
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Italic.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Italic.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Italic.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Italic.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JLMText';
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Italic.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Italic.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Italic.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Italic.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Italic.ttf') format('truetype');
+}
+/* JLMText normal bold: text bold font */
+@font-face {
+  font-family: 'JLMText';
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Bold.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Bold.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Bold.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Bold.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSL/CharletSL-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'JLMText';
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Bold.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Bold.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Bold.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Bold.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+/* JLMText italic bold: text bold italic font */
+@font-face {
+  font-family: 'JLMText';
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+/* font-family */
+/* JLMSmall */
+@font-face {
+  font-family: 'JLMSmall';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JLMSmall';
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS-Bold.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS-Bold.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS-Bold.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS-Bold.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/CharletSLS/CharletSLS-Bold.ttf') format('truetype');
+}
+/* font-family */
+/* JLMMono */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url('https://twardoch.github.io/jlm-theme/fonts/IBMPlexMono/IBMPlexMono-Text.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/IBMPlexMono/IBMPlexMono-Text.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/IBMPlexMono/IBMPlexMono-Text.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/IBMPlexMono/IBMPlexMono-Text.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/IBMPlexMono/IBMPlexMono-Text.ttf') format('truetype');
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n1ioa2HdgregdFOFh.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n1ioa0XdgregdFOFh.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n1ioa2ndgregdFOFh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n1ioa23dgregdFOFh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6pfjptAgt5VM-kVkqdyU8n1ioa1XdgregdFA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSClN1jcoQPttoz6Pz.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSClN1hMoQPttoz6Pz.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSClN1j8oQPttoz6Pz.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSClN1jsoQPttoz6Pz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6sfjptAgt5VM-kVkqdyU8n1ioSClN1gMoQPttozw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl1FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlRFgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl9FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl5FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v6/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgsAXHNk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* font-family */
+/* JLMSans */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARPQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARGQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARDQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4AROQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARBQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARNQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARMQ_mu72BiBLE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARCQ_mu72Bi.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyOzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyHzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyCzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyPzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyAzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyMzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyNzW1IPriezag.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: italic;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW1IPrie.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr6DRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr4TRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5DRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr6TRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5jRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr6jRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr6zRASf6M7VBj.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5TRASf6M7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVadyBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVYNyBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZdyBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVaNyBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZ9yBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVa9yBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVatyBx2pqPIif.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JLMSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZNyBx2pqPA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* font-family */
+/* JLMLogo */
+@font-face {
+  font-family: 'JLMLogo';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
+  src: url('https://twardoch.github.io/jlm-theme/fonts/JLMMonogram/JLMMonogram.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/JLMMonogram/JLMMonogram.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/JLMMonogram/JLMMonogram.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/JLMMonogram/JLMMonogram.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/JLMMonogram/JLMMonogram.ttf') format('truetype');
+}
+/* font-family */
+/* JLMIcons */
+@font-face {
+  font-family: 'JLMIcons';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Academmunicons/Academmunicons-RoundNormal.eot');
+  src: url('https://twardoch.github.io/jlm-theme/fonts/Academmunicons/Academmunicons-RoundNormal.eot?#iefix') format('embedded-opentype'), url('https://twardoch.github.io/jlm-theme/fonts/Academmunicons/Academmunicons-RoundNormal.woff2') format('woff2'), url('https://twardoch.github.io/jlm-theme/fonts/Academmunicons/Academmunicons-RoundNormal.woff') format('woff'), url('https://twardoch.github.io/jlm-theme/fonts/Academmunicons/Academmunicons-RoundNormal.ttf') format('truetype');
+}
 /**
  * @file plugins/themes/defaultManuscript/styles/variables.less
  *
