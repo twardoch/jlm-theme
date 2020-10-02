@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+dir=${0%/*}
+if [ "$dir" = "$0" ]; then dir="."; fi
+cd "$dir" || exit
+
 lessc styles/jlm.less docs/jlm.css
 git add --all
 git commit -am "Changed file $*"
