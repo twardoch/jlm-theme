@@ -2296,7 +2296,7 @@ img {
   }
   .pkp_site_name .is_text {
     font-family: "JLMHead", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-    font-size: 24px;
+    font-size: 44px;
     line-height: 30px;
   }
   .pkp_site_name .is_img img {
@@ -2509,7 +2509,7 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: 24px;
+  font-size: 44px;
   line-height: 30px;
   font-weight: 700;
 }
@@ -5230,7 +5230,7 @@ body {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: 24px;
+  font-size: 44px;
   line-height: 30px;
   font-weight: 700;
 }
