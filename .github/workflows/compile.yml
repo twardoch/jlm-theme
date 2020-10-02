@@ -6,7 +6,23 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      # first, compile the less
       - uses: NaturalHistoryMuseum/compile-frontend-actions/less@v1.1.0
+        # give this step an id so that we can reference its outputs in the next step
+        id: less
         with:
           target: 'styles/jlm.less'
-          destination: 'docs/'
+          destination: 'docs/jlm.css'
+
+      - name: Commit and push changes
+        if: steps.js.outputs.modified != '[]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODIFIED: ${{ steps.js.outputs.modified }}
+        run: |
+          git config user.name "Compile action on behalf of $GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git checkout `echo $GITHUB_REF | cut -d'/' -f3-`
+          git add `echo $MODIFIED | jq -r 'join(" ")'`
+          git commit -m "[bot] Update production frontend files"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" `echo $GITHUB_REF | cut -d'/' -f3-`
