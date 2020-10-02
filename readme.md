@@ -1,30 +1,17 @@
-# Manuscript (Default child theme)
+# JLM theme for OJS 3.x
 
-A clean, simple theme with a boxed layout that mimics a paper document.
+This is a child theme for [OJS 3.x](https://openjournalsystems.com/) (Open Journal Systems). It’s work-in-progress.
 
-## Installation
+The LESS/CSS code is licensed under the [GPLv2](./LICENSE) license.
 
-This theme can be installed through the **Plugin Gallery** in Open Journal Systems. If it's not available in the plugin gallery, you may need to update Open Journal Systems to a compatible version.
+- Contains code from the [Manuscript theme](https://github.com/NateWr/defaultManuscript)
+- Contains code from the [OJS default theme](https://github.com/pkp/ojs)
+- Contains code from the [PKP Web Application Library](https://github.com/pkp/pkp-lib)
+
+The fonts are licensed under the [OFL](https://scripts.sil.org/OFL) license.
 
 ## Contributors
 
-* Nate Wright, @NateWr ([PKP](https://pkp.sfu.ca/))
-* Stefan Weil, @stweil ([UB Mannheim](https://www.bib.uni-mannheim.de/))
-
-## Changelog
-
-**1.0.3** (2020-02-25)
-* Updated: changes to make it compatible with OJS v.3.2
-
-**1.0.2** (2018-04-10)
-* Fix #7: Style article keywords as inline label
-* Add: Style article subtitles in issue table of contents
-* Add: Style new issue archive pagination
-* Updated: Translations for da_DK, es_ES
-
-**1.0.1** (2017-10-24)
-* Add: Style restricted galley links
-* Add: German translation
-
-**1.0.0** (2017-02-07)
-* Initial release
+- [Adam Twardoch](https://github.com/twardoch/), @twardoch)
+- Nate Wright, @NateWr ([PKP](https://pkp.sfu.ca/))
+- Stefan Weil, @stweil ([UB Mannheim](https://www.bib.uni-mannheim.de/))
