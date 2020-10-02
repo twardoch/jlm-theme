@@ -123,7 +123,7 @@ a {
 @media( min-width: @screen-desktop ) {
 
 	.pkp_structure_content {
-		padding-top: @quadruple;
+		padding-top: @triple;
 	}
 
 	.pkp_structure_sidebar {
@@ -133,7 +133,10 @@ a {
 
 	.pkp_structure_main {
 		float: left;
-		padding: 0 @triple (@triple * 3);
+		padding-top: 0;
+		padding-right: @triple;
+		padding-bottom: @triple * 3;
+		padding-left: @triple * 2;
 		width: @screen-desktop-container - @sidebar-width;
 
 		&:after {

@@ -5065,7 +5065,7 @@ a:focus {
 }
 @media (min-width: 992px) {
   .pkp_structure_content {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .pkp_structure_sidebar {
     float: right;
@@ -5073,7 +5073,10 @@ a:focus {
   }
   .pkp_structure_main {
     float: left;
-    padding: 0 30px 90px;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 90px;
+    padding-left: 60px;
     width: 652px;
   }
   .pkp_structure_main:after {
