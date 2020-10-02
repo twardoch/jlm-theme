@@ -8,5 +8,5 @@ jobs:
 
       - uses: NaturalHistoryMuseum/compile-frontend-actions/less@v1.1.0
         with:
-          target: 'styles/index.less'
+          target: 'styles/jlm.less'
           destination: 'docs/'
