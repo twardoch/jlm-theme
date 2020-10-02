@@ -20,7 +20,7 @@
 @bg-base:                #000a41; // Accent color used in the header
 @text-bg-base:           #fff;
 
-// Primary "anchor" color for links
+// Primary 'anchor' color for links
 @primary:                #000a41;
 @primary-lift:           lighten(@primary, 10%);
 
@@ -56,11 +56,22 @@
 @quadruple:              @base * 4;
 @quintuple:              @base * 5;
 
+// Font families
+
+@JLMHead: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+@JLMText: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+@JLMSmall: 'JLMSmall', @JLMText;
+@JLMMono: 'JLMMono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+@JLMSans: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+@JLMLogo: 'JLMLogo';
+@JLMIcons: 'JLMIcons';
+
 //
 // Typography
 //
-@font:  "JLMSans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-@font-heading:  "JLMHead", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+
+@font:  @JLMSans;
+@font-heading:  @JLMHead;
 @font-site-title:        @font-heading;
 @font-sml:               @base;
 @line-sml:               @double;
@@ -71,7 +82,7 @@
 @line-bump:              @double;
 @font-lead:              18px;
 @line-lead:              @triple;
-@font-header:            44px;
+@font-header:            24px;
 @line-header:            @triple;
 
 // Font weights
