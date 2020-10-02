@@ -24,11 +24,20 @@
 @primary:                #000a41;
 @primary-lift:           lighten(@primary, 10%);
 
+// Yes/no, success/error, on/off, go/stop, etc. Typically green and red.
+@yes:                    #00b24e;
+@no:                     #ff4040;
+
 // Accent color
 @accent:                 #7d000d;
 
 // Border colors
 @bg-border-color:        @bg-shade;
+
+// Text
+@text:                   rgba(0,0,0,0.87);
+@text-light:             rgba(0,0,0,0.54);
+@text-bg-base:           #fff;
 
 //
 // Spacing
@@ -40,6 +49,7 @@
 // elements it is more appropriate to use an `em` spacing.
 //
 @base:                   10px;
+@bump:                   @base * 1.2;
 @half:                   @base / 2;
 @double:                 @base * 2;
 @triple:                 @base * 3;
@@ -57,7 +67,7 @@
 @font-base:              calc(@base + 0.2vw);
 @line-base:              @double;
 @line-base-large:        @line-base + 5; // large blocks of text
-@font-bump:              16px;
+@font-bump:              calc(@bump + 0.2vw);
 @line-bump:              @double;
 @font-lead:              18px;
 @line-lead:              @triple;
