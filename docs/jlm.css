@@ -5228,6 +5228,13 @@ body {
  *
  * @brief Styles applying to the main content panel
  */
+kbd,
+code,
+tt,
+samp,
+pre {
+  font-family: 'JLMMono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+}
 .main_entry {
   font-family: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   font-size: calc(12px + 0.2vw);
