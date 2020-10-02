@@ -1598,7 +1598,7 @@ template {
 }
 .cmp_form legend {
   margin-bottom: 10px;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
   font-weight: 700;
   line-height: 20px;
 }
@@ -2521,7 +2521,7 @@ img {
 }
 .pkp_structure_main h3 {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
   line-height: 20px;
   font-weight: 700;
 }
@@ -2601,7 +2601,7 @@ img {
 }
 @media (min-width: 480px) {
   .pkp_structure_main .page .about_section {
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     font-style: italic;
   }
 }
@@ -2854,7 +2854,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     cursor: pointer;
   }
   .pkp_search_desktop .search_prompt:before {
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     margin-right: 0.25em;
   }
   .pkp_search_desktop .search_prompt:hover,
@@ -2878,7 +2878,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     padding-right: 180px;
     border: none;
     border-bottom: 1px solid #ddd;
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     background: #fff;
   }
   .pkp_search_desktop.is_open input[type="text"]:hover,
@@ -4055,7 +4055,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .obj_article_details .main_entry .item .label {
   margin: 0 0 20px;
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
   font-weight: 700;
 }
 .obj_article_details .main_entry .item.doi .label,
@@ -4242,7 +4242,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   .obj_article_details .item .label {
     margin: 0 0 20px;
     font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     font-weight: 700;
   }
   .obj_article_details .item.doi .label,
@@ -4617,7 +4617,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     margin-top: 0;
     padding: 0 15px;
     background: #fff;
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     font-weight: 400;
     line-height: 30px;
     color: rgba(0, 0, 0, 0.54);
@@ -4656,7 +4656,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   margin-bottom: 10px;
   margin-top: 0;
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
   font-weight: 700;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.54);
@@ -5237,7 +5237,7 @@ pre {
 }
 .main_entry {
   font-family: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
 }
 .pkp_structure_main h1 {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
@@ -5253,7 +5253,7 @@ pre {
 }
 .pkp_structure_main h3 {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
   line-height: 20px;
   font-weight: 700;
 }
@@ -5333,7 +5333,7 @@ pre {
 }
 @media (min-width: 480px) {
   .pkp_structure_main .page .about_section {
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     font-style: italic;
   }
 }
@@ -5410,7 +5410,7 @@ pre {
 }
 .pkp_page_index .current_issue .current_issue_title {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
-  font-size: calc(12px + 0.2vw);
+  font-size: calc(13px + 0.2vw);
 }
 .pkp_page_index .current_issue .sections {
   margin-top: 20px;
