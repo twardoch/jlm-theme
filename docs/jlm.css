@@ -5230,6 +5230,7 @@ body {
  */
 .main_entry {
   font-family: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-size: 12px;
 }
 .pkp_structure_main h1 {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
