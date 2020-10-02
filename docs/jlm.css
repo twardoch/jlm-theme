@@ -5228,6 +5228,9 @@ body {
  *
  * @brief Styles applying to the main content panel
  */
+.main_entry {
+  font-family: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+}
 .pkp_structure_main h1 {
   font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   font-size: 24px;
