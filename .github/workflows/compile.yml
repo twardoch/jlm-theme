@@ -1,0 +1,12 @@
+name: Compile less
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: NaturalHistoryMuseum/compile-frontend-actions/less@v1.1.0
+        with:
+          target: 'styles/index.less'
+          destination: 'docs/'

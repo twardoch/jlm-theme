@@ -1,0 +1,71 @@
+@font-face {
+    font-family: JLMSerif;
+    src: url(./fonts/CharisSIL-R.woff);
+}
+
+@font-face {
+    font-family: JLMSerif;
+    font-style: italic;
+    src: url(./fonts/CharisSIL-I.woff);
+}
+
+@font-face {
+    font-family: JLMSerif;
+    font-weight: bold;
+    src: url(./fonts/CharisSIL-B.woff);
+}
+
+@font-face {
+    font-family: JLMSerif;
+    font-weight: bold;
+    font-style: italic;
+    src: url(./fonts/CharisSIL-BI.woff);
+}
+
+@font-face {
+    font-family: JLMHead;
+    src: url(./fonts/PlayfairDisplay-Regular.woff);
+}
+
+@font-face {
+    font-family: JLMHead;
+    font-style: italic;
+    src: url(./fonts/PlayfairDisplay-Italic.woff);
+}
+
+@font-face {
+    font-family: JLMHead;
+    font-weight: bold;
+    src: url(./fonts/PlayfairDisplaySC-Regular.woff);
+}
+
+@font-face {
+    font-family: JLMHead;
+    font-weight: bold;
+    font-style: italic;
+    src: url(./fonts/PlayfairDisplaySC-Italic.woff);
+}
+
+@font-face {
+    font-family: JLMSmall;
+    src: url(./fonts/CharletSLS-Regular.woff);
+}
+
+@font-face {
+    font-family: JLMSmall;
+    font-weight: bold;
+    src: url(./fonts/CharisSIL-R.woff);
+    font-feature-settings: "smcp", "c2sc";
+    -webkit-font-feature-settings: "smcp", "c2sc";
+    -moz-font-feature-settings: "smcp", "c2sc";
+    letter-spacing: 0.06em;
+}
+
+@font-face {
+    font-family: JLMLogo;
+    src: url(./fonts/JLM-Monogram.woff);
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga";
+}
