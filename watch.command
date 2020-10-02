@@ -3,5 +3,5 @@ dir=${0%/*}
 if [ "$dir" = "$0" ]; then dir="."; fi
 cd "$dir" || exit
 
-watchman watch .
-watchman -- trigger . build '*' -- ./build.command
+watchman watch 'styles'
+watchman -- trigger 'styles' build '*.less' -- ./build.command
