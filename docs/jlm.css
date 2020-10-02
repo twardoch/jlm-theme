@@ -1879,7 +1879,7 @@ template {
 }
 .cmp_breadcrumbs .current h1 {
   margin: 0;
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: 'JLMSmall', 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   font-size: 10px;
   font-weight: 400;
 }
@@ -1954,7 +1954,7 @@ template {
  * @brief Classes for site-wide elements and layout scaffolding
  */
 body {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: 'JLMSmall', 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   font-size: calc(10px + 0.2vw);
   line-height: 20px;
   color: rgba(0, 0, 0, 0.87);
@@ -5600,7 +5600,7 @@ body {
  * @link templates/frontend/objects/article_summary.tpl
  */
 .obj_article_summary .subtitle {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: 'JLMSmall', 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   font-size: 10px;
 }
 /**
@@ -5614,7 +5614,7 @@ body {
  * @link templates/frontend/objects/article_details.tpl
  */
 .obj_article_details .subtitle {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: 'JLMSmall', 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
 }
 .obj_article_details .authors,
 .obj_article_details .doi {
