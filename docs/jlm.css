@@ -5880,8 +5880,7 @@ pre {
 }
 @media (min-width: 992px) {
   .obj_article_details .row {
-    width: 240px;
-    margin-left: 30px;
+    flex-direction: row;
   }
 }
 .obj_article_details .author_bios .sub_item .label {
