@@ -2538,17 +2538,17 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 36px;
-  font-weight: 700;
 }
 .pkp_structure_main h2 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 18px;
-  line-height: 36px;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-size: 18px;
+  line-height: 36px;
 }
 .pkp_structure_main h3 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
