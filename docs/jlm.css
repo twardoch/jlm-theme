@@ -5086,7 +5086,7 @@ a:focus {
     padding-top: 36px;
   }
   .pkp_structure_sidebar {
-    float: right;
+    float: none;
     width: 300px;
   }
   .pkp_structure_main {
