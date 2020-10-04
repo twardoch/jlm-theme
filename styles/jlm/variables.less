@@ -57,14 +57,16 @@
 @quintuple: @base * 5;
 
 // Font families
-@JLMTextFallback: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif",
-    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+@JLMTextFallback: "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif",
+    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia",
     serif;
-@JLMHead : "JLMHead", @JLMTextFallback;
-@JLMText : "JLMText", @JLMTextFallback;
+@JLMHead : "JLMHead",
+@JLMTextFallback;
+@JLMText : "JLMText",
+@JLMTextFallback;
 @JLMSmall: "JLMSmall", @JLMText;
 @JLMMono : "JLMMono",
-Consolas,
+"Consolas",
 "Andale Mono WT",
 "Andale Mono",
 "Lucida Console",
@@ -73,9 +75,9 @@ Consolas,
 "Bitstream Vera Sans Mono",
 "Liberation Mono",
 "Nimbus Mono L",
-Monaco,
+"Monaco",
 "Courier New",
-Courier,
+"Courier",
 monospace;
 @JLMSans: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
     ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue",
@@ -88,21 +90,21 @@ monospace;
 // Typography
 //
 
-@font           : @JLMSans;
-@font-heading   : @JLMHead;
-@font-site-title: @font-heading;
-@font-sml       : @base;
-@line-sml       : @double;
-@font-base      : calc(@base + 0.2vw);
-@line-base      : @double;
-@line-base-large: @line-base + 5; // large blocks of text
-@font-bump      : calc(@bump + 0.2vw);
-@line-bump      : @double;
-@font-lead      : 18px;
-@line-lead      : @triple;
-@font-header    : 24px;
-@line-header    : @triple;
-@font-sitename  : 60px;
+@font               : @JLMSans;
+@font-heading       : @JLMHead;
+@font-site-title    : @font-heading;
+@font-sml           : @base;
+@line-sml           : @double;
+@font-base          : calc(@base + 0.2vw);
+@line-base          : @double;
+@line-base-large    : @line-base + 5; // large blocks of text
+@font-bump          : calc(@bump + 0.2vw);
+@line-bump          : @double;
+@font-lead          : 18px;
+@line-lead          : @triple;
+@font-header        : 24px;
+@line-header        : @triple;
+@font-sitename      : 60px;
 @font-sitename-small: @font-sitename * 0.5;
 
 // Font weights
