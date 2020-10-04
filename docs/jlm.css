@@ -5338,7 +5338,7 @@ img {
   }
   .pkp_site_name .is_text:after {
     font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-    content: 'Language Modellinx';
+    content: 'Language Modelling';
     visibility: visible;
     font-size: 72px;
     line-height: 1.1em;
