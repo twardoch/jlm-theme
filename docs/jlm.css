@@ -5878,6 +5878,12 @@ pre {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 992px) {
+  .obj_article_details .row {
+    width: 240px;
+    margin-left: 30px;
+  }
+}
 .obj_article_details .author_bios .sub_item .label {
   border-bottom: none;
   text-transform: none;
