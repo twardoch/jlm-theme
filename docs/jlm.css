@@ -5312,7 +5312,7 @@ img {
 }
 @media (min-width: 992px) {
   .pkp_structure_head {
-    background-image: url('https://twardoch.github.io/jlm-theme/assets/jlm-head-back.svg');
+    background-image: url('assets/jlm-head-back.svg');
     background-size: 50%;
   }
 }
