@@ -8,20 +8,24 @@
  * @brief Styles applying to the main content panel
  */
 
-kbd, code, tt, samp, pre {
+kbd,
+code,
+tt,
+samp,
+pre {
 	font-family: @JLMMono;
 }
 
 .main_entry {
 	font-family: @JLMText;
-	font-size: @font-bump;
+	font-size  : @font-bump;
 }
 
 .pkp_structure_main {
 
 	h1 {
 		font-family: @font-heading;
-		font-size: @font-header;
+		font-size  : @font-header;
 		line-height: @line-header;
 		font-weight: @bold;
 	}
@@ -33,29 +37,29 @@ kbd, code, tt, samp, pre {
 		text-transform: uppercase;
 		font-size     : @font-lead;
 		line-height   : @line-lead;
-		}
+	}
 
 	h3 {
 		font-family: @font-heading;
-		font-size: @font-bump;
+		font-size  : @font-bump;
 		line-height: @line-bump;
 		font-weight: @bold;
 	}
 
 	h4 {
-		font-size: @font-base;
+		font-size  : @font-base;
 		line-height: @line-base;
 		font-weight: @bold;
 	}
 
 	h5 {
-		font-size: @font-base;
+		font-size  : @font-base;
 		line-height: @line-base;
 		font-weight: @normal;
 	}
 
 	h6 {
-		font-size: @font-sml;
+		font-size  : @font-sml;
 		line-height: @line-sml;
 		font-weight: @bold;
 	}
@@ -74,7 +78,7 @@ kbd, code, tt, samp, pre {
 
 	p {
 		line-height: @line-base-large;
-		margin: @line-base 0;
+		margin     : @line-base 0;
 	}
 
 	p:last-child {
@@ -88,37 +92,37 @@ kbd, code, tt, samp, pre {
 			margin-top: 0;
 		}
 
-	    // Edit link that isn't nested in a section
-	    > .cmp_edit_link {
-	        float: right;
-	        padding: @half 0;
-	        line-height: @triple;
-	    }
+		// Edit link that isn't nested in a section
+		>.cmp_edit_link {
+			float      : right;
+			padding    : @half 0;
+			line-height: @triple;
+		}
 
 		// Count of catalog entries on the current page
 		// used in catalog, category, series and search pages
 		.monograph_count {
-			float: right;
-			padding: @base 0;
+			float    : right;
+			padding  : @base 0;
 			font-size: @font-sml;
-			color: @text-light;
+			color    : @text-light;
 		}
 
 		// Description and image for catalog category/series
 		.about_section {
 			.pkp_helpers_clear;
-			color: @text-light;
+			color      : @text-light;
 			line-height: @triple;
 
 			.cover {
-				float: right;
-				width: 20%;
-				margin-left: 10%;
+				float       : right;
+				width       : 20%;
+				margin-left : 10%;
 				margin-right: 10%;
 
 				img {
 					display: block;
-					margin: 0 auto;
+					margin : 0 auto;
 				}
 			}
 
@@ -131,7 +135,7 @@ kbd, code, tt, samp, pre {
 			}
 
 			@media(min-width: @screen-phone) {
-				font-size: @font-bump;
+				font-size : @font-bump;
 				font-style: italic;
 			}
 		}
