@@ -4,4 +4,4 @@ if [ "$dir" = "$0" ]; then dir="."; fi
 cd "$dir" || exit
 
 watchman watch 'styles'
-watchman -- trigger 'styles' build '*.less' -- ./build.command
+watchman -- trigger 'styles' build '*.less' -- "$dir/build.command"
