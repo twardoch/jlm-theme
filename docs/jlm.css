@@ -1,4 +1,13 @@
 /**
+ * @file plugins/themes/jlmTheme/index.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Aggregate file for compiling a standalone CSS file
+ *
+ */
+/**
  * @file plugins/themes/jlmTheme/styles/fonts.less
  *
  * Copyright (c) 2020 Adam Twardoch
