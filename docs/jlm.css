@@ -5215,9 +5215,8 @@ img {
 .cmp_manuscript_button,
 .block_make_submission a,
 .obj_galley_link {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   background: #000a41;
   color: #fff;
   border: none;
