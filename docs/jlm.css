@@ -5220,6 +5220,7 @@ img {
   background: #000a41;
   color: #fff;
   border: none;
+  line-height: 16.8px;
 }
 .cmp_manuscript_button:hover,
 .cmp_manuscript_button:focus,
