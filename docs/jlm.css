@@ -5301,7 +5301,6 @@ img {
 }
 .pkp_site_name .is_text {
   font-size: calc(12px + 0.2vw);
-  text-transform: uppercase;
 }
 @media (min-width: 992px) {
   .pkp_site_name {
