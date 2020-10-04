@@ -5876,6 +5876,7 @@ pre {
 }
 .obj_article_details .row {
   display: flex;
+  flex-direction: column;
 }
 .obj_article_details .author_bios .sub_item .label {
   border-bottom: none;
