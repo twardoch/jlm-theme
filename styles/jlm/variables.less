@@ -109,9 +109,22 @@ monospace;
 @font-site-title-huge      : @font-header * 2;
 @font-site-title-small: @font-header;
 @sc: 0.05em;
+
 // Font weights
 @normal: 400;
 @bold  : 700;
+
+//
+// Screen width breakpoints
+//
+@screen-phone:                480px;
+@screen-tablet:               768px;
+@screen-tablet-container:     @screen-tablet - (@double * 2);
+@screen-desktop:              992px;
+@screen-desktop-container:    @screen-desktop - (@double * 2);
+@screen-lg-desktop:           1200px;
+@screen-lg-desktop-container: @screen-lg-desktop - (@double * 2);
+
 
 // Fixed widths and heights
 @sidebar-width: 100%;
