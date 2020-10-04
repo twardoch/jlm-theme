@@ -57,13 +57,11 @@
 @quintuple: @base * 5;
 
 // Font families
-
-@JLMHead: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif",
-    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
-    serif;
-@JLMText: "JLMText", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif",
-    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
-    serif;
+@JLMTextFallback: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif",
+Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+serif;
+@JLMHead: "JLMHead", @JLMTextFallback;
+@JLMText: "JLMText", @JLMTextFallback;
 @JLMSmall: "JLMSmall", @JLMText;
 @JLMMono : "JLMMono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
@@ -71,8 +69,8 @@
 @JLMSans: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
     ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue",
     "Lucida Grande", sans-serif;
-@JLMLogo : "JLMLogo";
-@JLMIcons: "JLMIcons";
+@JLMLogo : "JLMLogo", @JLMText;
+@JLMIcons: "JLMIcons", @JLMSans;
 
 //
 // Typography
