@@ -5315,14 +5315,14 @@ img {
     visibility: hidden;
     display: inline-block;
   }
-  .pkp_site_name .is_text ::before {
+  .pkp_site_name .is_text::before {
     content: 'Journal of';
     font-size: 24px;
     visibility: visible;
     width: 200px;
     line-height: 1em;
   }
-  .pkp_site_name .is_text ::after {
+  .pkp_site_name .is_text::after {
     content: 'Language Modelling';
     visibility: visible;
     font-size: 50px;
