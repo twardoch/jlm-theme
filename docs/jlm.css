@@ -5300,7 +5300,7 @@ img {
   padding-right: 36px;
 }
 .pkp_site_name .is_text {
-  font-size: calc(12px + 0.2vw);
+  font-size: 60px;
 }
 @media (min-width: 992px) {
   .pkp_site_name {
