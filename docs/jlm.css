@@ -5028,7 +5028,6 @@ a:focus {
   width: auto;
 }
 .has_site_logo .pkp_head_wrapper {
-  max-width: 1152px;
   position: relative;
   width: 100%;
   margin: 0 auto;
