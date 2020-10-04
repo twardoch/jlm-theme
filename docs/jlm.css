@@ -5287,6 +5287,10 @@ img {
 .cmp_announcements .date:before {
   color: #7d000d;
 }
+.cmp_button_wire,
+.obj_galley_link {
+  font-size: calc(12px + 0.2vw);
+}
 /**
  * @file plugins/themes/jlmTheme/styles/head.less
  *
