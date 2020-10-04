@@ -2314,7 +2314,7 @@ img {
   }
   .pkp_site_name .is_text {
     font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-    font-size: 60px;
+    font-size: 24px;
     line-height: 36px;
   }
   .pkp_site_name .is_img img {
@@ -2527,7 +2527,7 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  font-size: 60px;
+  font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
@@ -5451,7 +5451,7 @@ pre {
 }
 .pkp_structure_main h1 {
   font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  font-size: 60px;
+  font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
