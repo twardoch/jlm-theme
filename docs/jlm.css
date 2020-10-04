@@ -5337,9 +5337,10 @@ img {
     line-height: 1em;
   }
   .pkp_site_name .is_text:after {
-    content: 'Language Modelling';
+    font-family: 72px;
+    content: 'Language Modellinx';
     visibility: visible;
-    font-size: 50px;
+    font-size: 72px;
     line-height: 1.1em;
     width: 120px;
     display: block;
