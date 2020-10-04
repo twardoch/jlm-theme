@@ -5313,6 +5313,7 @@ img {
 .pkp_site_name {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   padding-left: 36px;
+  padding-left: 48px;
   width: fit-content;
   background-color: #7d000d;
 }
