@@ -5131,7 +5131,7 @@ img {
 }
 .pkp_structure_page {
   margin: 0 auto;
-  max-width: 1152px;
+  max-width: 100%;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
