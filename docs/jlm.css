@@ -5310,6 +5310,12 @@ img {
   padding-left: 0px;
   padding-right: 36px;
 }
+@media (min-width: 992px) {
+  .pkp_structure_head {
+    background-image: url('https://twardoch.github.io/jlm-theme/assets/jlm-head-back.svg');
+    background-size: 50%;
+  }
+}
 .pkp_site_name {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   padding-left: 36px;
