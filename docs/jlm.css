@@ -5155,6 +5155,7 @@ img {
 }
 .pkp_structure_sidebar {
   display: flex;
+  flex-direction: row;
 }
 @media (min-width: 992px) {
   .pkp_structure_sidebar:before {
