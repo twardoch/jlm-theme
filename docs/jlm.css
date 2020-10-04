@@ -6002,3 +6002,6 @@ pre {
     border-right: 1px solid #fff;
   }
 }
+.pkp_site_name .is_text:first-word {
+  color: red;
+}
