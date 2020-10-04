@@ -58,18 +58,30 @@
 
 // Font families
 @JLMTextFallback: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif",
-Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
-serif;
-@JLMHead: "JLMHead", @JLMTextFallback;
-@JLMText: "JLMText", @JLMTextFallback;
+    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+    serif;
+@JLMHead : "JLMHead", @JLMTextFallback;
+@JLMText : "JLMText", @JLMTextFallback;
 @JLMSmall: "JLMSmall", @JLMText;
-@JLMMono : "JLMMono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
-    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+@JLMMono : "JLMMono",
+Consolas,
+"Andale Mono WT",
+"Andale Mono",
+"Lucida Console",
+"Lucida Sans Typewriter",
+"DejaVu Sans Mono",
+"Bitstream Vera Sans Mono",
+"Liberation Mono",
+"Nimbus Mono L",
+Monaco,
+"Courier New",
+Courier,
+monospace;
 @JLMSans: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
     ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue",
     "Lucida Grande", sans-serif;
-@JLMLogo : "JLMLogo", @JLMText;
+@JLMLogo : "JLMLogo",
+@JLMText;
 @JLMIcons: "JLMIcons", @JLMSans;
 
 //
@@ -90,12 +102,13 @@ serif;
 @line-lead      : @triple;
 @font-header    : 24px;
 @line-header    : @triple;
-@font-sitename: 60px;
+@font-sitename  : 60px;
+@font-sitename-small: @font-sitename * 0.5;
 
 // Font weights
 @normal: 400;
 @bold  : 700;
 
 // Fixed widths and heights
-@sidebar-width:               100%;
-@logo-height:                 @quadruple * 3;
+@sidebar-width: 100%;
+@logo-height  : @quadruple * 3;
