@@ -5158,14 +5158,16 @@ img {
   flex-direction: row;
 }
 @media (min-width: 992px) {
-  .pkp_structure_sidebar:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 300px;
-    border-left: 1px solid #fff;
+  .pkp_structure_sidebar {
+    /* &:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 300px;
+			border-left: @bg-border;
+		} */
   }
   .pkp_structure_sidebar > * {
     position: relative;
