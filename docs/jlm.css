@@ -5411,11 +5411,12 @@ img {
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt {
   padding-bottom: 12px;
   border-bottom: none;
-  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
-  font-weight: 700;
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(12px + 0.2vw);
+  letter-spacing: 0.05em;
+  font-weight: 400;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
 }
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt:hover,
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt:focus {
