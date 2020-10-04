@@ -2548,6 +2548,7 @@ img {
   line-height: 36px;
   font-weight: 400;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .pkp_structure_main h3 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
