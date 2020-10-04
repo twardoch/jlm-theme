@@ -5369,7 +5369,7 @@ img {
 }
 #navigationPrimary a {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 12px;
+  font-size: calc(12px + 0.2vw);
   font-weight: 400;
   text-transform: uppercase;
 }
