@@ -5221,6 +5221,8 @@ img {
   color: #fff;
   border: none;
   line-height: 16.8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .cmp_manuscript_button:hover,
 .cmp_manuscript_button:focus,
