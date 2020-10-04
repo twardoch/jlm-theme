@@ -5321,7 +5321,7 @@ img {
 }
 @media (min-width: 992px) {
   .pkp_site_name {
-    width: 75%;
+    width: fit-content;
     margin-left: 0;
     padding-top: 18px;
     padding-bottom: 18px;
