@@ -42,6 +42,32 @@
 
 	.main_entry {
 
+		.item {
+
+			.label {
+				margin: 0 0 @double;
+				font-family: @font-heading;
+				font-size: @font-bump;
+				font-weight: @normal;
+			}
+
+			&.doi .label,
+			&.keywords .label {
+				display: inline;
+				font-size: @font-base;
+			}
+		}
+
+		.sub_item {
+
+			.label {
+				font-size: @font-base;
+			}
+		}
+	}
+
+	.main_entry {
+
 		.label {
 			display: inline-block;
 			padding: 0 0 @half;
