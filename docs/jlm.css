@@ -2203,7 +2203,7 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff;
-  font-family: 72px;
+  font-family: 48px;
   font-size: 12px;
 }
 .pkp_site_name > a {
@@ -2229,7 +2229,7 @@ img {
   height: auto;
 }
 .pkp_site_name .is_text {
-  font-family: 72px;
+  font-family: 48px;
   font-size: 12px;
   font-weight: 700;
   line-height: 48px;
@@ -2324,7 +2324,7 @@ img {
     background: transparent;
   }
   .pkp_site_name .is_text {
-    font-family: 72px;
+    font-family: 48px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -5341,7 +5341,7 @@ img {
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.1em;
     width: 120px;
     display: block;
