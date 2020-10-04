@@ -5346,7 +5346,7 @@ img {
     visibility: visible;
     font-size: 48px;
     line-height: 1.1em;
-    width: 120px;
+    width: min-content;
     display: block;
   }
 }
