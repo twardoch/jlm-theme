@@ -1879,7 +1879,7 @@ template {
 }
 .cmp_breadcrumbs .current h1 {
   margin: 0;
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -1954,7 +1954,7 @@ template {
  * @brief Classes for site-wide elements and layout scaffolding
  */
 body {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: calc(12px + 0.2vw);
   line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
@@ -2174,7 +2174,7 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
 }
 .pkp_site_name > a {
@@ -2200,7 +2200,7 @@ img {
   height: auto;
 }
 .pkp_site_name .is_text {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 48px;
@@ -2295,7 +2295,7 @@ img {
     background: transparent;
   }
   .pkp_site_name .is_text {
-    font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+    font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     font-size: 24px;
     line-height: 36px;
   }
@@ -2508,19 +2508,19 @@ img {
  * @brief Styles applying to the main content panel
  */
 .pkp_structure_main h1 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
 .pkp_structure_main h2 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
 }
 .pkp_structure_main h3 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
   line-height: 24px;
   font-weight: 700;
@@ -4054,7 +4054,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_details .main_entry .item .label {
   margin: 0 0 24px;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
   font-weight: 700;
 }
@@ -4127,7 +4127,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_details .entry_details .item .label {
   margin: 0;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
@@ -4165,7 +4165,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   box-shadow: none;
   padding: 0 1em;
   width: 100%;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
   text-align: left;
@@ -4241,7 +4241,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   }
   .obj_article_details .item .label {
     margin: 0 0 24px;
-    font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+    font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     font-size: calc(15.6px + 0.2vw);
     font-weight: 700;
   }
@@ -4310,7 +4310,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   width: auto;
 }
 .obj_article_summary > .title {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(12px + 0.2vw);
   line-height: 24px;
   font-weight: 700;
@@ -4486,7 +4486,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   max-height: 250px;
 }
 .obj_issue_summary .title {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -4655,7 +4655,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   display: block;
   margin-bottom: 12px;
   margin-top: 0;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
   font-weight: 700;
   line-height: 24px;
@@ -4926,7 +4926,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  *
  */
 body {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: calc(12px + 0.2vw);
   line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
@@ -5176,7 +5176,7 @@ img {
 .cmp_manuscript_button,
 .block_make_submission a,
 .obj_galley_link {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: 700;
   text-transform: uppercase;
   background: #000a41;
@@ -5193,7 +5193,7 @@ img {
 }
 .cmp_breadcrumbs {
   padding: 36px 0;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.54);
   text-transform: uppercase;
@@ -5206,14 +5206,14 @@ img {
   text-transform: none;
 }
 .cmp_breadcrumbs .current h1 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .cmp_breadcrumbs .separator {
   padding: 0 0.1em;
   opacity: 0.3;
 }
 .cmp_pagination {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .cmp_pagination a {
   font-weight: 700;
@@ -5236,7 +5236,7 @@ img {
 .cmp_announcements .obj_announcement_summary h4,
 .cmp_announcements .date,
 .cmp_announcements .read_more {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   font-weight: 700;
 }
@@ -5297,7 +5297,7 @@ img {
   width: auto;
 }
 #navigationPrimary a {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -5339,7 +5339,7 @@ img {
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt {
   padding-bottom: 12px;
   border-bottom: none;
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.54);
   font-weight: 700;
@@ -5376,7 +5376,7 @@ img {
   color: #fff;
 }
 .pkp_navigation_user_wrapper a {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
   font-weight: 700;
 }
@@ -5416,26 +5416,26 @@ code,
 tt,
 samp,
 pre {
-  font-family: 'JLMMono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  font-family: "JLMMono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 .main_entry {
-  font-family: 'JLMText', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMText", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
 }
 .pkp_structure_main h1 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
 .pkp_structure_main h2 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 18px;
   line-height: 36px;
   font-weight: 700;
 }
 .pkp_structure_main h3 {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
   line-height: 24px;
   font-weight: 700;
@@ -5592,14 +5592,14 @@ pre {
   color: rgba(0, 0, 0, 0.54);
 }
 .pkp_page_index .current_issue .current_issue_title {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: calc(15.6px + 0.2vw);
 }
 .pkp_page_index .current_issue .sections {
   margin-top: 24px;
 }
 .pkp_page_index .current_issue .read_more {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -5654,7 +5654,7 @@ pre {
   margin-top: 12px;
 }
 .page_search .search_advanced legend {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -5694,7 +5694,7 @@ pre {
  */
 .obj_issue_toc .heading .pub_id,
 .obj_issue_toc .heading .published {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 12px;
 }
 .obj_issue_toc .heading .pub_id .type,
@@ -5742,7 +5742,7 @@ pre {
   margin-bottom: 0.5em;
 }
 .obj_issue_toc .pages {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .obj_issue_toc .cover img {
   margin-left: auto;
@@ -5759,7 +5759,7 @@ pre {
  * @link templates/frontend/objects/issue_summary.tpl
  */
 .obj_issue_summary .series {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 /**
  * @file styles/objects/galley_link.less
@@ -5794,7 +5794,7 @@ pre {
  * @link templates/frontend/objects/article_summary.tpl
  */
 .obj_article_summary .subtitle {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 12px;
 }
 /**
@@ -5808,11 +5808,11 @@ pre {
  * @link templates/frontend/objects/article_details.tpl
  */
 .obj_article_details .subtitle {
-  font-family: 'JLMSans', 'Noto Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 .obj_article_details .authors,
 .obj_article_details .doi {
-  font-family: 'JLMHead', Cambria, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  font-family: "JLMHead", Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .obj_article_details .orcid a,
 .obj_article_details .doi a {
