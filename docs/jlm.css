@@ -5119,10 +5119,10 @@ a:focus {
 }
 @media (min-width: 1200px) {
   .pkp_structure_main {
-    width: 880px;
+    width: 980px;
   }
   .pkp_structure_main:after {
-    left: 880px;
+    left: 980px;
   }
 }
 @media (min-width: 992px) {
