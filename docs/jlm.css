@@ -1181,7 +1181,7 @@ template {
 }
 .pkp_loading {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .pkp_loading .pkp_spinner {
   margin-right: 0.25em;
@@ -1298,13 +1298,13 @@ template {
 }
 .pkp_uploadedFile_summary {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .pkp_uploadedFile_summary .filename .display {
   line-height: 24px;
 }
 .pkp_uploadedFile_summary .filename .edit {
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .pkp_uploadedFile_summary .details {
   margin-top: 6px;
@@ -1784,7 +1784,7 @@ template {
 .ui-autocomplete > li {
   padding: 6px;
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
   color: #fff;
   cursor: pointer;
 }
@@ -2491,7 +2491,7 @@ img {
   .pkp_navigation_user a {
     padding-top: 6px;
     padding-bottom: 6px;
-    line-height: 15.6px;
+    line-height: 16.8px;
   }
   .pkp_navigation_user > li > a:focus {
     outline: 0;
@@ -2566,7 +2566,7 @@ img {
 }
 .pkp_structure_main h6 {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
   font-weight: 700;
 }
 .pkp_structure_main h1,
@@ -3477,7 +3477,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
  */
 .page_register .required_label {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
   color: rgba(0, 0, 0, 0.54);
   margin-bottom: 24px;
 }
@@ -3511,14 +3511,14 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   display: inline-block;
   margin-right: 1em;
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .page_register .context_optin .context_privacy {
   position: absolute;
   left: -9999px;
   padding: 6px 0;
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .page_register .context_optin .context_privacy_visible {
   position: relative;
@@ -3531,16 +3531,16 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   color: #fff;
 }
 .page_register #formErrors .pkp_form_error {
-  padding: 4.2px 0;
+  padding: 3.6px 0;
   font-size: 12px;
   font-weight: bold;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .page_register #formErrors .pkp_form_error_list {
   margin: 0;
   padding-left: 24px;
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .page_register #formErrors .pkp_form_error_list a {
   color: #fff;
@@ -4003,7 +4003,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_announcement_summary .summary {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
   margin-top: 12px;
 }
 .obj_announcement_summary .summary p:first-child {
@@ -4136,7 +4136,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_details .copyright {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .obj_article_details .copyright a[rel="license"] + p {
   margin-top: 0;
@@ -4525,7 +4525,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_issue_summary .description {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
 }
 .obj_issue_summary .description p:first-child {
   margin-top: 0;
@@ -5528,7 +5528,7 @@ pre {
 }
 .pkp_structure_main h6 {
   font-size: 12px;
-  line-height: 15.6px;
+  line-height: 16.8px;
   font-weight: 700;
 }
 .pkp_structure_main h1,
