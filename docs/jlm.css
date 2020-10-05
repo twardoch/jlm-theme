@@ -5970,6 +5970,11 @@ pre {
 .obj_article_details .doi {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
+.obj_article_details .authors .name {
+  font-weight: 400;
+  font-style: italic;
+  font-size: calc(15.6px + 0.2vw);
+}
 .obj_article_details .orcid a,
 .obj_article_details .doi a {
   color: rgba(0, 0, 0, 0.87);
