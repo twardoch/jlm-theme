@@ -5975,6 +5975,12 @@ pre {
   font-style: italic;
   font-size: calc(15.6px + 0.2vw);
 }
+.obj_article_details .authors .affiliation {
+  font-size: calc(12px + 0.2vw);
+}
+.obj_article_details .authors .orcid {
+  font-size: calc(12px + 0.2vw);
+}
 .obj_article_details .orcid a,
 .obj_article_details .doi a {
   color: rgba(0, 0, 0, 0.87);
