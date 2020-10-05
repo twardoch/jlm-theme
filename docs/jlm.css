@@ -2325,7 +2325,7 @@ img {
   }
   .pkp_site_name .is_text {
     font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-    font-size: calc(24px + 2vw);
+    font-size: calc(24px + 1.8vw);
     line-height: calc(48px + 0.2vw);
   }
   .pkp_site_name .is_img img {
@@ -2538,7 +2538,7 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(24px + 2vw);
+  font-size: calc(24px + 1.8vw);
   line-height: calc(48px + 0.2vw);
   font-weight: 700;
   margin-left: -0.08em;
@@ -5363,7 +5363,7 @@ img {
     font-weight: 700;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: calc(24px + 2vw);
+    font-size: calc(24px + 1.8vw);
     line-height: 1.1em;
     width: min-content;
     display: block;
@@ -5509,7 +5509,7 @@ pre {
 }
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(24px + 2vw);
+  font-size: calc(24px + 1.8vw);
   line-height: calc(48px + 0.2vw);
   font-weight: 700;
 }
