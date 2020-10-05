@@ -5871,12 +5871,13 @@ pre {
   top: 0;
   right: 0;
   width: 36px;
-  background: #fff;
+  background: #000a41;
+  color: #fff;
   text-align: center;
 }
 .header_view .download:hover,
 .header_view .download:focus {
-  background: #000a41;
+  background: #7d000d;
   color: #fff;
 }
 .header_view .download:before {
