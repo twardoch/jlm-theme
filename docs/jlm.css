@@ -5375,6 +5375,7 @@ img {
     line-height: 1.1em;
     width: min-content;
     display: block;
+    margin-left: -0.08em;
   }
 }
 @media (min-width: 992px) {
