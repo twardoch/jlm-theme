@@ -5794,39 +5794,6 @@ pre {
   margin-bottom: 12px;
   font-size: calc(12px + 0.2vw);
 }
-.page_contact .address {
-  margin-top: 0;
-}
-.page_contact .address p {
-  margin: 0;
-}
-.page_contact .label {
-  display: block;
-  font-weight: 700;
-}
-.page_contact .contact.support {
-  margin-top: 48px;
-}
-@media (min-width: 768px) {
-  .page_contact .contact_section:before,
-  .page_contact .contact_section:after {
-    content: " ";
-    display: table;
-  }
-  .page_contact .contact_section:after {
-    clear: both;
-  }
-  .page_contact .contact {
-    float: left;
-    width: 50%;
-  }
-  .page_contact .contact.primary {
-    padding-right: 24px;
-  }
-  .page_contact .contact.support {
-    margin-top: 0;
-  }
-}
 /**
  * @file plugins/themes/jlmTheme/styles/pages/search.less
  *
