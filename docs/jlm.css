@@ -1211,7 +1211,8 @@ template {
 .obj_article_summary .galleys_links,
 .obj_issue_toc .articles,
 .obj_issue_toc .galleys_links,
-.pkp_block .content ul {
+.pkp_block .content ul,
+.page_issue_archive .issues_archive {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -5735,9 +5736,41 @@ pre {
  * @brief Styles applying to issue archive page
  * @link templates/frontend/pages/issueArchive.tpl
  */
+.page_issue_archive .issues_archive {
+  margin-left: -12px;
+  margin-right: -12px;
+  border-top: 1px solid #fff;
+}
+.page_issue_archive .issues_archive > li {
+  padding: 36px 12px;
+  border-bottom: 1px solid #fff;
+}
+@media (min-width: 480px) {
+  .page_issue_archive .issues_archive {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  .page_issue_archive .issues_archive > li {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .page_issue_archive .issues_archive {
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+  .page_issue_archive .issues_archive > li {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
 .page_issue_archive .issues_archive,
 .page_issue_archive .issues_archive > li {
   border: none;
+}
+.page_issue_archive .cmp_pagination {
+  margin-top: 24px;
 }
 /**
  * @file plugins/themes/jlmTheme/styles/pages/search.less
