@@ -5863,7 +5863,7 @@ pre {
 }
 .header_view .title:hover,
 .header_view .title:focus {
-  background: #000a41;
+  background: #3e3e3e;
 }
 .header_view .download {
   display: block;
