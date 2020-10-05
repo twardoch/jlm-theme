@@ -5345,6 +5345,7 @@ img {
     padding-bottom: 36px;
   }
   .pkp_site_name .is_text {
+    font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
     font-size: 0px;
     line-height: 0px;
     visibility: hidden;
