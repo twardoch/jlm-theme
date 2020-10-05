@@ -6023,7 +6023,8 @@ pre {
   border-bottom: 3px solid #7d000d;
   background: transparent;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 .obj_issue_toc .galleys_links li {
   margin-bottom: 0.5em;
