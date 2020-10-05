@@ -5363,7 +5363,7 @@ img {
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: 31.2px;
+    font-size: calc(36px + 0.2vw);
     line-height: 1.1em;
     width: min-content;
     display: block;
