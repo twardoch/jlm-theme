@@ -5986,6 +5986,9 @@ pre {
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 }
+.obj_article_details .entry_details .item .label {
+  font-size: calc(12px + 0.2vw);
+}
 .obj_article_details .entry_details .item .label + .value {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
