@@ -5877,7 +5877,7 @@ pre {
 }
 .header_view .download:hover,
 .header_view .download:focus {
-  background: #7d000d;
+  background: black;
   color: #fff;
 }
 .header_view .download:before {
