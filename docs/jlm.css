@@ -5952,7 +5952,12 @@ pre {
  */
 @media (min-width: 768px) {
   .obj_article_details .item {
-    padding: 0;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 992px) {
+  .obj_article_details .item {
+    padding: 12px 36px;
   }
 }
 .obj_article_details .page_title {
