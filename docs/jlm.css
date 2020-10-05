@@ -5246,6 +5246,7 @@ img {
 .cmp_breadcrumbs > ol {
   padding: 0;
   margin: 0;
+  font-size: inherit;
 }
 .cmp_breadcrumbs .current {
   text-transform: none;
