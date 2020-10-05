@@ -2325,8 +2325,8 @@ img {
   }
   .pkp_site_name .is_text {
     font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: calc(36px + 0.2vw);
+    line-height: calc(48px + 0.2vw);
   }
   .pkp_site_name .is_img img {
     max-height: 80px;
@@ -2538,8 +2538,8 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: calc(36px + 0.2vw);
+  line-height: calc(48px + 0.2vw);
   font-weight: 700;
 }
 .pkp_structure_main h2 {
@@ -3830,6 +3830,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .header_view .title {
   display: block;
+  padding-left: 24px;
   padding-left: 48px;
   max-width: 100%;
   overflow-x: hidden;
@@ -5347,7 +5348,7 @@ img {
   }
   .pkp_site_name .is_text:before {
     content: 'Journal of';
-    font-size: 24px;
+    font-size: 36px;
     visibility: visible;
     width: 200px;
     line-height: 1em;
@@ -5357,7 +5358,7 @@ img {
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: 48px;
+    font-size: 72px;
     line-height: 1.1em;
     width: min-content;
     display: block;
@@ -5503,8 +5504,8 @@ pre {
 }
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: calc(36px + 0.2vw);
+  line-height: calc(48px + 0.2vw);
   font-weight: 700;
 }
 .pkp_structure_main h2 {
@@ -5755,6 +5756,7 @@ pre {
   color: #fff;
 }
 .header_view .title {
+  padding-left: 24px;
   color: #fff;
 }
 .header_view .title:hover,
