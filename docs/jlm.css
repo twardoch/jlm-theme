@@ -6076,7 +6076,7 @@ pre {
 }
 .obj_article_details .entry_details .sub_item:not(:first-child) .label {
   display: inline-block;
-  padding: 0.5em 0;
+  padding: 0.5em 0 0 0;
   margin: 0 24px;
 }
 .obj_article_details .entry_details .cover_image {
