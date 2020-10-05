@@ -5992,7 +5992,7 @@ pre {
   font-size: calc(12px + 0.2vw);
 }
 .obj_article_details .entry_details .item {
-  font-family: calc(12px + 0.2vw);
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   margin: 36px 0;
   padding: 0;
   border-bottom: none;
