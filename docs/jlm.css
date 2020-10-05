@@ -5988,6 +5988,7 @@ pre {
   font-weight: 400;
   text-transform: uppercase;
   font-size: calc(12px + 0.2vw);
+  letter-spacing: 0.05em;
 }
 .obj_article_details .entry_details .item {
   margin: 36px 0;
