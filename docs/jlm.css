@@ -5809,7 +5809,7 @@ pre {
 .header_view {
   z-index: 2;
   position: relative;
-  background: #3e3e3e;
+  background: #000a41;
   color: #fff;
 }
 .header_view:hover,
