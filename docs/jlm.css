@@ -2545,7 +2545,7 @@ img {
  * @brief Styles applying to the main content panel
  */
 .pkp_structure_main h1 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: Arial;
   font-size: calc(24px + 1.8vw);
   line-height: calc(36px + 1.4vw);
   font-weight: 700;
