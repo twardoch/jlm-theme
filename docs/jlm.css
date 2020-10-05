@@ -6095,6 +6095,7 @@ pre {
 .obj_article_summary .title {
   font-size: calc(15.6px + 0.2vw);
   font-weight: 400;
+  letter-spacing: normal;
   line-height: 24px;
   text-transform: none;
 }
