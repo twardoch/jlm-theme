@@ -6191,7 +6191,6 @@ pre {
 }
 .obj_article_details .main_entry .item.doi .label,
 .obj_article_details .main_entry .item.keywords .label {
-  display: inline;
   font-size: calc(12px + 0.2vw);
 }
 .obj_article_details .main_entry .sub_item .label {
