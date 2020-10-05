@@ -5947,18 +5947,6 @@ pre {
   color: #fff;
   text-decoration: underline;
 }
-/*
-.header_view {
-
-		&:hover,
-		&:focus {
-			background: @bg-base;
-			color: @text-bg-base;
-			text-decoration: underline;
-		}
-	}
-}
-*/
 /**
  * @file plugins/themes/jlmTheme/styles/objects/issue_toc.less
  *
