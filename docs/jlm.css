@@ -6006,6 +6006,9 @@ pre {
   font-family: 'JLMIcons';
   content: '\F044';
 }
+.obj_article_details .doi .label {
+  color: red;
+}
 .obj_article_details .authors li {
   margin-bottom: 24px;
 }
