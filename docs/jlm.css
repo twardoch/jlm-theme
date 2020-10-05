@@ -5257,12 +5257,6 @@ img {
   margin: 0;
   font-size: inherit;
 }
-.cmp_breadcrumbs .current {
-  text-transform: none;
-  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  letter-spacing: normal;
-  font-style: italic;
-}
 .cmp_breadcrumbs .current h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
