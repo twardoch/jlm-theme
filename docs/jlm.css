@@ -5536,9 +5536,11 @@ pre {
   line-height: 24px;
 }
 .pkp_structure_main h4 {
-  font-size: calc(12px + 0.2vw);
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(15.6px + 0.2vw);
   line-height: 24px;
-  font-weight: 700;
+  font-style: italic;
+  font-weight: 400;
 }
 .pkp_structure_main h5 {
   font-size: calc(12px + 0.2vw);
