@@ -5984,6 +5984,7 @@ pre {
 }
 .obj_issue_toc .description {
   font-size: calc(15.6px + 0.2vw);
+  line-height: 24px;
 }
 .obj_issue_toc .heading .pub_id,
 .obj_issue_toc .heading .published {
