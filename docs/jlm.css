@@ -1317,7 +1317,7 @@ template {
 }
 .pkp_uploadedFile_summary .details {
   margin-top: 6px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_uploadedFile_summary .details > span {
   margin-left: 24px;
@@ -1722,7 +1722,7 @@ template {
   margin-top: 0;
   font-size: 12px;
   line-height: 1.5em;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 @media (min-width: 480px) {
   .cmp_form input[type="text"],
@@ -1909,11 +1909,11 @@ template {
   text-decoration: none;
 }
 .cmp_breadcrumbs .separator {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   padding: 0 0.5em;
 }
 .cmp_breadcrumbs .current {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .cmp_breadcrumbs .current h1 {
   margin: 0;
@@ -2608,10 +2608,10 @@ img {
   float: right;
   padding: 12px 0;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_structure_main .page .about_section {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   line-height: 36px;
 }
 .pkp_structure_main .page .about_section:before,
@@ -2775,7 +2775,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   right: 100%;
   margin-right: 24px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_search .search_cancel {
   width: 25px;
@@ -3227,7 +3227,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   float: right;
   padding: 12px 0;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .page_catalog_category .about_section .cover {
   float: right;
@@ -3261,7 +3261,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     padding-right: 12px;
     line-height: 36px;
     background: #fff;
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.87);
   }
 }
 @media (min-width: 992px) {
@@ -3488,7 +3488,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .page_register .required_label {
   font-size: 12px;
   line-height: 16.8px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   margin-bottom: 24px;
 }
 .page_register .consent {
@@ -3627,7 +3627,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   padding: 12px 24px;
   margin: 0;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .page_search .date_range {
   float: left;
@@ -3710,7 +3710,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   margin-top: 24px;
   font-size: 12px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   text-align: right;
 }
 .page_search .cmp_pagination a {
@@ -3949,7 +3949,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_announcement_full .date {
   margin: 16px 0;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_announcement_full .date:before {
   display: inline-block;
@@ -3997,7 +3997,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .obj_announcement_summary .date {
   font-size: 12px;
   line-height: 29px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_announcement_summary .date:before {
   display: inline-block;
@@ -4127,7 +4127,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_details .authors .affiliation {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_details .author_bios .sub_item .label {
   margin-bottom: 0;
@@ -4170,7 +4170,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: 12px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_details .categories {
   margin: 0;
@@ -4207,7 +4207,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   width: 100%;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   text-align: left;
 }
 .obj_article_details .citation_display .citation_formats_button:after {
@@ -4365,7 +4365,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_summary .meta {
   position: relative;
@@ -4375,7 +4375,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_summary .pages,
 .obj_article_summary .published {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_summary .galleys_links {
   margin-top: 12px;
@@ -4532,7 +4532,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_issue_summary .series {
   margin-bottom: 6px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_issue_summary .description {
   font-size: 12px;
@@ -4660,7 +4660,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     font-size: calc(15.6px + 0.2vw);
     font-weight: 400;
     line-height: 36px;
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.87);
   }
 }
 @media (min-width: 992px) {
@@ -4699,7 +4699,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   font-size: calc(15.6px + 0.2vw);
   font-weight: 700;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_block .content ul li {
   line-height: 24px;
@@ -4729,7 +4729,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   margin-top: 24px;
   font-size: 12px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .block_browse .has_submenu ul {
   margin-top: 5px;
@@ -4742,7 +4742,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .block_browse .current a {
   padding-left: 0.5em;
   border-left: 4px solid #fff;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   cursor: text;
 }
 .block_information a,
@@ -5248,7 +5248,7 @@ img {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-weight: 400;
   font-size: calc(12px + 0.2vw);
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -5413,7 +5413,7 @@ img {
 }
 @media (min-width: 992px) {
   #navigationPrimary a {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.87);
   }
   #navigationPrimary a:hover,
   #navigationPrimary a:focus {
@@ -5438,7 +5438,7 @@ img {
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt:hover,
 .pkp_head_wrapper .pkp_search .search_controls .search_prompt:focus {
@@ -5485,7 +5485,7 @@ img {
     padding-right: 36px;
   }
   .pkp_navigation_user_wrapper a {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.87);
   }
   .pkp_navigation_user_wrapper ul a:hover,
   .pkp_navigation_user_wrapper ul a:focus {
@@ -5586,10 +5586,10 @@ pre {
   float: right;
   padding: 12px 0;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_structure_main .page .about_section {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   line-height: 36px;
 }
 .pkp_structure_main .page .about_section:before,
@@ -5691,7 +5691,7 @@ pre {
   border-bottom: 3px solid #7d000d;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .pkp_page_index .current_issue .current_issue_title {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
@@ -5838,7 +5838,7 @@ pre {
 .obj_issue_toc .heading .pub_id .type,
 .obj_issue_toc .heading .published .label {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
 }
 .obj_issue_toc .heading .pub_id .id,
@@ -5917,14 +5917,14 @@ pre {
 .obj_galley_link.restricted {
   border-color: #fff;
   background: #fff;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_galley_link.restricted:before {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_galley_link.restricted:hover,
 .obj_galley_link.restricted:focus {
-  background: rgba(0, 0, 0, 0.54);
+  background: rgba(0, 0, 0, 0.87);
 }
 /**
  * @file plugins/themes/jlmTheme/styles/objects/article_summary.less
@@ -5975,7 +5975,7 @@ pre {
 }
 .obj_article_details .orcid a {
   font-size: 10px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_details .authors li {
   margin-bottom: 24px;
@@ -5997,7 +5997,7 @@ pre {
 .obj_article_details .main_entry .label {
   display: inline-block;
   padding: 0 0 6px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -6060,7 +6060,7 @@ pre {
   margin-bottom: 0;
 }
 .obj_article_details .entry_details .sub_item .label {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_details .entry_details .item > .label,
 .obj_article_details .entry_details .sub_item:first-child > .label {
