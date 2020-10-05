@@ -5953,6 +5953,7 @@ pre {
   border-bottom: 3px solid #7d000d;
   color: rgba(0, 0, 0, 0.54);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .obj_article_details .main_entry .doi .label,
 .obj_article_details .main_entry .keywords .label {
