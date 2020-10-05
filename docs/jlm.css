@@ -5982,6 +5982,9 @@ pre {
 .obj_issue_toc {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
+.obj_issue_toc .description {
+  font-size: calc(15.6px + 0.2vw);
+}
 .obj_issue_toc .heading .pub_id,
 .obj_issue_toc .heading .published {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
