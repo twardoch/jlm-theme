@@ -5516,10 +5516,11 @@ pre {
   font-size: calc(15.6px + 0.2vw);
 }
 .pkp_structure_main h1 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: Arial;
   font-size: calc(24px + 1.8vw);
   line-height: calc(36px + 1.4vw);
   font-weight: 700;
+  margin-left: -0.08em;
 }
 .pkp_structure_main h2 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
