@@ -6109,6 +6109,20 @@ pre {
 .obj_article_details .entry_details .citation_display {
   margin-bottom: 0;
 }
+.obj_article_details .entry_details .citation_display .citation_formats_button {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+  padding: 0 1em;
+  width: 100%;
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: left;
+}
 .obj_article_details .entry_details .item.copyright {
   background: transparent;
   box-shadow: none;
