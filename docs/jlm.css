@@ -5976,6 +5976,7 @@ pre {
 .obj_article_details .entry_details .label {
   font-weight: 400;
   text-transform: uppercase;
+  font-size: calc(12px + 0.2vw);
 }
 .obj_article_details .entry_details .item {
   margin: 36px 0;
