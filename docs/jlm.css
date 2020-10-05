@@ -5809,7 +5809,8 @@ pre {
 .header_view {
   z-index: 2;
   position: relative;
-  background: #001274;
+  background: #3e3e3e;
+  color: #fff;
 }
 .header_view a {
   line-height: 36px;
@@ -5939,8 +5940,6 @@ pre {
 }
 /*
 .header_view {
-	background: @bg-base;
-	color: @text-bg-base;
 
 	.title {
 		font-family: @font-text;
