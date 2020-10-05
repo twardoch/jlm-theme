@@ -5859,6 +5859,7 @@ pre {
   font-size: 12px;
   color: #fff;
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-style: italic;
 }
 .header_view .title:hover,
 .header_view .title:focus {
