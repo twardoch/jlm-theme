@@ -5361,7 +5361,7 @@ img {
   }
   .pkp_site_name .is_text:before {
     content: 'Journal of';
-    font-size: 15.6px;
+    font-size: calc(15.6px + 0.2vw);
     visibility: visible;
     width: 200px;
     line-height: 1em;
