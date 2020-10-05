@@ -5981,8 +5981,8 @@ pre {
  */
 .obj_issue_toc .heading .pub_id,
 .obj_issue_toc .heading .published {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 12px;
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(12px + 0.2vw);
 }
 .obj_issue_toc .heading .pub_id .type,
 .obj_issue_toc .heading .published .label {
@@ -6029,7 +6029,7 @@ pre {
   margin-bottom: 0.5em;
 }
 .obj_issue_toc .pages {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
 .obj_issue_toc .cover img {
   margin-left: auto;
