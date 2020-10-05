@@ -6006,7 +6006,7 @@ pre {
   font-family: 'JLMIcons';
   content: '\F044';
 }
-.obj_article_details .obj_article_details .main_entry .item.doi .label {
+.obj_article_details .main_entry .item.doi .label {
   display: none;
 }
 .obj_article_details .authors li {
