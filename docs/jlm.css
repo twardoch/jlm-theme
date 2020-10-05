@@ -6007,7 +6007,7 @@ pre {
   content: '\F044';
 }
 .obj_article_details .item.doi h2.label {
-  display: none;
+  color: red;
 }
 .obj_article_details .authors li {
   margin-bottom: 24px;
