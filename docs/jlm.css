@@ -6071,7 +6071,7 @@ pre {
 }
 .obj_article_details .entry_details .item > .value,
 .obj_article_details .entry_details .sub_item .value {
-  padding: 12px 24px;
+  padding: 0 24px;
   border-radius: 3px;
 }
 .obj_article_details .entry_details .sub_item:not(:first-child) .label {
