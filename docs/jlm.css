@@ -6217,7 +6217,7 @@ pre {
 }
 .obj_article_details .main_entry .doi .label,
 .obj_article_details .main_entry .keywords .label {
-  display: inline;
+  display: block;
   padding: 0;
   border: none;
   text-transform: none;
