@@ -6236,6 +6236,12 @@ pre {
   }
 }
 .obj_article_details .author_bios .sub_item .label {
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: normal;
+  font-size: calc(15.6px + 0.2vw);
+  line-height: 24px;
   border-bottom: none;
   text-transform: none;
 }
