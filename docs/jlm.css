@@ -5950,6 +5950,10 @@ pre {
  * @brief Styles applying to a view of an article with all details
  * @link templates/frontend/objects/article_details.tpl
  */
+.obj_article_details .citation_display .value {
+  font-size: 12px;
+  line-height: 16.8px;
+}
 @media (min-width: 768px) {
   .obj_article_details .item {
     padding: 12px 24px;
