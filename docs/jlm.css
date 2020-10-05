@@ -5918,6 +5918,7 @@ pre {
 .obj_article_details .doi a {
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
+  font-family: "JLMMono", "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", "Courier", monospace;
 }
 .obj_article_details .orcid a:hover,
 .obj_article_details .doi a:hover,
