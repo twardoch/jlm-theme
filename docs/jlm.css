@@ -6031,6 +6031,7 @@ pre {
 }
 .obj_article_details .main_entry .item.keywords .label {
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .obj_article_details .main_entry .label {
   display: inline-block;
