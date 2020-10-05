@@ -6215,12 +6215,16 @@ pre {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.obj_article_details .main_entry .doi .label,
-.obj_article_details .main_entry .keywords .label {
+.obj_article_details .main_entry .doi .label {
   display: inline;
   padding: 0;
   border: none;
   text-transform: none;
+}
+.obj_article_details .main_entry .keywords .label {
+  display: block;
+  padding: 0;
+  border: none;
 }
 .obj_article_details .row,
 .obj_article_details .main_entry,
