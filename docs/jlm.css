@@ -5792,7 +5792,7 @@ pre {
 .page_contact .email {
   margin-top: 12px;
   margin-bottom: 12px;
-  font-size: 12px;
+  font-size: calc(12px + 0.2vw);
 }
 .page_contact .address {
   margin-top: 0;
