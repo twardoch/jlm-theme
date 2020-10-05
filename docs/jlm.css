@@ -5353,7 +5353,7 @@ img {
   }
   .pkp_site_name .is_text:before {
     content: 'Journal of';
-    font-size: 12px;
+    font-size: 15.6px;
     visibility: visible;
     width: 200px;
     line-height: 1em;
@@ -5363,7 +5363,7 @@ img {
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: 24px;
+    font-size: 31.2px;
     line-height: 1.1em;
     width: min-content;
     display: block;
