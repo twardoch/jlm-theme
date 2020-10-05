@@ -5829,8 +5829,8 @@ pre {
   width: 36px;
   height: 36px;
   line-height: 36px;
-  background: #fff;
-  color: #001274;
+  background: #000a41;
+  color: #fff;
   text-align: center;
 }
 .header_view .return:before {
