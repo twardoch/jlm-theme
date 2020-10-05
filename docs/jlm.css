@@ -5999,7 +5999,8 @@ pre {
   color: rgba(0, 0, 0, 0.87);
 }
 .obj_article_details .orcid a:before {
-  content: 'a';
+  font-family: 'JMNIcons';
+  content: ':orcid::';
 }
 .obj_article_details .authors li {
   margin-bottom: 24px;
