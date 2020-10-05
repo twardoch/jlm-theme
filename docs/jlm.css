@@ -6000,7 +6000,7 @@ pre {
 }
 .obj_article_details .orcid a:before {
   font-family: 'JLMIcons';
-  content: ':orcid::';
+  content: '\F04F';
 }
 .obj_article_details .authors li {
   margin-bottom: 24px;
