@@ -6096,8 +6096,14 @@ pre {
   text-transform: none;
 }
 .obj_article_summary .subtitle {
-  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 12px;
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(12px + 0.2vw);
+}
+.obj_article_summary .meta .authors {
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(15.6px + 0.2vw);
+  line-height: 24px;
+  font-style: italic;
 }
 /**
  * @file plugins/themes/jlmTheme/styles/objects/article_details.less
