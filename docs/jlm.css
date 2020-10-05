@@ -5950,6 +5950,11 @@ pre {
  * @brief Styles applying to a view of an article with all details
  * @link templates/frontend/objects/article_details.tpl
  */
+@media (min-width: 768px) {
+  .obj_article_details .item {
+    padding: 0;
+  }
+}
 .obj_article_details .page_title {
   margin-left: -0.08em;
 }
