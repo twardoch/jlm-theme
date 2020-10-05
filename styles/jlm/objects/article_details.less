@@ -12,7 +12,7 @@
 
 	.citation_display {
 		.value {
-			font-size: @font-sml;
+			font-size  : @font-sml;
 			line-height: @line-sml;
 		}
 	}
@@ -125,6 +125,7 @@
 
 		.item.keywords {
 			font-style: italic;
+
 			.label {
 				text-transform: uppercase;
 				letter-spacing: @sc;
@@ -170,14 +171,19 @@
 		.sub_item {
 
 			.label {
-					font-family   : @font-text;
-					font-weight   : @normal;
-					font-style: italic;
-					letter-spacing: normal;
-					font-size     : @font-bump;
-					line-height   : @line-bump;
+				font-family   : @font-text;
+				font-weight   : @normal;
+				font-style    : italic;
+				letter-spacing: normal;
+				font-size     : @font-bump;
+				line-height   : @line-bump;
 				border-bottom : none;
 				text-transform: none;
+				.affiliation { 
+					font-size: @font-base;
+					line-height: @line-base;
+					font-style: normal;
+				}
 			}
 		}
 	}
