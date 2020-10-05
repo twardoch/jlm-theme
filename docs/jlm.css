@@ -5543,8 +5543,9 @@ pre {
   font-weight: 400;
 }
 .pkp_structure_main h5 {
-  font-size: calc(12px + 0.2vw);
-  line-height: 24px;
+  font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: 12px;
+  line-height: 16.8px;
   font-weight: 400;
 }
 .pkp_structure_main h6 {
