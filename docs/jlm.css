@@ -5864,7 +5864,7 @@ pre {
 }
 .obj_issue_summary .description {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.6px + 0.2vw);
+  font-size: calc(12px + 0.2vw);
 }
 /**
  * @file plugins/themes/jlmTheme/styles/objects/galley_link.less
