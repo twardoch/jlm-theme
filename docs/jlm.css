@@ -2211,7 +2211,7 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff;
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: 12px;
 }
 .pkp_site_name > a {
@@ -2237,7 +2237,7 @@ img {
   height: auto;
 }
 .pkp_site_name .is_text {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 48px;
@@ -2332,7 +2332,7 @@ img {
     background: transparent;
   }
   .pkp_site_name .is_text {
-    font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+    font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
     font-size: calc(24px + 1.8vw);
     line-height: calc(36px + 1.4vw);
   }
@@ -5367,7 +5367,7 @@ img {
     line-height: 1em;
   }
   .pkp_site_name .is_text:after {
-    font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+    font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
     font-weight: 700;
     content: 'Language Modelling';
     visibility: visible;
