@@ -5860,6 +5860,7 @@ pre {
  */
 .obj_issue_summary .series {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(15.6px + 0.2vw);
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
