@@ -6064,7 +6064,7 @@ pre {
 }
 .obj_article_details .entry_details .item > .label,
 .obj_article_details .entry_details .sub_item:first-child > .label {
-  padding: 0.5em 24px;
+  padding: 0.5em 24px 0 24px;
   background: #fff;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
