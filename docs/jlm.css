@@ -5942,11 +5942,6 @@ pre {
 /*
 .header_view {
 
-	.title {
-		font-family: @font-text;
-		padding-left: @quadruple;
-		color: @text-bg-base;
-
 		&:hover,
 		&:focus {
 			background: @bg-base;
