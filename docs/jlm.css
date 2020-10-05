@@ -2553,7 +2553,7 @@ img {
 }
 .pkp_structure_main h2 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
@@ -3607,7 +3607,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   width: 100%;
   max-width: 100%;
   height: 46px;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 46px;
 }
 .page_search .search_advanced {
@@ -3769,7 +3769,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  font-size: 36px;
+  font-size: 24px;
   color: #00b24e;
 }
 @media (min-width: 480px) {
@@ -5526,7 +5526,7 @@ pre {
 .pkp_structure_main h2 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 36px;
 }
 .pkp_structure_main h3 {
