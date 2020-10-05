@@ -5532,7 +5532,7 @@ pre {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: calc(15.6px + 0.2vw);
+  font-size: calc(12px + 0.2vw);
   line-height: 24px;
 }
 .pkp_structure_main h4 {
