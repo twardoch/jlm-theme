@@ -5159,7 +5159,7 @@ img {
   }
 }
 .pkp_structure_footer_wrapper {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.01);
   border-top: 1px solid #fff;
   border-bottom: 24px solid #000a41;
 }
@@ -5445,7 +5445,7 @@ img {
 }
 .pkp_head_wrapper .pkp_search.is_open input[type="text"] {
   border-bottom: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.01);
   border-left: 1px solid #fff;
 }
 .pkp_head_wrapper .pkp_search.is_open .search_controls .search_prompt {
@@ -5983,7 +5983,7 @@ pre {
   padding: 0;
   border-bottom: none;
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.01);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 }
 .obj_article_details .entry_details .item .label {
