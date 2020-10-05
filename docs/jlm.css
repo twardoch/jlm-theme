@@ -5639,6 +5639,10 @@ pre {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.block_information a,
+.block_language_toggle a {
+  font-size: calc(12px + 0.2vw);
+}
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
  *
