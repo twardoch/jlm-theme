@@ -5998,6 +5998,9 @@ pre {
 .obj_article_details .orcid a {
   color: rgba(0, 0, 0, 0.87);
 }
+.obj_article_details .orcid a:before {
+  content: 'a';
+}
 .obj_article_details .authors li {
   margin-bottom: 24px;
 }
