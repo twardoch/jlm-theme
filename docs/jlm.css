@@ -6204,6 +6204,7 @@ pre {
   font-style: italic;
 }
 .obj_article_details .main_entry .item.keywords .label {
+  font-size: calc(12px + 0.2vw);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
