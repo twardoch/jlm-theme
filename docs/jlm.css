@@ -5981,7 +5981,7 @@ pre {
   margin-bottom: 24px;
 }
 .obj_article_details .main_entry .item .label {
-  margin: 0 0 24px;
+  margin: 0 0 0 0;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: calc(15.6px + 0.2vw);
   font-weight: 400;
