@@ -2545,7 +2545,7 @@ img {
  * @brief Styles applying to the main content panel
  */
 .pkp_structure_main h1 {
-  font-family: Arial;
+  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: calc(24px + 1.8vw);
   line-height: calc(36px + 1.4vw);
   font-weight: 700;
@@ -5367,7 +5367,7 @@ img {
     line-height: 1em;
   }
   .pkp_site_name .is_text:after {
-    font-family: Arial;
+    font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
@@ -5516,7 +5516,7 @@ pre {
   font-size: calc(15.6px + 0.2vw);
 }
 .pkp_structure_main h1 {
-  font-family: Arial;
+  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-size: calc(24px + 1.8vw);
   line-height: calc(36px + 1.4vw);
   font-weight: 700;
