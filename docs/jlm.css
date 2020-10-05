@@ -5565,6 +5565,8 @@ pre {
 .pkp_structure_main p {
   line-height: 29px;
   margin: 24px 0;
+  hyphens: auto;
+  text-align: justify;
 }
 .pkp_structure_main p:last-child {
   margin-bottom: 0;
