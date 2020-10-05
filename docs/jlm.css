@@ -6002,6 +6002,10 @@ pre {
   font-family: 'JLMIcons';
   content: '\F04F';
 }
+.obj_article_details .doi a:before {
+  font-family: 'JLMIcons';
+  content: '\F044';
+}
 .obj_article_details .authors li {
   margin-bottom: 24px;
 }
