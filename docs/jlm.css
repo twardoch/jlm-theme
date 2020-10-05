@@ -5630,8 +5630,9 @@ pre {
   display: inline-block;
   padding-bottom: 0.5em;
   border-bottom: 3px solid #7d000d;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
