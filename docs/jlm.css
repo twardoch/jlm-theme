@@ -5874,6 +5874,7 @@ pre {
   background: #7d000d;
   color: #fff;
   text-align: center;
+  font-weight: 700;
 }
 .header_view .download:hover,
 .header_view .download:focus {
