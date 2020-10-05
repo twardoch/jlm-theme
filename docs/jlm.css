@@ -5742,7 +5742,7 @@ pre {
   border-top: 1px solid #fff;
 }
 .page_issue_archive .issues_archive > li {
-  padding: 36px 12px;
+  padding: 12px 12px;
   border-bottom: 1px solid #fff;
 }
 @media (min-width: 480px) {
