@@ -5553,10 +5553,7 @@ pre {
   line-height: 16.8px;
   font-weight: 700;
 }
-.pkp_structure_main h1,
-.pkp_structure_main h2,
-.pkp_structure_main h3,
-.pkp_structure_main h4 {
+.pkp_structure_main h1 {
   margin: 48px 0 24px;
 }
 .pkp_structure_main h2,
