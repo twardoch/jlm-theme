@@ -5245,12 +5245,12 @@ img {
 }
 .cmp_breadcrumbs {
   padding: 36px 0;
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
   font-weight: 400;
-  font-size: calc(12px + 0.2vw);
+  font-style: italic;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.87);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
 }
 .cmp_breadcrumbs > ol {
   padding: 0;
