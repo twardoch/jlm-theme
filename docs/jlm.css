@@ -6008,6 +6008,7 @@ pre {
 }
 .obj_article_details .main_entry .item.doi .label {
   display: none;
+  color: red;
 }
 .obj_article_details .authors li {
   margin-bottom: 24px;
