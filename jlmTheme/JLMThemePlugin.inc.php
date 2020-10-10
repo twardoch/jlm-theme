@@ -27,9 +27,10 @@ class JLMThemePlugin extends ThemePlugin {
 		// Initialize the parent theme
 		$this->setParent('defaultthemeplugin');
 
-		// Add custom styles
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/jlm/index.less')));
-		//$this->addStyle('jlm-styles', 'styles/jlm/index.less');
+		// Start with a fresh array of additionalLessVariables so that we can
+		// ignore those added by the parent theme. This gets rid of @font
+		// variable overrides from the typography option
+		$additionalLessVariables = array();
 
 		// Remove the typography options of the parent theme.
 		// `removeOption` was introduced in OJS 3.0.2
@@ -52,11 +53,6 @@ class JLMThemePlugin extends ThemePlugin {
 			$this->removeStyle('fontNotoSerif');
 			$this->removeStyle('fontNotoSerif');
 		}
-
-		// Start with a fresh array of additionalLessVariables so that we can
-		// ignore those added by the parent theme. This gets rid of @font
-		// variable overrides from the typography option
-		$additionalLessVariables = array();
 
 		// Determine the path to the fonts
 		$fontPath = Application::getRequest()->getBaseUrl() . '/' . $this->getPluginPath() . '/fonts/';
@@ -83,6 +79,10 @@ class JLMThemePlugin extends ThemePlugin {
 		// Load Bootstrap
 		//$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
 
+		// Add custom styles
+		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		//$this->addStyle('jlm-styles', 'styles/jlm/index.less');
+				
 		// Add navigation menu areas for this theme
 		$this->addMenuArea(array('primary', 'user'));
 	}

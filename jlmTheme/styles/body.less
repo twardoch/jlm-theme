@@ -1,0 +1,275 @@
+/*!
+ * @file plugins/themes/jlmTheme/styles/body.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Layout styles which implement the boxed layout
+ *
+ */
+
+ body {
+	font-family: @font;
+	font-size: @font-base;
+	line-height: @line-base;
+	color: @text;
+	background: @bg-shade;
+}
+
+a {
+	color: @primary;
+
+	&:hover,
+	&:focus {
+		color: @primary-lift;
+	}
+}
+
+
+// Page container widths
+.pkp_site_name_wrapper,
+.pkp_navigation_primary_wrapper,
+.pkp_navigation_user,
+.pkp_search_mobile,
+.pkp_structure_content,
+.pkp_structure_footer {
+	.pkp_helpers_clear;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: @base;
+	padding-right: @base;
+
+	@media( min-width: @screen-tablet ) {
+		width: @screen-tablet-container;
+		padding: 0;
+	}
+
+	@media( min-width: @screen-desktop ) {
+		width: @screen-desktop-container;
+	}
+
+	@media( min-width: @screen-lg-desktop ) {
+		width: @screen-lg-desktop-container;
+	}
+}
+
+.pkp_head_wrapper {
+	max-width: @screen-lg-desktop-container;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.has_site_logo {
+
+	.pkp_site_name,
+	.pkp_navigation_primary_wrapper {
+		width: auto;
+	}
+
+	.pkp_head_wrapper {
+		.pkp_helpers_clear;
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		padding-right: @base;
+
+		@media( min-width: @screen-tablet ) {
+			width: @screen-tablet-container;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@media( min-width: @screen-desktop ) {
+			width: @screen-desktop-container;
+		}
+
+		@media( min-width: @screen-lg-desktop ) {
+			width: @screen-lg-desktop-container;
+		}
+	}
+}
+
+
+// Layout scaffold for content and sidebars
+.pkp_structure_main {
+	padding: @base;
+}
+
+@media( min-width: @screen-phone ) {
+
+	.pkp_structure_main {
+		padding: @double;
+	}
+}
+
+@media( min-width: @screen-tablet ) {
+
+	// Full-height borders wrapping primary content column
+	.pkp_structure_main {
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 1px;
+			background: @bg-border-color;
+		}
+
+		&:after {
+			left: @screen-tablet-container;
+		}
+	}
+}
+
+@media( min-width: @screen-desktop ) {
+
+	.pkp_structure_content {
+		padding-top: @triple;
+	}
+
+	.pkp_structure_sidebar {
+		float: none;
+		width: @sidebar-width;
+	}
+
+	.pkp_structure_main {
+		float: left;
+		padding-top: 0;
+		padding-right: @triple;
+		padding-bottom: @triple * 3;
+		padding-left: @triple;
+		width: @screen-desktop-container;
+
+		&:after {
+			left: @screen-desktop-container;
+		}
+	}
+}
+
+@media( min-width: @screen-lg-desktop ) {
+
+	.pkp_structure_main {
+		width: @screen-lg-desktop-container;
+
+		&:after {
+			left: @screen-lg-desktop-container;
+		}
+	}
+}
+
+// Center the content panel when no sidebar is present
+.pkp_structure_main:first-child:last-child {
+
+	@media(min-width: @screen-desktop) {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: @quadruple;
+
+		// Aligns the left and right borders
+		@no-sidebar-margins: @sidebar-width / 2;
+		&:before {
+			left: @no-sidebar-margins;
+		}
+
+		&:after {
+			left: auto;
+			right: @no-sidebar-margins;
+		}
+	}
+}
+
+// Lock in images so they don't run outside their container
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+// A white background for the boxed content area
+.pkp_structure_page {
+	margin: 0 auto;
+	max-width: 100%; //@screen-lg-desktop-container;
+	background: @bg;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+	@media(min-width: @screen-lg-desktop) {
+		margin-bottom: @triple;
+	}
+}
+
+
+
+
+
+
+.pkp_structure_footer_wrapper {
+	background: @bg-light-shade;
+	border-top: @bg-border;
+	border-bottom: @double solid @bg-base;
+}
+
+// Removes the left and right borders around the main content panel
+.pkp_structure_main:before,
+.pkp_structure_main:after {
+	display: none;
+}
+
+.pkp_structure_content {
+	padding-top: 0;
+}
+
+.pkp_structure_sidebar {
+
+	display: flex;
+	flex-direction: row;
+
+	@media(min-width: @screen-desktop) {
+
+		/* &:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 300px;
+			border-left: @bg-border;
+		} */
+
+		// Child elements need position to appear above the background element
+		> * {
+			position: relative;
+		}
+	}
+}
+
+// Center the content panel when no sidebar is present
+// @todo This was added to the default theme after OJS 3.0.2 was released.
+// The styles can be removed for future versions.
+.pkp_structure_main:first-child:last-child {
+
+	@media(min-width: @screen-desktop) {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: @quadruple;
+
+		// Aligns the left and right borders
+		@no-sidebar-margins: @sidebar-width / 2;
+		&:before {
+			left: @no-sidebar-margins;
+		}
+
+		&:after {
+			left: auto;
+			right: @no-sidebar-margins;
+		}
+	}
+}
