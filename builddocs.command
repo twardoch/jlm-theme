@@ -4,7 +4,7 @@ if [ "$dir" = "$0" ]; then dir="."; fi
 cd "$dir" || exit
 
 echo "Changed: $*"
-./php/Less/bin/lessc jlmTheme/styles/index.less docs/jlm.css
+./php/Less/bin/lessc index.less docs/jlm.css
 git add --all
 git commit -am "Changed file $*"
 git pull --commit --rebase=merges

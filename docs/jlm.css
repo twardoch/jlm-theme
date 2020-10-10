@@ -4954,7 +4954,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
     margin-left: 36px;
   }
 }
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/index.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -4965,7 +4965,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  * @brief Base stylesheet for jlmTheme, a child theme of the default theme
  *
  */
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/variables.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -4977,99 +4977,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  *  fully separated interface for defining variables, so that changes desired on
  *  the frontend won't impact the backend.
  */
-/**
- * @file plugins/themes/jlmTheme/styles/components.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Reusable components
- */
-.cmp_manuscript_button,
-.block_make_submission a,
-.obj_galley_link {
-  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-weight: 700;
-  background: #000a41;
-  color: #ffffff;
-  border: none;
-  line-height: 16.8px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.cmp_manuscript_button:hover,
-.cmp_manuscript_button:focus,
-.block_make_submission a:hover,
-.block_make_submission a:focus,
-.obj_galley_link:hover,
-.obj_galley_link:focus {
-  background: #7d000d;
-}
-.cmp_breadcrumbs {
-  padding: 36px 0;
-  font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.87);
-  text-transform: none;
-}
-.cmp_breadcrumbs > ol {
-  padding: 0;
-  margin: 0;
-  font-size: inherit;
-}
-.cmp_breadcrumbs .current h1 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-}
-.cmp_breadcrumbs .separator {
-  padding: 0 0.1em;
-  opacity: 0.3;
-}
-.cmp_pagination {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-}
-.cmp_pagination a {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.cmp_pagination .prev:before {
-  content: '‹';
-}
-.cmp_pagination .next:after {
-  content: '›';
-}
-.cmp_announcements {
-  border: none;
-}
-.cmp_announcements > li {
-  border-bottom: none;
-}
-.cmp_announcements .obj_announcement_summary h2,
-.cmp_announcements .obj_announcement_summary h3,
-.cmp_announcements .obj_announcement_summary h4,
-.cmp_announcements .date,
-.cmp_announcements .read_more {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 12px;
-  font-weight: 700;
-}
-.cmp_announcements .read_more {
-  text-transform: uppercase;
-}
-.cmp_announcements .date {
-  font-weight: 400;
-}
-.cmp_announcements .date:before {
-  color: #7d000d;
-}
-.cmp_button_wire,
-.obj_galley_link {
-  font-size: calc(12.2px);
-}
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/body.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -5330,6 +5238,138 @@ img {
   }
 }
 /**
+ * @file plugins/themes/jlmTheme/styles/main.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the main content panel
+ */
+kbd,
+code,
+tt,
+samp,
+pre {
+  font-family: "JLMMono", "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", "Courier", monospace;
+}
+.main_entry {
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(15.8px);
+}
+.pkp_structure_main {
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+}
+.pkp_structure_main h1 {
+  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(25.1px);
+  line-height: calc(36.7px);
+  font-weight: 700;
+  margin-left: -0.08em;
+}
+.pkp_structure_main h2 {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.pkp_structure_main h3 {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: calc(12.2px);
+  line-height: 24px;
+}
+.pkp_structure_main h4 {
+  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: calc(15.8px);
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+.pkp_structure_main h5 {
+  font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  font-weight: 400;
+}
+.pkp_structure_main h6 {
+  font-size: 12px;
+  line-height: 16.8px;
+  font-weight: 400;
+}
+.pkp_structure_main h1 {
+  margin: 48px 0 24px;
+}
+.pkp_structure_main h2,
+.pkp_structure_main h3,
+.pkp_structure_main h4 {
+  margin: 24px 0 12px;
+}
+.pkp_structure_main h5,
+.pkp_structure_main h6 {
+  margin: 24px 0;
+}
+.pkp_structure_main p {
+  line-height: 29px;
+  margin: 24px 0;
+  hyphens: auto;
+  text-align: justify;
+}
+.pkp_structure_main p:last-child {
+  margin-bottom: 0;
+}
+.pkp_structure_main .page h1 {
+  margin-top: 0;
+}
+.pkp_structure_main .page > .cmp_edit_link {
+  float: right;
+  padding: 6px 0;
+  line-height: 36px;
+}
+.pkp_structure_main .page .monograph_count {
+  float: right;
+  padding: 12px 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.pkp_structure_main .page .about_section {
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 36px;
+}
+.pkp_structure_main .page .about_section:before,
+.pkp_structure_main .page .about_section:after {
+  content: " ";
+  display: table;
+}
+.pkp_structure_main .page .about_section:after {
+  clear: both;
+}
+.pkp_structure_main .page .about_section .cover {
+  float: right;
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.pkp_structure_main .page .about_section .cover img {
+  display: block;
+  margin: 0 auto;
+}
+.pkp_structure_main .page .about_section .description p:first-child {
+  margin-top: 0;
+}
+.pkp_structure_main .page .about_section .description p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  .pkp_structure_main .page .about_section {
+    font-size: calc(15.8px);
+    font-style: italic;
+  }
+}
+/**
  * @file plugins/themes/jlmTheme/styles/head.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -5519,137 +5559,97 @@ img {
     width: auto;
   }
 }
-/**
- * @file plugins/themes/jlmTheme/styles/main.less
+/*!
+ * @file plugins/themes/jlmTheme/styles/components.less
  *
  * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @brief Styles applying to the main content panel
+ * @brief Reusable components
  */
-kbd,
-code,
-tt,
-samp,
-pre {
-  font-family: "JLMMono", "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", "Courier", monospace;
-}
-.main_entry {
-  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
-}
-.pkp_structure_main {
-  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-}
-.pkp_structure_main h1 {
-  font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(25.1px);
-  line-height: calc(36.7px);
+.cmp_manuscript_button,
+.block_make_submission a,
+.obj_galley_link {
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 700;
-  margin-left: -0.08em;
+  background: #000a41;
+  color: #ffffff;
+  border: none;
+  line-height: 16.8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.pkp_structure_main h2 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+.cmp_manuscript_button:hover,
+.cmp_manuscript_button:focus,
+.block_make_submission a:hover,
+.block_make_submission a:focus,
+.obj_galley_link:hover,
+.obj_galley_link:focus {
+  background: #7d000d;
 }
-.pkp_structure_main h3 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-size: calc(12.2px);
-  line-height: 24px;
-}
-.pkp_structure_main h4 {
-  font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
-  line-height: 24px;
-  font-style: italic;
-  font-weight: 400;
-}
-.pkp_structure_main h5 {
+.cmp_breadcrumbs {
+  padding: 36px 0;
   font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 12px;
-  line-height: 16.8px;
   font-weight: 400;
-}
-.pkp_structure_main h6 {
-  font-size: 12px;
-  line-height: 16.8px;
-  font-weight: 400;
-}
-.pkp_structure_main h1 {
-  margin: 48px 0 24px;
-}
-.pkp_structure_main h2,
-.pkp_structure_main h3,
-.pkp_structure_main h4 {
-  margin: 24px 0 12px;
-}
-.pkp_structure_main h5,
-.pkp_structure_main h6 {
-  margin: 24px 0;
-}
-.pkp_structure_main p {
-  line-height: 29px;
-  margin: 24px 0;
-  hyphens: auto;
-  text-align: justify;
-}
-.pkp_structure_main p:last-child {
-  margin-bottom: 0;
-}
-.pkp_structure_main .page h1 {
-  margin-top: 0;
-}
-.pkp_structure_main .page > .cmp_edit_link {
-  float: right;
-  padding: 6px 0;
-  line-height: 36px;
-}
-.pkp_structure_main .page .monograph_count {
-  float: right;
-  padding: 12px 0;
+  font-style: normal;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.87);
+  text-transform: none;
 }
-.pkp_structure_main .page .about_section {
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 36px;
+.cmp_breadcrumbs > ol {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
 }
-.pkp_structure_main .page .about_section:before,
-.pkp_structure_main .page .about_section:after {
-  content: " ";
-  display: table;
+.cmp_breadcrumbs .current h1 {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
-.pkp_structure_main .page .about_section:after {
-  clear: both;
+.cmp_breadcrumbs .separator {
+  padding: 0 0.1em;
+  opacity: 0.3;
 }
-.pkp_structure_main .page .about_section .cover {
-  float: right;
-  width: 20%;
-  margin-left: 10%;
-  margin-right: 10%;
+.cmp_pagination {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
-.pkp_structure_main .page .about_section .cover img {
-  display: block;
-  margin: 0 auto;
+.cmp_pagination a {
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.pkp_structure_main .page .about_section .description p:first-child {
-  margin-top: 0;
+.cmp_pagination .prev:before {
+  content: '‹';
 }
-.pkp_structure_main .page .about_section .description p:last-child {
-  margin-bottom: 0;
+.cmp_pagination .next:after {
+  content: '›';
 }
-@media (min-width: 480px) {
-  .pkp_structure_main .page .about_section {
-    font-size: calc(15.8px);
-    font-style: italic;
-  }
+.cmp_announcements {
+  border: none;
+}
+.cmp_announcements > li {
+  border-bottom: none;
+}
+.cmp_announcements .obj_announcement_summary h2,
+.cmp_announcements .obj_announcement_summary h3,
+.cmp_announcements .obj_announcement_summary h4,
+.cmp_announcements .date,
+.cmp_announcements .read_more {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cmp_announcements .read_more {
+  text-transform: uppercase;
+}
+.cmp_announcements .date {
+  font-weight: 400;
+}
+.cmp_announcements .date:before {
+  color: #7d000d;
+}
+.cmp_button_wire,
+.obj_galley_link {
+  font-size: calc(12.2px);
 }
 /**
  * @file plugins/themes/jlmTheme/styles/sidebar.less
