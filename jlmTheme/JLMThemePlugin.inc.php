@@ -28,7 +28,8 @@ class JLMThemePlugin extends ThemePlugin {
 		$this->setParent('defaultthemeplugin');
 
 		// Add custom styles
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/jlm/index.less')));
+		//$this->modifyStyle('stylesheet', array('addLess' => array('styles/jlm/index.less')));
+		$this->addStyle('jlm-styles', 'styles/jlm/index.less');
 
 		// Remove the typography options of the parent theme.
 		// `removeOption` was introduced in OJS 3.0.2
