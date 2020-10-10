@@ -50,8 +50,8 @@
 // spacings should also use this baseline. However, in some cases with inline
 // elements it is more appropriate to use an `em` spacing.
 //
-@base     : 12px;
-@bump     : @base * 1.3;
+@base     : 14px;
+@bump     : @base + 6px;
 @half     : @base / 2;
 @double   : @base * 2;
 @triple   : @base * 3;
@@ -103,6 +103,7 @@ monospace;
 @font-sml              : @base;
 @line-sml              : @base * 1.4;
 @font-base             : @base; // calc(@base + 0.2vw);
+@font-mid             : @base + 3px; // calc(@base + 0.2vw);
 @line-base             : @double;
 @line-base-large       : @line-base+5; // large blocks of text
 @font-bump             : @bump; // calc(@bump + 0.2vw);

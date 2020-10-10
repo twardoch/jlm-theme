@@ -36,6 +36,9 @@ class JLMThemePlugin extends ThemePlugin {
 		// `removeOption` was introduced in OJS 3.0.2
 		if (method_exists($this, 'removeOption')) {
 			$this->removeOption('typography');
+			$this->removeOption('accentColour');
+			$this->removeOption('baseColour');
+			$this->removeOption('useHomepageImageAsHeader');
 		}
 
 		// Dequeue any fonts loaded by parent theme
@@ -54,10 +57,7 @@ class JLMThemePlugin extends ThemePlugin {
 			$this->removeStyle('fontNotoSerif');
 		}
 
-		// Determine the path to the fonts
-		$fontPath = Application::getRequest()->getBaseUrl() . '/' . $this->getPluginPath() . '/fonts/';
-		$this->addStyle('jlm-fonts', 'fonts/index.less');
-		$this->modifyStyle('jlm-fonts', ['addLessVariables' => '@font-path:"' . $fontPath . '";']);
+		$this->modifyStyle('stylesheet', array('addLessVariables' => join('', $additionalLessVariables)));
 
 		// Load jQuery from a CDN or, if CDNs are disabled, from a local copy.
 		$min = Config::getVar('general', 'enable_minified') ? '.min' : '';
@@ -78,6 +78,12 @@ class JLMThemePlugin extends ThemePlugin {
 
 		// Load Bootstrap
 		//$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
+
+		// Determine the path to the fonts
+		$this->addStyle('jlm-fonts', 'fonts/index.less');
+		$fontPath = Application::getRequest()->getBaseUrl() . '/' . $this->getPluginPath() . '/fonts/';
+		$this->modifyStyle('jlm-fonts', ['addLessVariables' => '@font-path:"' . $fontPath . '";']);
+		//$this->modifyStyle('stylesheet', array('addLess' => array('fonts/index.less')));
 
 		// Add custom styles
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
