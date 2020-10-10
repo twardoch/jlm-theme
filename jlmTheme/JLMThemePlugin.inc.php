@@ -82,7 +82,7 @@ class JLMThemePlugin extends ThemePlugin {
 		// Add custom styles
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 		//$this->addStyle('jlm-styles', 'styles/jlm/index.less');
-				
+
 		// Add navigation menu areas for this theme
 		$this->addMenuArea(array('primary', 'user'));
 	}

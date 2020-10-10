@@ -1279,7 +1279,7 @@ template {
   clip: auto !important;
   color: #000;
   display: block;
-  font-size: calc(12.2px);
+  font-size: 12px;
   height: auto;
   line-height: normal;
   padding: 12px;
@@ -1664,7 +1664,7 @@ template {
 }
 .cmp_form legend {
   margin-bottom: 12px;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   font-weight: 700;
   line-height: 24px;
 }
@@ -1911,7 +1911,7 @@ template {
   margin-bottom: 48px;
   background: #ffffff;
   border-left: 6px solid #000a41;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
 }
 .cmp_notification .success {
@@ -2021,7 +2021,7 @@ template {
  */
 body {
   font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
   background: #ffffff;
@@ -2361,7 +2361,7 @@ img {
   }
   .pkp_site_name .is_text {
     font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-    font-size: calc(25.1px);
+    font-size: 24px;
     line-height: 36px;
   }
   .pkp_site_name .is_img img {
@@ -2574,7 +2574,7 @@ img {
  */
 .pkp_structure_main h1 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(25.1px);
+  font-size: 24px;
   line-height: 36px;
   font-weight: 700;
 }
@@ -2586,17 +2586,17 @@ img {
 }
 .pkp_structure_main h3 {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   line-height: 24px;
   font-weight: 700;
 }
 .pkp_structure_main h4 {
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   font-weight: 700;
 }
 .pkp_structure_main h5 {
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -2666,7 +2666,7 @@ img {
 }
 @media (min-width: 480px) {
   .pkp_structure_main .page .about_section {
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     font-style: italic;
   }
 }
@@ -2889,7 +2889,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     height: 48px;
     min-width: 100px;
     padding: 0;
-    font-size: calc(12.2px);
+    font-size: 12px;
     line-height: 24px;
     transition: min-width 0.4s;
     text-align: right;
@@ -2919,7 +2919,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     cursor: pointer;
   }
   .pkp_search_desktop .search_prompt:before {
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     margin-right: 0.25em;
   }
   .pkp_search_desktop .search_prompt:hover,
@@ -2943,7 +2943,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     padding-right: 180px;
     border: none;
     border-bottom: 1px solid #ffffff;
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     background: #ffffff;
   }
   .pkp_search_desktop.is_open input[type="text"]:hover,
@@ -3010,7 +3010,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .pkp_page_index .journals h3 {
   margin: 12px 0;
-  font-size: calc(12.2px);
+  font-size: 12px;
   font-weight: 700;
 }
 .pkp_page_index .journals h3 a {
@@ -3313,7 +3313,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     clip: auto !important;
     color: #000;
     display: block;
-    font-size: calc(12.2px);
+    font-size: 12px;
     height: auto;
     line-height: normal;
     padding: 12px;
@@ -3606,7 +3606,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   clip: auto !important;
   color: #000;
   display: block;
-  font-size: calc(12.2px);
+  font-size: 12px;
   height: auto;
   line-height: normal;
   padding: 12px;
@@ -3907,7 +3907,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 @media (min-width: 768px) {
   .header_view .title {
-    font-size: calc(12.2px);
+    font-size: 12px;
   }
   .header_view .download {
     width: auto;
@@ -4011,7 +4011,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .obj_announcement_summary h3,
 .obj_announcement_summary h4 {
   margin: 0;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
 }
 .obj_announcement_summary h2 a,
@@ -4034,7 +4034,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   transform: translate(0, 0);
   content: "\f073";
   margin-right: 0.5em;
-  font-size: calc(12.2px);
+  font-size: 12px;
   color: #ffffff;
 }
 .obj_announcement_summary .summary {
@@ -4094,7 +4094,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_details > .subtitle {
   margin: 0;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 36px;
   font-weight: 400;
 }
@@ -4120,16 +4120,16 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 .obj_article_details .main_entry .item .label {
   margin: 0 0 24px;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   font-weight: 700;
 }
 .obj_article_details .main_entry .item.doi .label,
 .obj_article_details .main_entry .item.keywords .label {
   display: inline;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .main_entry .sub_item .label {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .authors li {
   margin-bottom: 12px;
@@ -4302,13 +4302,13 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   .obj_article_details .item .label {
     margin: 0 0 24px;
     font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     font-weight: 700;
   }
   .obj_article_details .item.doi .label,
   .obj_article_details .item.keywords .label {
     display: inline;
-    font-size: calc(12.2px);
+    font-size: 12px;
   }
   .obj_article_details .entry_details {
     float: left;
@@ -4371,7 +4371,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
 }
 .obj_article_summary > .title {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   font-weight: 700;
   border-bottom: none;
@@ -4532,7 +4532,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
  */
 .obj_issue_summary h2 {
   margin: 0;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -4677,7 +4677,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
     margin-top: 0;
     padding: 0 18px;
     background: #ffffff;
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     font-weight: 400;
     line-height: 36px;
     color: rgba(0, 0, 0, 0.87);
@@ -4708,7 +4708,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
  */
 .pkp_block {
   padding: 36px 24px;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
 }
 .pkp_block .title {
@@ -4716,7 +4716,7 @@ body.navIsOpen .siteHeader__navToggleIcon > span:last-child {
   margin-bottom: 12px;
   margin-top: 0;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   font-weight: 700;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
@@ -4990,7 +4990,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  */
 body {
   font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
   background: #ffffff;
@@ -5256,15 +5256,15 @@ pre {
 }
 .main_entry {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
 }
 .pkp_structure_main {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
 .pkp_structure_main h1 {
   font-family: "JLMHuge", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(25.1px);
-  line-height: calc(36.7px);
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 700;
   margin-left: -0.08em;
 }
@@ -5279,12 +5279,12 @@ pre {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
 }
 .pkp_structure_main h4 {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   line-height: 24px;
   font-style: italic;
   font-weight: 400;
@@ -5365,7 +5365,7 @@ pre {
 }
 @media (min-width: 480px) {
   .pkp_structure_main .page .about_section {
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     font-style: italic;
   }
 }
@@ -5406,7 +5406,7 @@ pre {
   background-color: #7d000d;
 }
 .pkp_site_name .is_text {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 @media (min-width: 992px) {
   .pkp_site_name {
@@ -5424,7 +5424,7 @@ pre {
   }
   .pkp_site_name .is_text:before {
     content: 'Journal of';
-    font-size: calc(15.8px);
+    font-size: 15.6px;
     visibility: visible;
     width: 200px;
     line-height: 1em;
@@ -5434,7 +5434,7 @@ pre {
     font-weight: 400;
     content: 'Language Modelling';
     visibility: visible;
-    font-size: calc(25.1px);
+    font-size: 24px;
     line-height: 1.1em;
     width: min-content;
     display: block;
@@ -5453,7 +5453,7 @@ pre {
 }
 #navigationPrimary a {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
@@ -5496,7 +5496,7 @@ pre {
   padding-bottom: 12px;
   border-bottom: none;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
@@ -5649,7 +5649,7 @@ pre {
 }
 .cmp_button_wire,
 .obj_galley_link {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 /**
  * @file plugins/themes/jlmTheme/styles/sidebar.less
@@ -5671,7 +5671,7 @@ pre {
 }
 .block_information a,
 .block_language_toggle a {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
@@ -5730,7 +5730,7 @@ pre {
 }
 .pkp_page_index .current_issue .current_issue_title {
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
 }
 .pkp_page_index .current_issue .sections {
   margin-top: 24px;
@@ -5830,7 +5830,7 @@ pre {
 .page_contact .email {
   margin-top: 12px;
   margin-bottom: 12px;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 /**
  * @file plugins/themes/jlmTheme/styles/pages/search.less
@@ -5953,7 +5953,7 @@ pre {
 }
 @media (min-width: 768px) {
   .header_view .title {
-    font-size: calc(12.2px);
+    font-size: 12px;
   }
   .header_view .download {
     width: auto;
@@ -6020,13 +6020,13 @@ pre {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
 .obj_issue_toc .description {
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   line-height: 24px;
 }
 .obj_issue_toc .heading .pub_id,
 .obj_issue_toc .heading .published {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_issue_toc .heading .pub_id .type,
 .obj_issue_toc .heading .published .label {
@@ -6096,7 +6096,7 @@ pre {
 }
 .obj_issue_summary .description {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
 }
 /**
  * @file plugins/themes/jlmTheme/styles/objects/galley_link.less
@@ -6137,7 +6137,7 @@ pre {
 }
 .obj_article_summary .title {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 24px;
@@ -6145,10 +6145,10 @@ pre {
 }
 .obj_article_summary .subtitle {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_summary .meta {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_summary .meta .authors {
   font-style: italic;
@@ -6191,20 +6191,20 @@ pre {
 .obj_article_details .authors .name {
   font-weight: 400;
   font-style: italic;
-  font-size: calc(15.8px);
+  font-size: 15.6px;
 }
 .obj_article_details .authors .affiliation {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .authors .orcid {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .orcid a,
 .obj_article_details .doi a {
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
   font-family: "JLMMono", "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", "Courier", monospace;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .orcid a:hover,
 .obj_article_details .doi a:hover,
@@ -6230,21 +6230,21 @@ pre {
 .obj_article_details .main_entry .item .label {
   margin: 0 0 0 0;
   font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: calc(12.2px);
+  font-size: 12px;
   font-weight: 400;
   margin-top: 12px;
   margin-bottom: 0;
 }
 .obj_article_details .main_entry .item.doi .label {
   display: inline;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .main_entry .item.keywords .label {
   display: block;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .main_entry .sub_item .label {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .main_entry .item.doi h2.label {
   display: none;
@@ -6253,7 +6253,7 @@ pre {
   font-style: italic;
 }
 .obj_article_details .main_entry .item.keywords .label {
-  font-size: calc(12.2px);
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -6294,12 +6294,12 @@ pre {
   font-weight: 400;
   font-style: italic;
   letter-spacing: normal;
-  font-size: calc(12.2px);
+  font-size: 12px;
   border-bottom: none;
   text-transform: none;
 }
 .obj_article_details .author_bios .sub_item .label .affiliation {
-  font-size: calc(12.2px);
+  font-size: 12px;
   line-height: 24px;
   font-style: normal;
 }
@@ -6311,7 +6311,7 @@ pre {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .entry_details .item {
   font-family: "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
@@ -6323,7 +6323,7 @@ pre {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 }
 .obj_article_details .entry_details .item .label {
-  font-size: calc(12.2px);
+  font-size: 12px;
 }
 .obj_article_details .entry_details .item .label + .value {
   border-top-left-radius: 0;
