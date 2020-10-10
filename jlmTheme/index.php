@@ -17,7 +17,7 @@
  *
  */
 
-ini_set('display_errors', 1); // TODO
+ini_set('display_errors', 0); // TODO
 error_reporting(E_ERROR); // TODO
 
 require_once('JLMThemePlugin.inc.php');
