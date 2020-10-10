@@ -4937,6 +4937,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
 /**
  * @file plugins/themes/jlmTheme/styles/index.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -4947,6 +4948,7 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
 /**
  * @file plugins/themes/jlmTheme/styles/variables.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -4956,8 +4958,101 @@ body[dir="rtl"] .obj_issue_toc .galleys_links li {
  *  the frontend won't impact the backend.
  */
 /**
+ * @file plugins/themes/jlmTheme/styles/components.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Reusable components
+ */
+.cmp_manuscript_button,
+.block_make_submission a,
+.obj_galley_link {
+  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: 700;
+  background: #000a41;
+  color: #fff;
+  border: none;
+  line-height: 16.8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.cmp_manuscript_button:hover,
+.cmp_manuscript_button:focus,
+.block_make_submission a:hover,
+.block_make_submission a:focus,
+.obj_galley_link:hover,
+.obj_galley_link:focus {
+  background: #7d000d;
+}
+.cmp_breadcrumbs {
+  padding: 36px 0;
+  font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: none;
+}
+.cmp_breadcrumbs > ol {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+.cmp_breadcrumbs .current h1 {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+}
+.cmp_breadcrumbs .separator {
+  padding: 0 0.1em;
+  opacity: 0.3;
+}
+.cmp_pagination {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+}
+.cmp_pagination a {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cmp_pagination .prev:before {
+  content: "\f053";
+}
+.cmp_pagination .next:after {
+  content: "\f054";
+}
+.cmp_announcements {
+  border: none;
+}
+.cmp_announcements > li {
+  border-bottom: none;
+}
+.cmp_announcements .obj_announcement_summary h2,
+.cmp_announcements .obj_announcement_summary h3,
+.cmp_announcements .obj_announcement_summary h4,
+.cmp_announcements .date,
+.cmp_announcements .read_more {
+  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cmp_announcements .read_more {
+  text-transform: uppercase;
+}
+.cmp_announcements .date {
+  font-weight: 400;
+}
+.cmp_announcements .date:before {
+  color: #7d000d;
+}
+.cmp_button_wire,
+.obj_galley_link {
+  font-size: calc(12px + 0.2vw);
+}
+/**
  * @file plugins/themes/jlmTheme/styles/body.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5215,99 +5310,9 @@ img {
   }
 }
 /**
- * @file plugins/themes/jlmTheme/styles/components.less
- *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Reusable components
- */
-.cmp_manuscript_button,
-.block_make_submission a,
-.obj_galley_link {
-  font-family: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-weight: 700;
-  background: #000a41;
-  color: #fff;
-  border: none;
-  line-height: 16.8px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.cmp_manuscript_button:hover,
-.cmp_manuscript_button:focus,
-.block_make_submission a:hover,
-.block_make_submission a:focus,
-.obj_galley_link:hover,
-.obj_galley_link:focus {
-  background: #7d000d;
-}
-.cmp_breadcrumbs {
-  padding: 36px 0;
-  font-family: "JLMSmall", "JLMText", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.87);
-  text-transform: none;
-}
-.cmp_breadcrumbs > ol {
-  padding: 0;
-  margin: 0;
-  font-size: inherit;
-}
-.cmp_breadcrumbs .current h1 {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-}
-.cmp_breadcrumbs .separator {
-  padding: 0 0.1em;
-  opacity: 0.3;
-}
-.cmp_pagination {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-}
-.cmp_pagination a {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.cmp_pagination .prev:before {
-  content: "\f053";
-}
-.cmp_pagination .next:after {
-  content: "\f054";
-}
-.cmp_announcements {
-  border: none;
-}
-.cmp_announcements > li {
-  border-bottom: none;
-}
-.cmp_announcements .obj_announcement_summary h2,
-.cmp_announcements .obj_announcement_summary h3,
-.cmp_announcements .obj_announcement_summary h4,
-.cmp_announcements .date,
-.cmp_announcements .read_more {
-  font-family: "JLMHead", "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
-  font-size: 12px;
-  font-weight: 700;
-}
-.cmp_announcements .read_more {
-  text-transform: uppercase;
-}
-.cmp_announcements .date {
-  font-weight: 400;
-}
-.cmp_announcements .date:before {
-  color: #7d000d;
-}
-.cmp_button_wire,
-.obj_galley_link {
-  font-size: calc(12px + 0.2vw);
-}
-/**
  * @file plugins/themes/jlmTheme/styles/head.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5497,6 +5502,7 @@ img {
 /**
  * @file plugins/themes/jlmTheme/styles/main.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
@@ -5628,6 +5634,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/sidebar.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5649,6 +5656,7 @@ pre {
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5725,6 +5733,7 @@ pre {
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/announcement.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5738,6 +5747,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/pages/issueArchive.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5787,6 +5797,7 @@ pre {
 /**
  * @file  plugins/themes/jlmTheme/styles/pages/contact.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
@@ -5804,6 +5815,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/pages/search.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5823,6 +5835,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/pages/viewPdf.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -5975,6 +5988,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/objects/issue_toc.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -6048,6 +6062,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/objects/issue_summary.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -6066,6 +6081,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/objects/galley_link.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -6088,6 +6104,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/objects/article_summary.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -6119,6 +6136,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/styles/objects/article_details.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -6363,6 +6381,7 @@ pre {
 /**
  * @file plugins/themes/jlmTheme/rtl.less
  *
+ * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
