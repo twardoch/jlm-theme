@@ -24,7 +24,7 @@
 	    Valid: 1.0.2.3, 0.1.4.0
 		Invalid: 1.0, v1.0.4, 1.0.0.0b
 	-->
-	<release>1.0.3.4</release>
+	<release>1.0.3.5</release>
 
 	<!-- The date of the latest version -->
 	<date>2020-10-02</date>
