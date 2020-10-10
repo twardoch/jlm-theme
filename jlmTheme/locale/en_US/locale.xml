@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/jlmTheme/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2020 Adam Twardoch
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.jlmTheme.name">JLM Theme</message>
+	<message key="plugins.themes.jlmTheme.description">OJS theme for Journal of Language Modelling.</message>
+</locale>

@@ -1,9 +1,0 @@
-[
-    "trigger",
-    "./styles",
-    {
-        "name": "build",
-        "expression": ["pcre", ".(less)$"],
-        "command": ["./build.command"]
-    }
-]
