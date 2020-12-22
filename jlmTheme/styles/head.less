@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/head.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -11,7 +11,7 @@
  */
 .pkp_head_wrapper,
 .has_site_logo .pkp_head_wrapper {
-	position: relative;
+	position   : relative;
 	padding-top: 0;
 }
 
@@ -20,60 +20,52 @@
 }
 
 .pkp_site_name_wrapper {
-	padding-left: 0px;
+	padding-left : 0px;
 	padding-right: @triple;
 }
 
 .pkp_structure_head {
 	@media(min-width: @screen-desktop) {
-		background-image: url('assets/jlm-head-back.png');
-		background-size: 50%;
+		background-image: url('/plugins/themes/jlmTheme/assets/jlm-head-back.png');
+		background-size : 50%;
 	}
 }
 
 .pkp_site_name {
 
-	font-family: @font-heading;
-	padding-left: @triple;
-	padding-right: @quintuple;
-	width: fit-content;
+	font-family     : @font-heading;
+	padding-left    : @triple;
+	padding-right   : @quintuple;
+	width           : auto;
 	background-color: @accent;
+	padding-right   : 120px;
 
 	.is_text {
-		font-size: @font-base;
+		font-family    : @font-site-title;
+		font-size      : @font-site-title-small;
+		font-weight    : @bold;
+		line-height    : @nav-menu-height;
+		color          : @text-bg-base;
+		text-decoration: none;
+		position       : relative;
+		bottom         : 4px;
 	}
 
 	@media(min-width: @screen-desktop) {
-		width: fit-content;
-		margin-left: 0;
-		padding-top: 0;
+		width         : max-content;
+		margin-left   : 0;
+		padding-top   : 0;
 		padding-bottom: @triple;
+		font-weight   : normal;
 
 		.is_text {
-			font-family: @font-heading;
-			font-size: 0px;
-			line-height: 0px;
-			visibility: hidden;
-			display: inline-block;
-
-			&:before {
-				content: 'Journal of';
-				font-size: @font-site-title-small;
-				visibility: visible;
-				width: 200px;
-				line-height: 1em;
-			}
-			&:after {
-				font-family: @font-huge;
-				font-weight: @normal;
-				content: 'Language Modelling';
-				visibility: visible;
-				font-size: @font-site-title-huge;
-				line-height: 1.1em;
-				width: min-content;
-				display: block;
-				margin-left: @lfbd;
-			}
+			font-family: 'JLMLogo2', @font-heading;
+			font-size  : @font-header;
+			line-height: @font-header;
+			display    : inline-block;
+			position   : relative;
+			top        : @bump;
+			font-weight: normal;
 		}
 	}
 }
@@ -81,8 +73,8 @@
 @media(min-width: @screen-desktop) {
 
 	.pkp_navigation_primary_row {
-		background: @bg;
-		padding-left: @triple;
+		background   : @bg;
+		padding-left : @triple;
 		padding-right: @triple;
 	}
 }
@@ -95,15 +87,15 @@
 #navigationPrimary {
 
 	a {
-		font-family: @font-heading;
-		font-size: @font-base;
+		font-family   : @font-heading;
+		font-size     : @font-base;
 		letter-spacing: @sc;
-		font-weight: @normal;
+		font-weight   : @normal;
 		text-transform: uppercase;
 	}
 
-	> li > a {
-		padding-bottom: 6px;
+	>li>a {
+		padding-bottom     : 6px;
 		border-bottom-width: 4px;
 
 		&:hover,
@@ -112,8 +104,8 @@
 		}
 	}
 
-	> [aria-haspopup] > a:hover,
-	> [aria-haspopup] > a:focus {
+	>[aria-haspopup]>a:hover,
+	>[aria-haspopup]>a:focus {
 		border-color: transparent;
 	}
 
@@ -153,13 +145,13 @@
 
 		.search_prompt {
 			padding-bottom: @base;
-			border-bottom: none;
-			font-family: @font-heading;
-			font-size: @font-base;
+			border-bottom : none;
+			font-family   : @font-heading;
+			font-size     : @font-base;
 			letter-spacing: @sc;
-			font-weight: @normal;
+			font-weight   : @normal;
 			text-transform: uppercase;
-			color: @text-light;
+			color         : @text-light;
 
 			&:hover,
 			&:focus {
@@ -182,15 +174,15 @@
 
 		input[type="text"] {
 			border-bottom: none;
-			background: @bg-light-shade;
-			border-left: @bg-border;
+			background   : @bg-light-shade;
+			border-left  : @bg-border;
 		}
 
 		.search_controls {
 
 			.search_prompt {
 				background: @accent;
-				color: @text-bg-base;
+				color     : @text-bg-base;
 
 				&:hover,
 				&:focus {
@@ -209,16 +201,16 @@
 
 	a {
 		font-family: @font;
-		font-size: @font-sml;
+		font-size  : @font-sml;
 		font-weight: @bold;
 	}
 
 	@media(min-width: @screen-desktop) {
-		top: 13px;
-		right: 0;
-		left: auto;
-		width: 25%;
-		transform: none;
+		top          : 13px;
+		right        : 0;
+		left         : auto;
+		width        : 25%;
+		transform    : none;
 		padding-right: @triple;
 
 		a {
@@ -231,9 +223,9 @@
 		}
 
 		.pkp_navigation_user {
-			margin-right: 0;
+			margin-right : 0;
 			padding-right: 0;
-			width: auto;
+			width        : auto;
 		}
 	}
 }

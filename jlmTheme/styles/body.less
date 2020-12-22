@@ -10,16 +10,22 @@
  *
  */
 
- body {
+body {
 	font-family: @font;
-	font-size: @font-base;
+	font-size  : @font-base;
 	line-height: @line-base;
-	color: @text;
-	background: @bg-shade;
+	color      : @text;
+	background : @bg-shade;
 }
 
 a {
-	color: @primary;
+	color          : @primary;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
 
 	&:hover,
 	&:focus {
@@ -36,29 +42,29 @@ a {
 .pkp_structure_content,
 .pkp_structure_footer {
 	.pkp_helpers_clear;
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	padding-left: @base;
+	position     : relative;
+	width        : 100%;
+	margin       : 0 auto;
+	padding-left : @base;
 	padding-right: @base;
 
-	@media( min-width: @screen-tablet ) {
-		width: @screen-tablet-container;
+	@media(min-width: @screen-tablet ) {
+		width  : @screen-tablet-container;
 		padding: 0;
 	}
 
-	@media( min-width: @screen-desktop ) {
+	@media(min-width: @screen-desktop ) {
 		width: @screen-desktop-container;
 	}
 
-	@media( min-width: @screen-lg-desktop ) {
+	@media(min-width: @screen-lg-desktop ) {
 		width: @screen-lg-desktop-container;
 	}
 }
 
 .pkp_head_wrapper {
-	max-width: @screen-lg-desktop-container;
-	margin-left: auto;
+	max-width   : @screen-lg-desktop-container;
+	margin-left : auto;
 	margin-right: auto;
 }
 
@@ -71,22 +77,22 @@ a {
 
 	.pkp_head_wrapper {
 		.pkp_helpers_clear;
-		position: relative;
-		width: 100%;
-		margin: 0 auto;
+		position     : relative;
+		width        : 100%;
+		margin       : 0 auto;
 		padding-right: @base;
 
-		@media( min-width: @screen-tablet ) {
-			width: @screen-tablet-container;
-			padding-left: 0;
+		@media(min-width: @screen-tablet ) {
+			width        : @screen-tablet-container;
+			padding-left : 0;
 			padding-right: 0;
 		}
 
-		@media( min-width: @screen-desktop ) {
+		@media(min-width: @screen-desktop ) {
 			width: @screen-desktop-container;
 		}
 
-		@media( min-width: @screen-lg-desktop ) {
+		@media(min-width: @screen-lg-desktop ) {
 			width: @screen-lg-desktop-container;
 		}
 	}
@@ -98,26 +104,26 @@ a {
 	padding: @base;
 }
 
-@media( min-width: @screen-phone ) {
+@media(min-width: @screen-phone ) {
 
 	.pkp_structure_main {
 		padding: @double;
 	}
 }
 
-@media( min-width: @screen-tablet ) {
+@media(min-width: @screen-tablet ) {
 
 	// Full-height borders wrapping primary content column
 	.pkp_structure_main {
 
 		&:before,
 		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			width: 1px;
+			content   : '';
+			position  : absolute;
+			top       : 0;
+			left      : 0;
+			bottom    : 0;
+			width     : 1px;
 			background: @bg-border-color;
 		}
 
@@ -127,7 +133,7 @@ a {
 	}
 }
 
-@media( min-width: @screen-desktop ) {
+@media(min-width: @screen-desktop ) {
 
 	.pkp_structure_content {
 		padding-top: @triple;
@@ -136,15 +142,16 @@ a {
 	.pkp_structure_sidebar {
 		float: none;
 		width: @sidebar-width;
+		padding-left  : @double;
 	}
 
 	.pkp_structure_main {
-		float: left;
-		padding-top: 0;
-		padding-right: @triple;
+		float         : left;
+		padding-top   : 0;
+		padding-right : @triple;
 		padding-bottom: @triple * 3;
-		padding-left: @triple;
-		width: @screen-desktop-container;
+		padding-left  : @triple;
+		width         : @screen-desktop-container;
 
 		&:after {
 			left: @screen-desktop-container;
@@ -152,7 +159,7 @@ a {
 	}
 }
 
-@media( min-width: @screen-lg-desktop ) {
+@media(min-width: @screen-lg-desktop ) {
 
 	.pkp_structure_main {
 		width: @screen-lg-desktop-container;
@@ -167,19 +174,20 @@ a {
 .pkp_structure_main:first-child:last-child {
 
 	@media(min-width: @screen-desktop) {
-		float: none;
-		margin-left: auto;
+		float       : none;
+		margin-left : auto;
 		margin-right: auto;
-		margin-top: @quadruple;
+		margin-top  : @quadruple;
 
 		// Aligns the left and right borders
 		@no-sidebar-margins: @sidebar-width / 2;
+
 		&:before {
 			left: @no-sidebar-margins;
 		}
 
 		&:after {
-			left: auto;
+			left : auto;
 			right: @no-sidebar-margins;
 		}
 	}
@@ -188,15 +196,15 @@ a {
 // Lock in images so they don't run outside their container
 img {
 	max-width: 100%;
-	width: auto;
-	height: auto;
+	width    : auto;
+	height   : auto;
 }
 
 
 // A white background for the boxed content area
 .pkp_structure_page {
-	margin: 0 auto;
-	max-width: 100%; //@screen-lg-desktop-container;
+	margin    : 0 auto;
+	max-width : 100%; //@screen-lg-desktop-container;
 	background: @bg;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -211,8 +219,8 @@ img {
 
 
 .pkp_structure_footer_wrapper {
-	background: @bg-light-shade;
-	border-top: @bg-border;
+	background   : @bg-light-shade;
+	border-top   : @bg-border;
 	border-bottom: @double solid @bg-base;
 }
 
@@ -228,8 +236,15 @@ img {
 
 .pkp_structure_sidebar {
 
-	display: flex;
+	display       : flex;
 	flex-direction: row;
+	flex-wrap     : wrap;
+
+	.pkp_block {
+		width  : @screen-desktop-container / 4;
+		padding: @base;
+		margin : 0;
+	}
 
 	@media(min-width: @screen-desktop) {
 
@@ -244,7 +259,7 @@ img {
 		} */
 
 		// Child elements need position to appear above the background element
-		> * {
+		>* {
 			position: relative;
 		}
 	}
@@ -256,20 +271,25 @@ img {
 .pkp_structure_main:first-child:last-child {
 
 	@media(min-width: @screen-desktop) {
-		float: none;
-		margin-left: auto;
+		float       : none;
+		margin-left : auto;
 		margin-right: auto;
-		margin-top: @quadruple;
+		margin-top  : @quadruple;
 
 		// Aligns the left and right borders
 		@no-sidebar-margins: @sidebar-width / 2;
+
 		&:before {
 			left: @no-sidebar-margins;
 		}
 
 		&:after {
-			left: auto;
+			left : auto;
 			right: @no-sidebar-margins;
 		}
 	}
+}
+
+.pkp_brand_footer {
+	display: none !important;
 }

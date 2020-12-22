@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/objects/issue_toc.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -18,6 +18,10 @@
 		line-height: @line-bump;
 	}
 
+	.heading .published {
+		display: none;
+	}
+
 	.heading .pub_id,
 	.heading .published {
 		font-family: @font-text;
@@ -26,9 +30,11 @@
 
 	.heading .pub_id .type,
 	.heading .published .label {
-		font-weight   : @bold;
+		font-family   : @font-heading;
+		font-weight   : @normal;
 		color         : @text-light;
 		text-transform: uppercase;
+		letter-spacing: @sc;
 	}
 
 	.heading .pub_id .id,
@@ -59,6 +65,7 @@
 
 		h2 {
 			position       : relative;
+			font-size      : @font-base;
 			display        : inline-block;
 			top            : auto;
 			left           : auto;

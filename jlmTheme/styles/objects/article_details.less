@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/objects/article_details.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -20,11 +20,11 @@
 
 	.item {
 		@media(min-width: @screen-tablet) {
-			padding: @base @double;
+			padding: 0 @double @base @double;
 		}
 
 		@media(min-width: @screen-desktop) {
-			padding: @base @triple;
+			padding: 0 @double @base @triple;
 		}
 
 	}
@@ -97,11 +97,11 @@
 		.item {
 
 			.label {
-				margin     : 0 0 0 0;
-				font-family: @font-heading;
-				font-size  : @font-base;
-				font-weight: @normal;
-				margin-top: @base;
+				margin       : 0 0 0 0;
+				font-family  : @font-heading;
+				font-size    : @font-base;
+				font-weight  : @normal;
+				margin-top   : @base;
 				margin-bottom: 0;
 			}
 
@@ -132,9 +132,10 @@
 
 		.item.keywords {
 			font-style: italic;
+			font-size : @font-mid;
 
 			.label {
-				font-size: @font-base;
+				font-size     : @font-base;
 				text-transform: uppercase;
 				letter-spacing: @sc;
 			}
@@ -157,9 +158,9 @@
 		}
 
 		.keywords .label {
-			display       : block;
-			padding       : 0;
-			border        : none;
+			display: block;
+			padding: 0;
+			border : none;
 		}
 	}
 
@@ -191,10 +192,11 @@
 				font-size     : @font-base;
 				border-bottom : none;
 				text-transform: none;
+
 				.affiliation {
-					font-size: @font-base;
+					font-size  : @font-base;
 					line-height: @line-base;
-					font-style: normal;
+					font-style : normal;
 				}
 			}
 		}
@@ -254,7 +256,7 @@
 
 		.item>.value,
 		.sub_item .value {
-			padding      : @base @double;
+			padding      : 0 @double @base @double;
 			border-radius: @radius;
 		}
 
@@ -312,12 +314,32 @@
 
 		.item.copyright {
 			background: transparent;
-			box-shadow: none;
+
+			p {
+				font-size  : @font-sml;
+				line-height: @line-sml;
+				padding    : 0 @double @base @double;
+			}
 		}
 
 		@media(min-width: @screen-tablet) {
-			width      : 240px;
+			width      : 280px;
 			margin-left: 30px;
 		}
 	}
+}
+
+
+.item.galleys_full {
+	margin          : 0 auto 0 auto;
+	text-align      : center;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius   : 8px;
+	width           : fit-content;
+	padding         : 0px @triple @triple @triple;
+	margin          : @double auto @double auto;
+}
+
+.item.author_bios, .item.author_bios h3 {
+	font-size: @font-base;
 }

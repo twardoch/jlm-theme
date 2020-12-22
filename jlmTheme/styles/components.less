@@ -18,8 +18,8 @@
 	color            : @text-bg-base;
 	border           : none;
 	line-height      : @line-sml;
-	padding-top      : @base;
-	padding-bottom   : @base;
+	padding-top      : @half;
+	padding-bottom   : @half;
 
 	&:hover,
 	&:focus {
@@ -30,12 +30,22 @@
 // Breadcrumb navigation
 .cmp_breadcrumbs {
 	padding       : @triple 0;
-	font-family   : @font-small;
+	font-family   : @JLMSans;
 	font-weight   : @normal;
 	font-style    : normal;
 	font-size     : @font-sml;
 	color         : @text-light;
 	text-transform: none;
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+	}
 
 	>ol {
 		padding  : 0;
@@ -114,4 +124,12 @@
 
 .cmp_button_wire {
 	font-size: @font-base;
+}
+
+// List of articles
+.cmp_article_list {
+
+	>li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
 }

@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/main.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -16,6 +16,25 @@ samp,
 pre {
 	font-family: @font-mono;
 }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: @JLMSans;
+}
+
+input,
+textarea {
+	background-color: #ecedee !important;
+}
+
+/*
+.published {
+	display: none;
+}
+*/
 
 .main_entry {
 	font-family: @font-text;
@@ -93,7 +112,7 @@ section {
 	p {
 		line-height: @line-base-large;
 		font-size  : @font-mid;
-		margin     : @line-base 0;
+		margin     : 0 0 @base 0;
 		hyphens    : auto;
 		text-align : left;
 	}

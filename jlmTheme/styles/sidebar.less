@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/sidebar.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -13,12 +13,29 @@
 .pkp_block {
 
 	.title {
-		display: inline-block;
-		padding-bottom: 0.5em;
+		display         : inline-block;
+		padding-bottom  : 0.5em;
 		// border-bottom: 3px solid @accent;
-		font-weight: @normal;
-		text-transform: uppercase;
-		letter-spacing: @sc;
+		font-weight     : @normal;
+		text-transform  : uppercase;
+		letter-spacing  : @sc;
+		font-size       : @font-base;
+		line-height     : @line-sml;
+	}
+
+	.content {
+		p {
+			line-height: @line-sml;
+		}
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
 	}
 
 }

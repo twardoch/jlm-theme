@@ -1,4 +1,4 @@
-/**
+/*!
  * @file plugins/themes/jlmTheme/styles/objects/issue_summary.less
  *
  * Copyright (c) 2020 Adam Twardoch
@@ -11,6 +11,9 @@
  */
 .obj_issue_summary {
 
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding      : 0 0 @half 0;
+
 	.series {
 		font-family: @font-heading;
 		font-weight: @bold;
@@ -19,5 +22,10 @@
 	.description {
 		font-family: @font-text;
 		font-size  : @font-bump;
+
+		p {
+			font-family: @font-text;
+			font-size  : @font-bump;
+		}
 	}
 }
