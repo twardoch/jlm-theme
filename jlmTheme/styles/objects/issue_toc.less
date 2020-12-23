@@ -55,7 +55,7 @@
 
 	>.galleys,
 	.section {
-		margin : 0;
+		margin : @triple 0 0 0;
 		padding: 0;
 		border : none;
 
@@ -89,5 +89,20 @@
 	.cover img {
 		margin-left : auto;
 		margin-right: auto;
+	}
+
+	.item {
+		.galleys_links {
+			margin-top: @half;
+		}
+
+		.label {
+			font-size     : @font-base;
+			font-weight   : @normal;
+			text-transform: uppercase;
+			letter-spacing: @sc;
+			margin        : 0;
+			padding-top   : @base;
+		}
 	}
 }

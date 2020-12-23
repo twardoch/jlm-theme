@@ -171,7 +171,7 @@
 			{if $primaryGalleys}
 				<div class="item galleys_full">
 					<h2 class="label">
-						Read full text
+						Full article
 					</h2>
 					<ul class="value galleys_links">
 						{foreach from=$primaryGalleys item=galley}
