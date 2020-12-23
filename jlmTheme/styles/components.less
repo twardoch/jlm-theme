@@ -30,7 +30,7 @@
 // Breadcrumb navigation
 .cmp_breadcrumbs {
 	padding       : @triple 0;
-	font-family   : @JLMSans;
+	font-family   : @font;
 	font-weight   : @normal;
 	font-style    : normal;
 	font-size     : @font-sml;
@@ -100,17 +100,27 @@
 	}
 
 	.obj_announcement_summary h2,
-	.obj_announcement_summary h3,
+	.obj_announcement_summary h3 {
+		font-family: @font-heading;
+		font-size  : @font-header;
+		font-weight: @bold;
+		text-transform: none;
+		letter-spacing: 0;
+	}
+
 	.obj_announcement_summary h4,
-	.date,
-	.read_more {
+	.date {
 		font-family: @font-heading;
 		font-size  : @font-sml;
-		font-weight: @bold;
+		font-weight: @normal;
 	}
 
 	.read_more {
+		font-family   : @font-heading;
+		font-size     : @font-sml;
+		font-weight   : @normal;
 		text-transform: uppercase;
+		letter-spacing: @sc;
 	}
 
 	.date {
