@@ -1,98 +1,485 @@
-This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+Project Structure:
+📁 jlm-theme
+├── 📁 .github
+│   └── 📁 workflows
+│       └── 📄 compile.yml
+├── 📁 jlmTheme
+│   ├── 📁 assets
+│   ├── 📁 fonts
+│   │   ├── 📁 Academmunicons
+│   │   ├── 📁 CharisSILCompact
+│   │   ├── 📁 CharletSL
+│   │   ├── 📁 CharletSLS
+│   │   ├── 📁 CharletSLXS
+│   │   ├── 📁 IBMPlexMono
+│   │   ├── 📁 JLMMonogram
+│   │   ├── 📁 Langfair
+│   │   └── 📄 index.less
+│   ├── 📁 locale
+│   │   └── 📁 en_US
+│   │       └── 📄 locale.xml
+│   ├── 📁 styles
+│   │   ├── 📁 objects
+│   │   │   ├── 📄 article_details.less
+│   │   │   ├── 📄 article_summary.less
+│   │   │   ├── 📄 galley_link.less
+│   │   │   ├── 📄 issue_summary.less
+│   │   │   └── 📄 issue_toc.less
+│   │   ├── 📁 pages
+│   │   │   ├── 📄 announcement.less
+│   │   │   ├── 📄 contact.less
+│   │   │   ├── 📄 indexJournal.less
+│   │   │   ├── 📄 issueArchive.less
+│   │   │   ├── 📄 search.less
+│   │   │   ├── 📄 submissions.less
+│   │   │   └── 📄 viewPdf.less
+│   │   ├── 📄 body.less
+│   │   ├── 📄 components.less
+│   │   ├── 📄 head.less
+│   │   ├── 📄 index.less
+│   │   ├── 📄 main.less
+│   │   ├── 📄 rtl.less
+│   │   ├── 📄 sidebar.less
+│   │   └── 📄 variables.less
+│   ├── 📁 templates
+│   │   └── 📁 frontend
+│   │       └── 📁 objects
+│   │           ├── 📄 article_details.tpl
+│   │           └── 📄 issue_toc.tpl
+│   ├── 📄 index.php
+│   ├── 📄 JLMThemePlugin.inc.php
+│   └── 📄 version.xml
+├── 📁 php
+│   ├── 📁 Less
+│   │   ├── 📁 bin
+│   │   └── 📁 lib
+│   │       └── 📁 Less
+│   │           ├── 📁 Exception
+│   │           │   └── ... (depth limit reached)
+│   │           ├── 📁 Output
+│   │           │   └── ... (depth limit reached)
+│   │           ├── 📁 SourceMap
+│   │           │   └── ... (depth limit reached)
+│   │           ├── 📁 Tree
+│   │           │   └── ... (depth limit reached)
+│   │           └── 📁 Visitor
+│   │               └── ... (depth limit reached)
+│   └── 📁 ojs
+│       ├── 📁 api
+│       │   └── 📁 v1
+│       │       ├── 📁 _payments
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 _submissions
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 _uploadPublicFile
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 contexts
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 emailTemplates
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 issues
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 site
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 stats
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 submissions
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 temporaryFiles
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 users
+│       │       │   └── ... (depth limit reached)
+│       │       └── 📁 vocabs
+│       │           └── ... (depth limit reached)
+│       ├── 📁 cache
+│       │   ├── 📁 _db
+│       │   ├── 📁 t_cache
+│       │   ├── 📁 t_compile
+│       │   └── 📁 t_config
+│       ├── 📁 classes
+│       │   ├── 📁 article
+│       │   ├── 📁 components
+│       │   │   ├── 📁 forms
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 listPanels
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 controllers
+│       │   │   └── 📁 grid
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 core
+│       │   ├── 📁 file
+│       │   ├── 📁 handler
+│       │   ├── 📁 i18n
+│       │   ├── 📁 install
+│       │   ├── 📁 issue
+│       │   ├── 📁 journal
+│       │   ├── 📁 log
+│       │   ├── 📁 mail
+│       │   ├── 📁 notification
+│       │   │   ├── 📁 form
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 managerDelegate
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 oai
+│       │   │   └── 📁 ojs
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 payment
+│       │   │   └── 📁 ojs
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 plugins
+│       │   ├── 📁 publication
+│       │   ├── 📁 search
+│       │   ├── 📁 security
+│       │   │   └── 📁 authorization
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 services
+│       │   │   └── 📁 queryBuilders
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 statistics
+│       │   ├── 📁 submission
+│       │   │   ├── 📁 form
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 reviewer
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 subscription
+│       │   │   └── 📁 form
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 tasks
+│       │   ├── 📁 template
+│       │   ├── 📁 user
+│       │   └── 📁 workflow
+│       ├── 📁 controllers
+│       │   ├── 📁 api
+│       │   │   └── 📁 file
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 grid
+│       │   │   ├── 📁 articleGalleys
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 issueGalleys
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 issues
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 navigationMenus
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 pubIds
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 settings
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 submissions
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 subscriptions
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 toc
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 users
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 modals
+│       │   │   ├── 📁 editorDecision
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 publish
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 statistics
+│       │   │   └── 📁 form
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 tab
+│       │   │   ├── 📁 pubIds
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 workflow
+│       │   │       └── ... (depth limit reached)
+│       │   └── 📁 wizard
+│       │       └── 📁 fileUpload
+│       │           └── ... (depth limit reached)
+│       ├── 📁 dbscripts
+│       │   └── 📁 xml
+│       │       └── 📁 upgrade
+│       │           └── ... (depth limit reached)
+│       ├── 📁 docs
+│       │   ├── 📁 manual
+│       │   │   ├── 📁 ar
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 da
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 de
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 en
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 es
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 fa
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 fr
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 pt
+│       │   │       └── ... (depth limit reached)
+│       │   └── 📁 release-notes
+│       ├── 📁 js
+│       │   └── 📁 controllers
+│       │       └── 📁 grid
+│       │           └── ... (depth limit reached)
+│       ├── 📁 lib
+│       │   └── 📁 pkp
+│       │       ├── 📁 .github
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 api
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 classes
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 controllers
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 dtd
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 includes
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 js
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 lib
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 locale
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 pages
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 plugins
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 registry
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 schemas
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 styles
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 templates
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 tools
+│       │       │   └── ... (depth limit reached)
+│       │       └── 📁 xml
+│       │           └── ... (depth limit reached)
+│       ├── 📁 locale
+│       │   ├── 📁 ar_IQ
+│       │   ├── 📁 ca_ES
+│       │   ├── 📁 cs_CZ
+│       │   ├── 📁 da_DK
+│       │   ├── 📁 de_DE
+│       │   ├── 📁 el_GR
+│       │   ├── 📁 en_US
+│       │   │   └── 📁 images
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 es_ES
+│       │   ├── 📁 eu_ES
+│       │   ├── 📁 fa_IR
+│       │   ├── 📁 fi_FI
+│       │   ├── 📁 fr_CA
+│       │   ├── 📁 fr_FR
+│       │   ├── 📁 hi_IN
+│       │   ├── 📁 hr_HR
+│       │   ├── 📁 hu_HU
+│       │   ├── 📁 id_ID
+│       │   ├── 📁 it_IT
+│       │   ├── 📁 ko_KR
+│       │   ├── 📁 ku_IQ
+│       │   ├── 📁 mk_MK
+│       │   ├── 📁 mn_MN
+│       │   ├── 📁 nb_NO
+│       │   ├── 📁 nl_NL
+│       │   ├── 📁 pl_PL
+│       │   ├── 📁 pt_BR
+│       │   ├── 📁 pt_PT
+│       │   ├── 📁 ru_RU
+│       │   ├── 📁 sl_SI
+│       │   ├── 📁 sr_RS@cyrillic
+│       │   ├── 📁 sr_RS@latin
+│       │   ├── 📁 sv_SE
+│       │   ├── 📁 tr_TR
+│       │   ├── 📁 uk_UA
+│       │   ├── 📁 uz_UZ@cyrillic
+│       │   ├── 📁 uz_UZ@latin
+│       │   ├── 📁 vi_VN
+│       │   └── 📁 zh_CN
+│       ├── 📁 pages
+│       │   ├── 📁 about
+│       │   ├── 📁 article
+│       │   ├── 📁 authorDashboard
+│       │   ├── 📁 catalog
+│       │   ├── 📁 gateway
+│       │   ├── 📁 index
+│       │   ├── 📁 information
+│       │   ├── 📁 issue
+│       │   ├── 📁 manageIssues
+│       │   ├── 📁 management
+│       │   ├── 📁 manager
+│       │   ├── 📁 oai
+│       │   ├── 📁 payment
+│       │   ├── 📁 payments
+│       │   ├── 📁 reviewer
+│       │   ├── 📁 search
+│       │   ├── 📁 sitemap
+│       │   ├── 📁 stats
+│       │   ├── 📁 submission
+│       │   ├── 📁 user
+│       │   └── 📁 workflow
+│       ├── 📁 plugins
+│       │   ├── 📁 auth
+│       │   ├── 📁 blocks
+│       │   │   ├── 📁 browse
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 developedBy
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 information
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 languageToggle
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 makeSubmission
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 subscription
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 gateways
+│       │   │   └── 📁 resolver
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 generic
+│       │   │   ├── 📁 acron
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 announcementFeed
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 citationStyleLanguage
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 customBlockManager
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 driver
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 dublinCoreMeta
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 googleAnalytics
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 googleScholar
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 htmlArticleGalley
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 lensGalley
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 orcidProfile
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 pdfJsViewer
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 recommendByAuthor
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 recommendBySimilarity
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 staticPages
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 tinymce
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 usageEvent
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 usageStats
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 webFeed
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 importexport
+│       │   │   ├── 📁 crossref
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 datacite
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 doaj
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 medra
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 native
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 pubmed
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 users
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 metadata
+│       │   │   ├── 📁 dc11
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 mods34
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 openurl10
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 oaiMetadataFormats
+│       │   │   ├── 📁 dc
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 marc
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 marcxml
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 rfc1807
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 paymethod
+│       │   │   ├── 📁 manual
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 paypal
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 pubIds
+│       │   │   ├── 📁 doi
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 urn
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 reports
+│       │   │   ├── 📁 articles
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 counter
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 reviewReport
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 subscriptions
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 views
+│       │   │       └── ... (depth limit reached)
+│       │   └── 📁 themes
+│       │       └── 📁 default
+│       │           └── ... (depth limit reached)
+│       ├── 📁 public
+│       ├── 📁 registry
+│       ├── 📁 schemas
+│       ├── 📁 styles
+│       ├── 📁 templates
+│       │   ├── 📁 authorDashboard
+│       │   ├── 📁 common
+│       │   ├── 📁 controllers
+│       │   │   ├── 📁 grid
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 modals
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 tab
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 frontend
+│       │   │   ├── 📁 components
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   ├── 📁 objects
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 pages
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 gateway
+│       │   ├── 📁 images
+│       │   │   ├── 📁 icons
+│       │   │   │   └── ... (depth limit reached)
+│       │   │   └── 📁 structure
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 manageIssues
+│       │   ├── 📁 management
+│       │   ├── 📁 payments
+│       │   ├── 📁 reviewer
+│       │   │   └── 📁 review
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 submission
+│       │   │   └── 📁 form
+│       │   │       └── ... (depth limit reached)
+│       │   ├── 📁 user
+│       │   └── 📁 workflow
+│       └── 📁 tools
+├── 📄 .gitignore
+├── 📄 CHANGELOG.md
+├── 📄 LICENSE
+├── 📄 PLAN.md
+├── 📄 README.md
+├── 📄 REFACTOR_FILELIST.txt
+├── 📄 TODO.md
+└── 📄 ziptheme.command
 
-<file_summary>
-This section contains a summary of this file.
 
-<purpose>
-This file contains a packed representation of the entire repository's contents.
-It is designed to be easily consumable by AI systems for analysis, code review,
-or other automated processes.
-</purpose>
-
-<file_format>
-The content is organized as follows:
-1. This summary section
-2. Repository information
-3. Directory structure
-4. Repository files (if enabled)
-5. Multiple file entries, each consisting of:
-  - File path as an attribute
-  - Full contents of the file
-</file_format>
-
-<usage_guidelines>
-- This file should be treated as read-only. Any changes should be made to the
-  original repository files, not this packed version.
-- When processing this file, use the file path to distinguish
-  between different files in the repository.
-- Be aware that this file may contain sensitive information. Handle it with
-  the same level of security as you would the original repository.
-</usage_guidelines>
-
-<notes>
-- Some files may have been excluded based on .gitignore rules and Repomix's configuration
-- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
-- Files matching patterns in .gitignore are excluded
-- Files matching default ignore patterns are excluded
-- Files are sorted by Git change count (files with more changes are at the bottom)
-</notes>
-
-</file_summary>
-
-<directory_structure>
-.github/
-  workflows/
-    compile.yml
-jlmTheme/
-  assets/
-    ipipan-logo.svg
-    ojs-logo.svg
-  fonts/
-    index.less
-  locale/
-    en_US/
-      locale.xml
-  styles/
-    objects/
-      article_details.less
-      article_summary.less
-      galley_link.less
-      issue_summary.less
-      issue_toc.less
-    pages/
-      announcement.less
-      contact.less
-      indexJournal.less
-      issueArchive.less
-      search.less
-      submissions.less
-      viewPdf.less
-    body.less
-    components.less
-    head.less
-    index.less
-    main.less
-    rtl.less
-    sidebar.less
-    variables.less
-  templates/
-    frontend/
-      objects/
-        article_details.tpl
-        issue_toc.tpl
-  index.php
-  JLMThemePlugin.inc.php
-  version.xml
-.gitignore
-LICENSE
-README.md
-ziptheme.command
-</directory_structure>
-
-<files>
-This section contains the contents of the repository's files.
-
-<file path=".github/workflows/compile.yml">
+<documents>
+<document index="1">
+<source>.github/workflows/compile.yml</source>
+<document_content>
 name: Compile less
 on: [push]
 jobs:
@@ -121,9 +508,101 @@ jobs:
           git add `echo $MODIFIED | jq -r 'join(" ")'`
           git commit -a -m "[bot] Update production frontend files"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" `echo $GITHUB_REF | cut -d'/' -f3-`
-</file>
 
-<file path="LICENSE">
+
+</document_content>
+</document>
+
+<document index="2">
+<source>.gitignore</source>
+<document_content>
+php/
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+</document_content>
+</document>
+
+<document index="3">
+<source>CHANGELOG.md</source>
+<document_content>
+# Changelog
+
+All notable changes to the JLM Theme for OJS 3.x will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased] - 2025-06-29
+
+### Added
+- Font Awesome web fonts (eot, ttf, woff, woff2 formats)
+- Additional font variants for CharletSL family (BoldItalic, Light, LightItalic, Medium, MediumItalic, Regular, Semibold, SemiboldItalic)
+- Additional font variants for Langfair family (Head10, Head10Bold, Head10BoldItalic, Head10Italic, Head40Bold, Head40BoldItalic, Head40Italic, Head50, Head50Bold, Head50BoldItalic, Head50Italic, Sub456, Sub456Bold, Sub456BoldItalic, Sub456Italic, Sub555Bold, Sub555BoldItalic, Sub555Italic)
+- New JLMLogo.woff2 font file
+- OJS logo SVG asset
+- Enhanced submissions page styling with improved font sizes and spacing
+
+### Changed
+- Updated article details template with custom article table of contents structure
+- Modified issue table of contents template with enhanced heading hierarchy
+- Improved component styles with better spacing and typography settings
+- Enhanced main styles with additional utility classes
+- Updated article details LESS styles for better visual hierarchy
+- Modified indexJournal page styles
+- Version updated to 1.0.4.4 (dated 2020-12-22)
+- Updated tarball archive (jlmTheme.tar.gz)
+
+### Removed
+- Extensive documentation directory (docs/) containing:
+  - Multiple font files and documentation
+  - CSS build files and indexes
+  - Various utility scripts (builddocs.command, watch.command)
+- Redundant font files in various formats (eot, ttf, woff)
+- Font-specific HTML, LESS, and CSS files
+- Old index.less file from root directory
+
+### Technical Details
+- Major cleanup of font assets, consolidating to WOFF2 format for better performance
+- Removed legacy font formats in favor of modern web font standards
+- Streamlined directory structure by removing the documentation build artifacts
+- Maintained all license files (OFL, GPL) for proper attribution
+
+## [1.0.4.3] - Earlier
+
+### Note
+Prior changes were not formally documented. This changelog begins tracking from the current state of the repository.
+</document_content>
+</document>
+
+<document index="4">
+<source>LICENSE</source>
+<document_content>
 GNU GENERAL PUBLIC LICENSE
    Version 2, June 1991
 
@@ -404,9 +883,249 @@ PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
 
  END OF TERMS AND CONDITIONS
-</file>
 
-<file path="README.md">
+</document_content>
+</document>
+
+<document index="5">
+<source>PLAN.md</source>
+<document_content>
+# JLM Theme Improvement Plan
+
+## Executive Summary
+
+The JLM Theme for OJS 3.x is a custom child theme that extends the default OJS theme with specialized typography and styling for the Journal of Language Modelling. This improvement plan outlines strategic enhancements to make the theme more stable, elegant, maintainable, and easily deployable.
+
+## Current State Analysis
+
+### Strengths
+1. **Typography System**: Comprehensive font setup with multiple families (JLMHuge, JLMHead, JLMText, JLMSmall, JLMMono, JLMSans, JLMLogo, JLMIcons)
+2. **Inheritance Model**: Properly extends the default OJS theme as a child theme
+3. **LESS Architecture**: Modular styling with organized directory structure
+4. **Font Optimization**: Modern WOFF2 formats for better performance
+5. **Responsive Design**: Inherits responsive capabilities from parent theme
+
+### Areas for Improvement
+1. **Version Inconsistency**: Last version update was 2020-12-22 (v1.0.4.4) but recent commits suggest active development
+2. **Generic Commit Messages**: Git history shows uninformative commit messages ("up", "Changed file")
+3. **Documentation**: Limited documentation beyond basic README
+4. **Build Process**: Manual tarball creation via shell script
+5. **Font Loading**: Mixed approach with local fonts and CDN fonts (Google Fonts)
+6. **Testing**: No visible test infrastructure
+7. **Development Workflow**: No clear development guidelines or contribution process
+
+## Improvement Strategy
+
+### Phase 1: Foundation and Stability (Weeks 1-2)
+
+#### 1.1 Version Control and Documentation
+- **Implement Semantic Versioning**: Update to v2.0.0 to reflect breaking changes
+- **Commit Message Convention**: Adopt Conventional Commits standard
+- **Enhanced Documentation**:
+  - Create CONTRIBUTING.md with development guidelines
+  - Add INSTALL.md with detailed installation instructions
+  - Document theme customization options
+  - Create a style guide for the typography system
+
+#### 1.2 Build System Modernization
+- **Replace Shell Scripts**: Implement Node.js-based build system
+- **Package.json Setup**:
+  ```json
+  {
+    "scripts": {
+      "build": "npm run build:less && npm run build:assets && npm run build:package",
+      "build:less": "lessc jlmTheme/styles/index.less jlmTheme/styles/compiled.css",
+      "build:assets": "node scripts/copy-assets.js",
+      "build:package": "node scripts/create-package.js",
+      "watch": "npm-watch",
+      "lint": "stylelint 'jlmTheme/styles/**/*.less'",
+      "test": "npm run lint"
+    }
+  }
+  ```
+- **Automated Release Process**: GitHub Actions for creating releases
+
+#### 1.3 Code Quality and Testing
+- **Linting Configuration**:
+  - Add .stylelintrc for LESS/CSS linting
+  - Configure EditorConfig for consistent formatting
+- **Visual Regression Testing**: 
+  - Implement Percy or similar for UI testing
+  - Create test pages for major components
+- **Compatibility Matrix**: Document and test against OJS versions
+
+### Phase 2: Architecture and Performance (Weeks 3-4)
+
+#### 2.1 Font Loading Optimization
+- **Font Loading Strategy**:
+  ```less
+  // Implement font-display: swap for better performance
+  @font-face {
+    font-family: "JLMText";
+    font-display: swap;
+    // ... rest of font definition
+  }
+  ```
+- **Subset Fonts**: Create Latin-only subsets for faster initial load
+- **Preload Critical Fonts**: Add link preload tags for primary fonts
+- **Font Loading API**: Implement progressive font loading
+
+#### 2.2 LESS Architecture Refactoring
+- **Variable Organization**:
+  ```less
+  // variables.less restructuring
+  // 1. Colors
+  @color-primary: #000;
+  @color-secondary: #333;
+  
+  // 2. Typography
+  @font-size-base: 16px;
+  @line-height-base: 1.5;
+  
+  // 3. Spacing
+  @spacing-unit: 8px;
+  @spacing-small: @spacing-unit;
+  @spacing-medium: @spacing-unit * 2;
+  ```
+- **Mixin Library**: Create reusable mixins for common patterns
+- **Component Isolation**: Better separation of concerns
+
+#### 2.3 Responsive Enhancement
+- **Mobile-First Refactoring**: Ensure all components work well on mobile
+- **Touch Target Optimization**: Improve interactive element sizes
+- **Performance Budget**: Establish and monitor CSS size limits
+
+### Phase 3: Features and Elegance (Weeks 5-6)
+
+#### 3.1 Theme Customization Options
+- **Admin Interface Options**:
+  - Font size controls
+  - Color scheme variants (light/dark mode preparation)
+  - Layout density options
+- **CSS Custom Properties**: Implement for runtime customization
+  ```css
+  :root {
+    --jlm-font-size-base: 16px;
+    --jlm-line-height-base: 1.5;
+    --jlm-color-primary: #000;
+  }
+  ```
+
+#### 3.2 Accessibility Improvements
+- **WCAG 2.1 AA Compliance**:
+  - Ensure proper color contrast ratios
+  - Add focus indicators for all interactive elements
+  - Implement skip navigation links
+- **Screen Reader Optimization**: Proper ARIA labels and semantic HTML
+- **Keyboard Navigation**: Full keyboard support for all features
+
+#### 3.3 Typography Enhancements
+- **OpenType Features**: Enable advanced typography features
+  ```less
+  .article-content {
+    font-feature-settings: "liga" 1, "kern" 1, "onum" 1;
+    text-rendering: optimizeLegibility;
+  }
+  ```
+- **Responsive Typography**: Implement fluid type scales
+- **Reading Experience**: Optimize line lengths and spacing
+
+### Phase 4: Deployment and Maintenance (Weeks 7-8)
+
+#### 4.1 Deployment Automation
+- **CI/CD Pipeline**:
+  ```yaml
+  # .github/workflows/release.yml
+  name: Release
+  on:
+    push:
+      tags:
+        - 'v*'
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Build theme
+          run: |
+            npm ci
+            npm run build
+        - name: Create release
+          uses: softprops/action-gh-release@v1
+          with:
+            files: jlmTheme.tar.gz
+  ```
+- **Version Bumping**: Automated version updates
+- **Change Log Generation**: Automated from commit messages
+
+#### 4.2 Monitoring and Maintenance
+- **Error Tracking**: Implement client-side error logging
+- **Performance Monitoring**: Track Core Web Vitals
+- **Update Notifications**: System for alerting about theme updates
+
+#### 4.3 Developer Experience
+- **Development Environment**:
+  - Docker setup for consistent development
+  - Hot reload for LESS changes
+  - Style guide with live examples
+- **Testing Fixtures**: Sample content for testing
+- **Migration Guides**: For upgrading from older versions
+
+## Implementation Timeline
+
+### Month 1
+- Week 1-2: Foundation and Stability
+- Week 3-4: Architecture and Performance
+
+### Month 2
+- Week 5-6: Features and Elegance
+- Week 7-8: Deployment and Maintenance
+
+## Success Metrics
+
+1. **Performance**:
+   - Page load time < 3 seconds on 3G
+   - CSS file size < 100KB (minified + gzipped)
+   - Font loading complete < 2 seconds
+
+2. **Quality**:
+   - 0 linting errors
+   - 100% keyboard navigable
+   - WCAG 2.1 AA compliant
+
+3. **Developer Experience**:
+   - Build time < 10 seconds
+   - Clear documentation
+   - Automated release process
+
+4. **User Satisfaction**:
+   - Improved readability scores
+   - Positive accessibility audit
+   - Faster perceived performance
+
+## Risk Mitigation
+
+1. **OJS Compatibility**: Maintain compatibility matrix and test against multiple versions
+2. **Breaking Changes**: Use semantic versioning and provide migration guides
+3. **Performance Regression**: Implement performance budgets and monitoring
+4. **Font Licensing**: Ensure all fonts are properly licensed and documented
+
+## Long-term Vision
+
+1. **Theme Framework**: Extract reusable components for other OJS themes
+2. **Plugin Ecosystem**: Create companion plugins for extended functionality
+3. **Community Contribution**: Open source best practices and community engagement
+4. **Internationalization**: Support for RTL languages and locale-specific typography
+
+## Conclusion
+
+This improvement plan transforms the JLM Theme from a functional custom theme into a robust, maintainable, and elegant solution. By focusing on stability, performance, and developer experience, we create a theme that serves both end-users and developers effectively. The phased approach ensures continuous improvement while maintaining backward compatibility and production stability.
+</document_content>
+</document>
+
+<document index="6">
+<source>README.md</source>
+<document_content>
 # JLM theme for OJS 3.x
 
 This is a child theme for [OJS 3.x](https://openjournalsystems.com/) (Open Journal Systems). It’s work-in-progress.
@@ -424,265 +1143,324 @@ The fonts are licensed under the [OFL](https://scripts.sil.org/OFL) license.
 - [Adam Twardoch](https://github.com/twardoch/), @twardoch)
 - Nate Wright, @NateWr ([PKP](https://pkp.sfu.ca/))
 - Stefan Weil, @stweil ([UB Mannheim](https://www.bib.uni-mannheim.de/))
-</file>
 
-<file path="jlmTheme/assets/ojs-logo.svg">
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="315" height="215" viewBox="-5 -5 310 200" xmlns="http://www.w3.org/2000/svg">
-  <path d="M77.6 156.8C22.8 156.8 0 114.2 0 78.2 0 45.8 23.6 0 78.8 0c45 0 78.6 28.4 78.6 75 0 44.8-31.6 81.8-79.8 81.8zm5.4-7.6c18 0 55.2-10.4 55.2-68.6 0-48-29.2-73.8-60.8-73.8C44 6.8 19 28.8 19 72.6c0 46.6 28 76.6 64 76.6zm119-91.6V103c0 30.6 0 42.3-6 55.8-4.1 9.4-13 18.3-29.1 28.9a82.2 82.2 0 01-7.8 4.7c-.4.2-.8.4-1.4.4-.6 0-1.4-.4-1.4-1.1 0-1.2 1-1.7 2.8-2.9 2.4-1.3 5.2-3.6 7-5.3 13-12.4 19.2-22.5 19.2-71.2V57.6c0-29.5 0-34.8-.4-40.8-.4-6.4-2-9.5-8.6-10.8-1.6-.4-4.4-.6-6.2-.6-1.4 0-2.2-.5-2.2-1.3 0-.7.8-1.3 3-1.3 9 0 21.8.6 22.8.6s13.6-.6 19.6-.6c2.2 0 3.2.4 3.2 1.5 0 .8-1 1.1-2.2 1.1-1.4 0-3 .2-4.8.4-5.4.6-6.6 4.4-7 11-.4 6-.4 11.3-.4 40.8zm50.8 99.2c-9.4 0-18.6-1.4-26.8-5.4-2.8-1.4-3-2.2-3-7.6 0-10 .8-18 1-21.2.2-2.2.6-3.2 1.6-3.2 1.2 0 1.4.6 1.4 2.2 0 1.8 0 4.6.6 7.4 3 14.8 16.2 20.4 29.6 20.4 19.2 0 28.6-13.8 28.6-26.6 0-13.8-5.8-21.8-23-36l-9-7.4c-21.2-17.4-26-29.8-26-43.4 0-21.4 16-36 41.4-36 7.8 0 13.6.8 18.6 2 3.8.8 5.4 1 7 1 1.6 0 2 .4 2 1.4 0 1-.8 7.6-.8 21.2 0 3.2-.4 4.6-1.4 4.6-1.2 0-1.4-1-1.6-2.6-.2-2.4-1.4-7.8-2.6-10-1.2-2.2-6.6-10.6-25-10.6-13.8 0-24.6 8.6-24.6 23.2 0 11.4 5.2 18.6 24.4 33.6l5.6 4.4c23.6 18.6 29.2 31 29.2 47 0 8.2-3.2 23.4-17 33.2-8.6 6-19.4 8.4-30.2 8.4z"/>
-</svg>
-</file>
+</document_content>
+</document>
 
-<file path="jlmTheme/locale/en_US/locale.xml">
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<document index="7">
+<source>REFACTOR_FILELIST.txt</source>
+<document_content>
+4200	./jlmTheme.tar.gz
+304	./jlmTheme/fonts/CharisSILCompact/CharisSILCompact-BoldItalic.woff2
+297	./jlmTheme/fonts/CharisSILCompact/CharisSILCompact-Italic.woff2
+276	./jlmTheme/fonts/CharisSILCompact/CharisSILCompact.woff2
+273	./jlmTheme/fonts/CharisSILCompact/CharisSILCompact-Bold.woff2
+162	./jlmTheme/fonts/fontawesome-webfont.eot
+162	./jlmTheme/fonts/fontawesome-webfont.ttf
+111	./llms.txt
+101	./jlmTheme/fonts/Langfair/Langfair-Sub555BoldItalic.woff2
+100	./jlmTheme/fonts/Langfair/Langfair-Sub456BoldItalic.woff2
+100	./jlmTheme/fonts/Langfair/Langfair-Sub456Italic.woff2
+99	./jlmTheme/fonts/Langfair/Langfair-Sub555Italic.woff2
+97	./jlmTheme/fonts/Langfair/Langfair-Head10BoldItalic.woff2
+97	./jlmTheme/fonts/Langfair/Langfair-Head40BoldItalic.woff2
+97	./jlmTheme/fonts/Langfair/Langfair-Head50BoldItalic.woff2
+96	./jlmTheme/fonts/Langfair/Langfair-Sub456.woff2
+96	./jlmTheme/fonts/Langfair/Langfair-Sub555Bold.woff2
+96	./jlmTheme/fonts/Langfair/Langfair-Sub456Bold.woff2
+96	./jlmTheme/fonts/fontawesome-webfont.woff
+95	./jlmTheme/fonts/Langfair/Langfair-Head10Bold.woff2
+95	./jlmTheme/fonts/Langfair/Langfair-Head10Italic.woff2
+95	./jlmTheme/fonts/Langfair/Langfair-Sub555.woff2
+94	./jlmTheme/fonts/Langfair/Langfair-Head50Italic.woff2
+94	./jlmTheme/fonts/Langfair/Langfair-Head40Italic.woff2
+94	./jlmTheme/fonts/Langfair/Langfair-Head50Bold.woff2
+93	./jlmTheme/fonts/Langfair/Langfair-Head40Bold.woff2
+91	./jlmTheme/fonts/Langfair/Langfair-Head10.woff2
+90	./jlmTheme/fonts/Langfair/Langfair-Head50.woff2
+89	./jlmTheme/fonts/Langfair/Langfair-Head40.woff2
+75	./jlmTheme/fonts/fontawesome-webfont.woff2
+64	./jlmTheme/assets/jlm-head-back.png
+56	./jlmTheme/fonts/CharletSLS/CharletSLS-Bold.woff2
+55	./jlmTheme/fonts/CharletSLXS/CharletSLXS-Regular.woff2
+54	./jlmTheme/fonts/CharletSL/CharletSL-Light.woff2
+54	./jlmTheme/fonts/CharletSLS/CharletSLS-Regular.woff2
+54	./jlmTheme/fonts/CharletSL/CharletSL-Medium.woff2
+53	./jlmTheme/fonts/CharletSL/CharletSL-Semibold.woff2
+53	./jlmTheme/fonts/CharletSL/CharletSL-Bold.woff2
+52	./jlmTheme/fonts/CharletSL/CharletSL-Regular.woff2
+43	./jlmTheme/fonts/CharletSL/CharletSL-SemiboldItalic.woff2
+42	./jlmTheme/fonts/CharletSL/CharletSL-LightItalic.woff2
+42	./jlmTheme/fonts/CharletSL/CharletSL-BoldItalic.woff2
+42	./jlmTheme/fonts/CharletSL/CharletSL-MediumItalic.woff2
+41	./jlmTheme/fonts/CharletSL/CharletSL-Italic.woff2
+38	./jlmTheme/fonts/Academmunicons/Academmunicons-RoundNormal.woff2
+37	./jlmTheme/fonts/IBMPlexMono/IBMPlexMono-Text.woff2
+23	./jlmTheme/fonts/index.less
+16	./jlmTheme/templates/frontend/objects/article_details.tpl
+15	./LICENSE
+8	./PLAN.md
+6	./jlmTheme/fonts/JLMMonogram/JLMMonogram.woff2
+5	./jlmTheme/styles/objects/article_details.less
+5	./jlmTheme/styles/body.less
+4	./jlmTheme/templates/frontend/objects/issue_toc.tpl
+4	./jlmTheme/JLMThemePlugin.inc.php
+4	./jlmTheme/styles/variables.less
+4	./jlmTheme/styles/head.less
+4	./TODO.md
+3	./jlmTheme/fonts/JLMMonogram/JLMLogo.woff2
+3	./jlmTheme/styles/main.less
+3	./jlmTheme/styles/pages/viewPdf.less
+2	./jlmTheme/styles/components.less
+2	./CHANGELOG.md
 
-<!--
-  * plugins/themes/jlmTheme/locale/en_US/locale.xml
-  *
-  * Copyright (c) 2020 Adam Twardoch
-  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
-  *
-  * Localization strings
-  -->
+</document_content>
+</document>
 
-<locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.jlmTheme.name">JLM Theme</message>
-	<message key="plugins.themes.jlmTheme.description">OJS theme for Journal of Language Modelling.</message>
-</locale>
-</file>
+<document index="8">
+<source>TODO.md</source>
+<document_content>
+# TODO List for JLM Theme
 
-<file path="jlmTheme/styles/pages/submissions.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/pages/submissions.less
+## High Priority
+
+### Version Control & Documentation
+- [ ] Update version.xml to v2.0.0 with current date
+- [ ] Implement Conventional Commits standard for all future commits
+- [ ] Create CONTRIBUTING.md with development guidelines
+- [ ] Create INSTALL.md with step-by-step installation instructions
+- [ ] Add inline documentation to JLMThemePlugin.inc.php
+- [ ] Document all LESS variables and their usage
+
+### Build System
+- [ ] Create package.json with build scripts
+- [ ] Replace ziptheme.command with Node.js build script
+- [ ] Set up LESS compilation with source maps
+- [ ] Implement CSS minification in build process
+- [ ] Add npm scripts for watch mode
+- [ ] Create automated tarball generation script
+
+### Code Quality
+- [ ] Add .editorconfig file for consistent formatting
+- [ ] Configure stylelint for LESS files
+- [ ] Add .gitignore entries for build artifacts
+- [ ] Fix mixed indentation in LESS files
+- [ ] Remove commented-out code from JLMThemePlugin.inc.php
+- [ ] Consolidate duplicate font-face declarations
+
+## Medium Priority
+
+### Performance Optimization
+- [ ] Add font-display: swap to all @font-face rules
+- [ ] Create Latin subset versions of fonts
+- [ ] Implement font preloading for critical fonts
+- [ ] Optimize font loading order
+- [ ] Reduce number of font weights loaded by default
+- [ ] Minify SVG assets
+
+### Theme Features
+- [ ] Add dark mode support preparation
+- [ ] Create theme options for font size adjustment
+- [ ] Implement print stylesheet
+- [ ] Add RTL (right-to-left) language support
+- [ ] Create custom 404 and error pages
+- [ ] Add breadcrumb navigation
+
+### Testing & Compatibility
+- [ ] Test compatibility with OJS 3.2.x
+- [ ] Test compatibility with OJS 3.3.x
+- [ ] Create visual regression test suite
+- [ ] Document minimum browser requirements
+- [ ] Test with screen readers
+- [ ] Validate HTML output
+
+## Low Priority
+
+### Developer Experience
+- [ ] Create development Docker container
+- [ ] Add hot reload for LESS changes
+- [ ] Create component showcase/style guide
+- [ ] Write JSDocs for any JavaScript
+- [ ] Add source code comments
+- [ ] Create theme development tutorial
+
+### Accessibility
+- [ ] Audit color contrast ratios
+- [ ] Add skip navigation links
+- [ ] Ensure all interactive elements have focus states
+- [ ] Add ARIA labels where needed
+- [ ] Test keyboard navigation flow
+- [ ] Create accessibility statement
+
+### Maintenance
+- [ ] Set up GitHub Actions for automated releases
+- [ ] Create issue templates
+- [ ] Add pull request template
+- [ ] Set up automated dependency updates
+- [ ] Create security policy
+- [ ] Add code of conduct
+
+## Future Enhancements
+
+### Advanced Features
+- [ ] Create child theme generator
+- [ ] Add theme customizer UI
+- [ ] Implement CSS custom properties
+- [ ] Create plugin API for theme extensions
+- [ ] Add advanced typography controls
+- [ ] Create theme update notification system
+
+### Community
+- [ ] Create demo site
+- [ ] Write blog post about theme development
+- [ ] Create video tutorials
+- [ ] Set up community forum/discussions
+- [ ] Translate theme to other languages
+- [ ] Create theme marketplace listing
+
+## Bug Fixes
+
+### Known Issues
+- [ ] Fix duplicate removeStyle calls in JLMThemePlugin.inc.php (lines 53-57)
+- [ ] Resolve font path issues in production environments
+- [ ] Fix responsive layout issues on tablet devices
+- [ ] Address console warnings about missing font files
+- [ ] Fix CSS specificity conflicts with parent theme
+- [ ] Resolve jQuery dependency loading order
+
+## Notes
+
+- Tasks are ordered by priority within each section
+- Each task should result in a meaningful commit
+- Update CHANGELOG.md after completing each section
+- Test thoroughly after each major change
+- Keep backward compatibility when possible
+</document_content>
+</document>
+
+<document index="9">
+<source>jlmTheme/JLMThemePlugin.inc.php</source>
+<document_content>
+<?php
+
+/**
+ * @file plugins/themes/default/JLMThemePlugin.inc.php
  *
  * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @brief Styles applying to submissions page
- * @link templates/frontend/pages/submissions.tpl
+ * @class JLMThemePlugin
+ * @ingroup plugins_themes_jlmTheme
+ *
+ * @brief JLM theme
  */
-.page_submissions {
+import('lib.pkp.classes.plugins.ThemePlugin');
 
-	.fa-check:before {
-		position: relative;
-		right   : 48px;
-	}
+class JLMThemePlugin extends ThemePlugin {
+	/**
+	 * Initialize the theme's styles, scripts and hooks. This is only run for
+	 * the currently active theme.
+	 *
+	 * @return null
+	 */
+	public function init() {
 
-	font-size: @font-mid  !important;
+		// Initialize the parent theme
+		$this->setParent('defaultthemeplugin');
 
-	p {
-		font-size: @font-mid  !important;
-	}
+		// Start with a fresh array of additionalLessVariables so that we can
+		// ignore those added by the parent theme. This gets rid of @font
+		// variable overrides from the typography option
+		$additionalLessVariables = array();
 
-	.submission_sections,
-	.submission_checklist {
-
-		ul {
-			font-size: @font-mid  !important;
+		// Remove the typography options of the parent theme.
+		// `removeOption` was introduced in OJS 3.0.2
+		if (method_exists($this, 'removeOption')) {
+			$this->removeOption('typography');
+			$this->removeOption('accentColour');
+			$this->removeOption('baseColour');
+			$this->removeOption('useHomepageImageAsHeader');
 		}
 
-		li {
-			position     : relative;
-			border-bottom: none;
+		// Dequeue any fonts loaded by parent theme
+		// `removeStyle` was introduced in OJS 3.0.2
+		if (method_exists($this, 'removeStyle')) {
+			$this->removeStyle('fontNotoSans');
+			$this->removeStyle('fontNotoSerif');
+			$this->removeStyle('fontNotoSansNotoSerif');
+			$this->removeStyle('fontLato');
+			$this->removeStyle('fontLora');
+			$this->removeStyle('fontLoraOpenSans');
+			$this->removeStyle('fontNotoSerif');
+			$this->removeStyle('fontNotoSerif');
+			$this->removeStyle('fontNotoSerif');
+			$this->removeStyle('fontNotoSerif');
+			$this->removeStyle('fontNotoSerif');
 		}
+
+		$this->modifyStyle('stylesheet', array('addLessVariables' => join('', $additionalLessVariables)));
+
+		// Load jQuery from a CDN or, if CDNs are disabled, from a local copy.
+		$min = Config::getVar('general', 'enable_minified') ? '.min' : '';
+		$request = Application::getRequest();
+		if (Config::getVar('general', 'enable_cdn')) {
+			$jquery = '//ajax.googleapis.com/ajax/libs/jquery/' . CDN_JQUERY_VERSION . '/jquery' . $min . '.js';
+			$jqueryUI = '//ajax.googleapis.com/ajax/libs/jqueryui/' . CDN_JQUERY_UI_VERSION . '/jquery-ui' . $min . '.js';
+		} else {
+			// Use OJS's built-in jQuery files
+			$jquery = $request->getBaseUrl() . '/lib/pkp/lib/vendor/components/jquery/jquery' . $min . '.js';
+			$jqueryUI = $request->getBaseUrl() . '/lib/pkp/lib/vendor/components/jqueryui/jquery-ui' . $min . '.js';
+		}
+		// Use an empty `baseUrl` argument to prevent the theme from looking for
+		// the files within the theme directory
+		$this->addScript('jQuery', $jquery, array('baseUrl' => ''));
+		$this->addScript('jQueryUI', $jqueryUI, array('baseUrl' => ''));
+		$this->addScript('jQueryTagIt', $request->getBaseUrl() . '/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js', array('baseUrl' => ''));
+
+		// Load Bootstrap
+		//$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
+
+		// Determine the path to the fonts
+		$this->addStyle('jlm-fonts', 'fonts/index.less');
+		$fontPath = Application::getRequest()->getBaseUrl() . '/' . $this->getPluginPath() . '/fonts/';
+		$this->modifyStyle('jlm-fonts', ['addLessVariables' => '@font-path:"' . $fontPath . '";']);
+		//$this->modifyStyle('stylesheet', array('addLess' => array('fonts/index.less')));
+
+		// Add custom styles
+		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
+		//$this->addStyle('jlm-styles', 'styles/jlm/index.less');
+
+		// Add navigation menu areas for this theme
+		$this->addMenuArea(array('primary', 'user'));
 	}
 
-	.submission_checklist {
-
-		li {
-			padding: 0 0 0 @base;
-		}
+	/**
+	 * Get the display name of this plugin
+	 * @return string
+	 */
+	function getDisplayName() {
+		return __('plugins.themes.jlmTheme.name');
 	}
 
+	/**
+	 * Get the description of this plugin
+	 * @return string
+	 */
+	function getDescription() {
+		return __('plugins.themes.jlmTheme.description');
+	}
 }
-</file>
 
-<file path="jlmTheme/templates/frontend/objects/issue_toc.tpl">
-{**
- * templates/frontend/objects/issue_toc.tpl
- *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @brief View of an Issue which displays a full table of contents.
- *
- * @uses $issue Issue The issue
- * @uses $issueTitle string Title of the issue. May be empty
- * @uses $issueSeries string Vol/No/Year string for the issue
- * @uses $issueGalleys array Galleys for the entire issue
- * @uses $hasAccess bool Can this user access galleys for this context?
- * @uses $publishedSubmissions array Lists of articles published in this issue
- *   sorted by section.
- * @uses $primaryGenreIds array List of file genre ids for primary file types
- * @uses $heading string HTML heading element, default: h2
- *}
-{if !$heading}
-	{assign var="heading" value="h2"}
-{/if}
-{assign var="articleHeading" value="h3"}
-{if $heading == "h3"}
-	{assign var="articleHeading" value="h4"}
-{elseif $heading == "h4"}
-	{assign var="articleHeading" value="h5"}
-{elseif $heading == "h5"}
-	{assign var="articleHeading" value="h6"}
-{/if}
-<div class="obj_issue_toc">
+?>
 
-	{* Indicate if this is only a preview *}
-	{if !$issue->getPublished()}
-		{include file="frontend/components/notification.tpl" type="warning" messageKey="editor.issues.preview"}
-	{/if}
+</document_content>
+</document>
 
-	{* Issue introduction area above articles *}
-	<div class="heading">
-
-		{* Issue cover image *}
-		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
-		{if $issueCover}
-			<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
-				{capture assign="defaultAltText"}
-					{translate key="issue.viewIssueIdentification" identification=$issue->getIssueIdentification()|escape}
-				{/capture}
-				<img src="{$issueCover|escape}" alt="{$issue->getLocalizedCoverImageAltText()|escape|default:$defaultAltText}">
-			</a>
-		{/if}
-
-		{* Description *}
-		{if $issue->hasDescription()}
-			<div class="description">
-				{$issue->getLocalizedDescription()|strip_unsafe_html}
-			</div>
-		{/if}
-
-		{* PUb IDs (eg - DOI) *}
-		{foreach from=$pubIdPlugins item=pubIdPlugin}
-			{assign var=pubId value=$issue->getStoredPubId($pubIdPlugin->getPubIdType())}
-			{if $pubId}
-				{assign var="doiUrl" value=$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
-				<div class="pub_id {$pubIdPlugin->getPubIdType()|escape}">
-					<span class="type">
-						{$pubIdPlugin->getPubIdDisplayType()|escape}:
-					</span>
-					<span class="id">
-						{if $doiUrl}
-							<a href="{$doiUrl|escape}">
-								{$doiUrl}
-							</a>
-						{else}
-							{$pubId}
-						{/if}
-					</span>
-				</div>
-			{/if}
-		{/foreach}
-
-		{* Published date *}
-		{if $issue->getDatePublished()}
-			<div class="published">
-				<span class="label">
-					{translate key="submissions.published"}:
-				</span>
-				<span class="value">
-					{$issue->getDatePublished()|date_format:$dateFormatShort}
-				</span>
-			</div>
-		{/if}
-	</div>
-
-
-
-	{* Articles *}
-	<div class="sections">
-	{foreach name=sections from=$publishedSubmissions item=section}
-		<div class="section">
-		{if $section.articles}
-			{if $section.title}
-				<{$heading}>
-					{$section.title|escape}
-				</{$heading}>
-			{/if}
-			<ul class="cmp_article_list articles">
-				{foreach from=$section.articles item=article}
-					<li>
-						{include file="frontend/objects/article_summary.tpl" heading=$articleHeading}
-					</li>
-				{/foreach}
-			</ul>
-		{/if}
-		</div>
-	{/foreach}
-	</div><!-- .sections -->
-
-	{* Full-issue galleys *}
-	{if $issueGalleys}
-		<div class="item galleys_full">
-			<{$heading} id="issueTocGalleyLabel" class="label">
-				{translate key="issue.fullIssue"}
-			</{$heading}>
-			<ul class="value galleys_links">
-				{foreach from=$issueGalleys item=galley}
-					<li>
-						{include file="frontend/objects/galley_link.tpl" parent=$issue labelledBy="issueTocGalleyLabel" purchaseFee=$currentJournal->getData('purchaseIssueFee') purchaseCurrency=$currentJournal->getData('currency')}
-					</li>
-				{/foreach}
-			</ul>
-		</div>
-	{/if}
-
-</div>
-</file>
-
-<file path=".gitignore">
-php/
-
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-</file>
-
-<file path="ziptheme.command">
-#!/usr/bin/env bash
-dir=${0%/*}
-if [ "$dir" = "$0" ]; then dir="."; fi
-cd "$dir" || exit
-rm jlmTheme.tar.gz
-tar -zcv --exclude='.DS_Store' -f jlmTheme.tar.gz jlmTheme
-</file>
-
-<file path="jlmTheme/assets/ipipan-logo.svg">
-<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.2 115.2"><path d="M176 109.2l-18.3-21.1v21.7h-6.8V84.7l6.3-7.5 12 13.5V77.2h6.8zm-32 .6h-6.3v-4.6h-12l6-8h6V85.8l-18.8 24V99.3L137 77.2h7zm-31.1-29.9c3.1 3 4.3 6.8 3.7 11.6a11.2 11.2 0 01-4.1 7.9 16.4 16.4 0 01-9.3 2.3v-8a14.5 14.5 0 004.2-.4l.4-.2c1.9-1.2 2.4-2.8 1.6-5a5.7 5.7 0 00-1.1-1.6 2.4 2.4 0 00-.9-.8c-.8-.5-2.6-.6-5.6-.6v24.7H95V84.7l6.5-7.5c4.1 0 6.9.2 8.2.7a8.3 8.3 0 013.2 2zm111.4-49.5V7a3.7 3.7 0 00-2.6-3.7h-32.4a3.6 3.6 0 00-3.7 2.7 2.3 2.3 0 00-.2 1.2v23.2a3.6 3.6 0 002.6 3.7h32.4a3.7 3.7 0 003.7-2.6 6.9 6.9 0 00.2-1.1zm0 77.8V41.4a3.6 3.6 0 00-2.6-3.7h-.3l-1-.2h-31.1a3.6 3.6 0 00-3.7 2.7 2.7 2.7 0 00-.2 1.3v66.8a3.6 3.6 0 002.6 3.7h32.4a3.6 3.6 0 003.7-2.7 4.3 4.3 0 00.2-1.1zm-81.8-70.8H85.7v-3.1h56.8a1.3 1.3 0 011.5 1.5.2.2 0 010 .3c0 .9-.5 1.3-1.5 1.3zm38.9 27.2V7a3.6 3.6 0 00-2.6-3.7H50.7A3.6 3.6 0 0047 5.8a2.3 2.3 0 00-.2 1.2v101.2a3.6 3.6 0 002.6 3.7h.1l1.2.2h31.1a3.6 3.6 0 003.7-2.7 4.3 4.3 0 00.2-1.2V68.5h91.8a3.5 3.5 0 003.7-2.6 2.5 2.5 0 00.2-1.3zM42.9 30.4V7a3.7 3.7 0 00-2.7-3.7h-.1l-1.2-.2H7.8a3.7 3.7 0 00-3.7 2.7A4.3 4.3 0 003.9 7v23.4a3.6 3.6 0 002.7 3.7l1.2.2h31.1a3.6 3.6 0 003.7-2.6 3.5 3.5 0 00.3-1.3zm0 77.8V41.4a3.6 3.6 0 00-2.7-3.7h-.1a2.7 2.7 0 00-1.2-.3H7.8a3.7 3.7 0 00-3.7 2.7 5.1 5.1 0 00-.2 1.3v66.8a3.7 3.7 0 002.7 3.7l1.2.2h31.1a3.6 3.6 0 003.7-2.7 2.4 2.4 0 00.3-1.2zm185.3 0a6.3 6.3 0 01-4 6.3 6 6 0 01-3 .7h-39.8V71.7H89.6v43.5H7a6.3 6.3 0 01-6.3-4 6.6 6.6 0 01-.7-3V7A6.3 6.3 0 014 .7 6.6 6.6 0 017 0h214.2a6.3 6.3 0 016.3 4 6.6 6.6 0 01.7 3z"/></svg>
-</file>
-
-<file path="jlmTheme/fonts/index.less">
+<document index="10">
+<source>jlmTheme/fonts/index.less</source>
+<document_content>
 /*!
  * @file plugins/themes/jlmTheme/fonts/index.less
  *
@@ -1390,413 +2168,71 @@ tar -zcv --exclude='.DS_Store' -f jlmTheme.tar.gz jlmTheme
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
         U+FEFF, U+FFFD;
 }
-</file>
 
-<file path="jlmTheme/styles/objects/article_summary.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/objects/article_summary.less
+
+</document_content>
+</document>
+
+<document index="11">
+<source>jlmTheme/index.php</source>
+<document_content>
+<?php
+
+/**
+ * @defgroup plugins_themes_jlmTheme JLM theme plugin
+ */
+
+/**
+ * @file plugins/themes/jlmTheme/index.php
  *
  * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @brief Styles applying to a summary view of an article for lists
- * @link templates/frontend/objects/article_summary.tpl
- */
-.obj_article_summary {
-	font-family: @font-text;
-
-	.title {
-		font-family: @font-text;
-		font-size: @font-bump;
-		font-weight: @normal;
-		letter-spacing: normal;
-		line-height: @line-bump;
-		text-transform: none;
-	}
-
-	.subtitle {
-		font-family: @font-text;
-		font-size: @font-base;
-	}
-
-	.meta {
-		font-size: @font-mid;
-		.authors {
-			font-style: italic;
-			}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/objects/galley_link.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/objects/galley_link.less
+ * @ingroup plugins_themes_jlmTheme
+ * @brief Wrapper for JLM theme plugin.
  *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to a galley link button
- * @link templates/frontend/objects/galley_link.tpl
- */
-.obj_galley_link {
-	&:extend(.cmp_manuscript_button all);
-
-	&.restricted {
-		border-color: @bg-shade;
-		background: @bg-shade;
-		color: @text-light;
-
-		&:before {
-			color: @text-light;
-		}
-
-		&:hover,
-		&:focus {
-			background: @text-light;
-		}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/objects/issue_summary.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/objects/issue_summary.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to an issue summary view
- * @link templates/frontend/objects/issue_summary.tpl
- */
-.obj_issue_summary {
-
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	padding      : 0 0 @half 0;
-
-	.series {
-		font-family: @font-heading;
-		font-weight: @bold;
-	}
-
-	.description {
-		font-family: @font-text;
-		font-size  : @font-bump;
-
-		p {
-			font-family: @font-text;
-			font-size  : @font-bump;
-		}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/pages/announcement.less">
-/*!
- * @file  plugins/themes/jlmTheme/styles/pages/announcement.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to the announcement page
- * @link templates/frontend/pages/announcement.tpl
- */
-.page_announcement {
-	margin-top: @triple;
-}
-</file>
-
-<file path="jlmTheme/styles/pages/contact.less">
-/*!
- * @file  plugins/themes/jlmTheme/styles/pages/contact.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to the contact page
- * @link templates/frontend/pages/contact.tpl
- */
-.page_contact {
-
-    .address,
-    .phone,
-    .email {
-        margin-top: @base;
-        margin-bottom: @base;
-        font-size: @font-base;
-    }
-
-}
-</file>
-
-<file path="jlmTheme/styles/pages/issueArchive.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/pages/issueArchive.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to issue archive page
- * @link templates/frontend/pages/issueArchive.tpl
- */
-.page_issue_archive {
-
-	.issues_archive {
-		&:extend(.pkp_unstyled_list);
-		margin-left: -@base;
-		margin-right: -@base;
-		border-top: @bg-border;
-
-		> li {
-			padding-top: 0;
-			padding-right: @base;
-			padding-bottom: @base;
-			padding-left: @base;
-			border-bottom: @bg-border;
-		}
-
-		@media(min-width: @screen-phone) {
-			margin-left: -@double;
-			margin-right: -@double;
-
-			> li {
-				padding-left: @double;
-				padding-right: @double;
-			}
-		}
-
-		@media(min-width: @screen-desktop) {
-			margin-left: -@triple;
-			margin-right: -@triple;
-
-			> li {
-				padding-left: @triple;
-				padding-right: @triple;
-			}
-		}
-	}
-
-	.issues_archive,
-	.issues_archive > li {
-		border: none;
-	}
-
-	.cmp_pagination {
-		margin-top: @double;
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/pages/search.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/pages/search.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to the search form and results page
- * @link templates/frontend/pages/search.tpl
- */
-.page_search {
-
-	.search_advanced {
-		margin-top: @base;
-
-		legend {
-			font-family: @font-heading;
-			font-size: 13px;
-			font-weight: @bold;
-			text-transform: uppercase;
-		}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/pages/viewPdf.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/pages/viewPdf.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to the lightweight page for viewing PDFs
- * @link templates/frontend/pages/viewPdf.tpl
  */
 
- .header_view {
-	z-index: 2;
-	position: relative;
-	background: @bg-base;
-	color: @text-bg-base;
+ini_set('display_errors', 0); // TODO
+error_reporting(E_ERROR); // TODO
 
-	&:hover,
-	&:focus {
-		background: @bg-base;
-		color: @text-bg-base;
-		text-decoration: underline;
-	}
+require_once('JLMThemePlugin.inc.php');
 
-	a {
-		line-height: @pdf-base;
-		text-decoration: none;
-	}
+return new JLMThemePlugin();
 
-	.return {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: @pdf-base;
-		height: @pdf-base;
-		line-height: @pdf-base;
-		background: @bg-base;
-		color: @text-bg-base;
-		text-align: center;
+?>
 
-		&:before {
-			.fa();
-			content: @fa-var-arrow-left;
-		}
+</document_content>
+</document>
 
-		&:hover,
-		&:focus {
-			background: @accent;
-			color: #fff;
-		}
-	}
+<document index="12">
+<source>jlmTheme/locale/en_US/locale.xml</source>
+<document_content>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
-	.title {
-		display: block;
-		padding-left: @double;
-		padding-left: @pdf-base + @base;
-		max-width: 100%;
-		overflow-x: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		font-size: @font-sml;
-		color: @text-bg-base;
-		font-family: @font-text;
-		font-style: italic;
+<!--
+  * plugins/themes/jlmTheme/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2020 Adam Twardoch
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings
+  -->
 
-		&:hover,
-		&:focus {
-			background: @bg-base;
-		}
-	}
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.jlmTheme.name">JLM Theme</message>
+	<message key="plugins.themes.jlmTheme.description">OJS theme for Journal of Language Modelling.</message>
+</locale>
 
-	.download {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: @pdf-base;
-		background: @accent;
-		color: @text-bg-base;
-		text-align: center;
-		font-weight: @bold;
+</document_content>
+</document>
 
-		&:hover,
-		&:focus {
-			background: @bg;
-			color: @primary;
-		}
-
-		&:before {
-			.fa();
-			content: @fa-var-download;
-			margin-right: 4px;
-		}
-
-		.label {
-			display: none;
-		}
-	}
-
-	@media(min-width: @screen-tablet) {
-
-		.title {
-			font-size: @font-base;
-		}
-
-		.download {
-			width: auto;
-			padding: 0 @double;
-
-			.label {
-				display: inline-block;
-			}
-
-			// Prevent duplicate download labels once the regular label is visible
-			.pkp_screen_reader {
-				display: none;
-			}
-		}
-	}
-}
-
-.galley_view {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow-y: hidden;
-
-	iframe {
-		width: 100%;
-		height: 100%;
-		padding-top: @pdf-base;
-		border: none;
-	}
-
-	&.galley_view_with_notice {
-
-		iframe {
-			padding-top: @pdf-base * 3;
-		}
-	}
-
-	.galley_view_notice {
-		position: absolute;
-		top: @pdf-base;
-		width: 100%;
-		height: @pdf-base * 2;
-		background: @no;
-	}
-
-	.galley_view_notice_message {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 100%;
-		transform: translate(-50%, -50%);
-		color: @text-bg-base;
-		font-weight: @bold;
-		text-align: center;
-
-		a {
-			color: @text-bg-base;
-			text-decoration: underline;
-		}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/body.less">
+<document index="13">
+<source>jlmTheme/styles/body.less</source>
+<document_content>
 /*!
  * @file plugins/themes/jlmTheme/styles/body.less
  *
@@ -2092,9 +2528,163 @@ img {
 .pkp_brand_footer {
 	display: none !important;
 }
-</file>
+</document_content>
+</document>
 
-<file path="jlmTheme/styles/head.less">
+<document index="14">
+<source>jlmTheme/styles/components.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/components.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Reusable components
+ */
+
+// Buttons
+.cmp_manuscript_button {
+	font-family      : @font;
+	font-weight      : @bold;
+	// text-transform: uppercase;
+	background       : @bg-base;
+	color            : @text-bg-base;
+	border           : none;
+	line-height      : @line-sml;
+	padding-top      : @half;
+	padding-bottom   : @half;
+
+	&:hover,
+	&:focus {
+		background: @accent;
+	}
+}
+
+// Breadcrumb navigation
+.cmp_breadcrumbs {
+	padding       : @triple 0;
+	font-family   : @font;
+	font-weight   : @normal;
+	font-style    : normal;
+	font-size     : @font-sml;
+	color         : @text-light;
+	text-transform: none;
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+	}
+
+	>ol {
+		padding  : 0;
+		margin   : 0;
+		font-size: inherit;
+	}
+
+	.current {
+
+		h1 {
+			font-family: @font-heading;
+		}
+	}
+
+	.separator {
+		padding: 0 0.1em;
+		opacity: 0.3;
+	}
+}
+
+// Pagination (eg - issue archive)
+.cmp_pagination {
+	font-family: @font-heading;
+
+	a {
+		font-weight   : @bold;
+		text-transform: uppercase;
+	}
+
+	.prev {
+
+		&:before {
+			content: '‹'; //@fa-var-chevron-left;
+		}
+	}
+
+	.next {
+
+		&:after {
+			content: '›'; // @fa-var-chevron-right;
+		}
+	}
+}
+
+
+// Announcements
+.cmp_announcements {
+	border: none;
+
+	>li {
+		border-bottom: none;
+	}
+
+	.obj_announcement_summary h2,
+	.obj_announcement_summary h3 {
+		font-family: @font-heading;
+		font-size  : @font-header;
+		font-weight: @bold;
+		text-transform: none;
+		letter-spacing: 0;
+	}
+
+	.obj_announcement_summary h4,
+	.date {
+		font-family: @font-heading;
+		font-size  : @font-sml;
+		font-weight: @normal;
+	}
+
+	.read_more {
+		font-family   : @font-heading;
+		font-size     : @font-sml;
+		font-weight   : @normal;
+		text-transform: uppercase;
+		letter-spacing: @sc;
+	}
+
+	.date {
+		font-weight: @normal;
+
+		&:before {
+			color: @accent;
+		}
+	}
+}
+
+.cmp_button_wire {
+	font-size: @font-base;
+}
+
+// List of articles
+.cmp_article_list {
+
+	>li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+}
+</document_content>
+</document>
+
+<document index="15">
+<source>jlmTheme/styles/head.less</source>
+<document_content>
 /*!
  * @file plugins/themes/jlmTheme/styles/head.less
  *
@@ -2326,9 +2916,1326 @@ img {
 		}
 	}
 }
-</file>
+</document_content>
+</document>
 
-<file path="jlmTheme/styles/rtl.less">
+<document index="16">
+<source>jlmTheme/styles/index.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/index.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Base stylesheet for jlmTheme, a child theme of the default theme
+ *
+ */
+
+@import "variables.less";
+@import "body.less";
+@import "main.less";
+@import "head.less";
+@import "components.less";
+@import "sidebar.less";
+@import "pages/indexJournal.less";
+@import "pages/announcement.less";
+@import "pages/issueArchive.less";
+@import "pages/contact.less";
+@import "pages/search.less";
+@import "pages/submissions.less";
+@import "pages/viewPdf.less";
+@import "objects/issue_toc.less";
+@import "objects/issue_summary.less";
+@import "objects/galley_link.less";
+@import "objects/article_summary.less";
+@import "objects/article_details.less";
+@import "rtl.less";
+
+</document_content>
+</document>
+
+<document index="17">
+<source>jlmTheme/styles/main.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/main.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the main content panel
+ */
+
+kbd,
+code,
+tt,
+samp,
+pre {
+	font-family: @font-mono;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: @JLMSans;
+}
+
+input,
+textarea {
+	background-color: #ecedee !important;
+}
+
+/*
+.published {
+	display: none;
+}
+*/
+
+.main_entry {
+	font-family: @font-text;
+	font-size  : @font-bump;
+}
+
+section {
+	max-width: 720px; // TODO
+}
+
+.pkp_structure_main {
+
+	font-family: @font-text;
+
+	h1 {
+		font-family: @font-huge;
+		font-size  : @font-header;
+		line-height: @line-header-responsive;
+		font-weight: @bold;
+		margin-left: @lfbd;
+	}
+
+	h2 {
+		font-family: @font-heading;
+		font-weight: @bold;
+		font-size  : @font-lead;
+		line-height: @line-lead;
+	}
+
+	h3 {
+		font-family   : @font-heading;
+		font-weight   : @normal;
+		letter-spacing: @sc;
+		text-transform: uppercase;
+		font-size     : @font-base;
+		line-height   : @line-base;
+	}
+
+	h4 {
+		font-family: @font-text;
+		font-size  : @font-bump;
+		line-height: @line-bump;
+		font-style : italic;
+		font-weight: @normal;
+	}
+
+	h5 {
+		font-family: @font-small;
+		font-size  : @font-sml;
+		line-height: @line-sml;
+		font-weight: @normal;
+	}
+
+	h6 {
+		font-size  : @font-sml;
+		line-height: @line-sml;
+		font-weight: @normal;
+	}
+
+	h1 {
+		margin: (@double * 2) 0 @double;
+	}
+
+	h2,
+	h3,
+	h4 {
+		margin: @double 0 @base;
+	}
+
+	h5,
+	h6 {
+		margin: @double 0;
+	}
+
+	p {
+		line-height: @line-base-large;
+		font-size  : @font-mid;
+		margin     : 0 0 @base 0;
+		hyphens    : auto;
+		text-align : left;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.page {
+
+		// Titles in pages
+		h1 {
+			margin-top: 0;
+		}
+
+		// Edit link that isn't nested in a section
+		>.cmp_edit_link {
+			float      : right;
+			padding    : @half 0;
+			line-height: @triple;
+		}
+
+		// Count of catalog entries on the current page
+		// used in catalog, category, series and search pages
+		.monograph_count {
+			float    : right;
+			padding  : @base 0;
+			font-size: @font-sml;
+			color    : @text-light;
+		}
+
+		// Description and image for catalog category/series
+		.about_section {
+			.pkp_helpers_clear;
+			color      : @text-light;
+			line-height: @triple;
+
+			.cover {
+				float       : right;
+				width       : 20%;
+				margin-left : 10%;
+				margin-right: 10%;
+
+				img {
+					display: block;
+					margin : 0 auto;
+				}
+			}
+
+			.description p:first-child {
+				margin-top: 0;
+			}
+
+			.description p:last-child {
+				margin-bottom: 0;
+			}
+
+			@media(min-width: @screen-phone) {
+				font-size : @font-bump;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+
+.team {
+	p {
+		font-size: @font-mid;
+	}
+
+	strong {
+		font-size  : @font-bump;
+		font-weight: normal;
+		font-style : italic;
+		margin-right: @half;
+	}
+
+	em {
+		font-family   : @JLMSmall;
+		font-size     : @font-sml;
+		font-weight   : normal;
+		font-style    : normal;
+		text-transform: uppercase;
+		letter-spacing: @sc;
+	}
+}
+
+svg.orcid_icon {
+	display: none !important;
+}
+
+</document_content>
+</document>
+
+<document index="18">
+<source>jlmTheme/styles/objects/article_details.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/objects/article_details.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to a view of an article with all details
+ * @link templates/frontend/objects/article_details.tpl
+ */
+.obj_article_details {
+
+	.citation_display {
+		.value {
+			font-size  : @font-sml;
+			line-height: @line-sml;
+		}
+	}
+
+	.item {
+		@media(min-width: @screen-tablet) {
+			padding: 0 @double @base @double;
+		}
+
+		@media(min-width: @screen-desktop) {
+			padding: 0 @double @base @triple;
+		}
+
+	}
+
+	.page_title {
+		margin-left: -0.08em;
+	}
+
+	.subtitle {
+		font-family: @font;
+	}
+
+	.authors,
+	.doi {
+		font-family: @font-text;
+	}
+
+	.authors {
+		.name {
+			font-weight: @normal;
+			font-style : italic;
+			font-size  : @font-bump;
+		}
+
+		.affiliation {
+			font-size: @font-base;
+		}
+
+		.orcid {
+			font-size: @font-base;
+		}
+	}
+
+	.orcid a,
+	.doi a {
+		color          : @text;
+		text-decoration: none;
+		font-family    : @font-mono;
+		font-size      : @font-base;
+
+		&:hover,
+		&:focus {
+			color          : @primary;
+			text-decoration: underline;
+		}
+	}
+
+	.orcid a {
+		color: @text-light;
+
+		&:before {
+			font-family: 'JLMIcons';
+			content    : '\F04F';
+		}
+	}
+
+	.doi a {
+		&:before {
+			font-family: 'JLMIcons';
+			content    : '\F044';
+		}
+	}
+
+	.authors li {
+		margin-bottom: @double;
+	}
+
+	.main_entry {
+
+		.item {
+
+			.label {
+				margin       : 0 0 0 0;
+				font-family  : @font-heading;
+				font-size    : @font-base;
+				font-weight  : @normal;
+				margin-top   : @base;
+				margin-bottom: 0;
+			}
+
+			&.doi .label {
+				display  : inline;
+				font-size: @font-base;
+			}
+
+			&.keywords .label {
+				display  : block;
+				font-size: @font-base;
+			}
+		}
+
+		.sub_item {
+
+			.label {
+				font-size: @font-base;
+			}
+		}
+	}
+
+	.main_entry {
+
+		.item.doi h2.label {
+			display: none;
+		}
+
+		.item.keywords {
+			font-style: italic;
+			font-size : @font-mid;
+
+			.label {
+				font-size     : @font-base;
+				text-transform: uppercase;
+				letter-spacing: @sc;
+			}
+		}
+
+		.label {
+			display         : inline-block;
+			padding         : 0 0 @half;
+			//border-bottom : 3px solid @accent;
+			color           : @text-light;
+			text-transform  : uppercase;
+			letter-spacing  : @sc;
+		}
+
+		.doi .label {
+			display       : inline;
+			padding       : 0;
+			border        : none;
+			text-transform: none;
+		}
+
+		.keywords .label {
+			display: block;
+			padding: 0;
+			border : none;
+		}
+	}
+
+	.row,
+	.main_entry,
+	.entry_details {
+		border: none;
+	}
+
+	.row {
+		display       : flex;
+		flex-direction: column;
+
+		@media(min-width: @screen-desktop) {
+			flex-direction: row;
+		}
+
+	}
+
+	.author_bios {
+
+		.sub_item {
+
+			.label {
+				font-family   : @font-text;
+				font-weight   : @normal;
+				font-style    : italic;
+				letter-spacing: normal;
+				font-size     : @font-base;
+				border-bottom : none;
+				text-transform: none;
+
+				.affiliation {
+					font-size  : @font-base;
+					line-height: @line-base;
+					font-style : normal;
+				}
+			}
+		}
+	}
+
+	.entry_details {
+		margin-left : 0;
+		margin-right: 0;
+
+		.label {
+			font-weight   : @normal;
+			text-transform: uppercase;
+			letter-spacing: @sc;
+			font-size     : @font-base;
+		}
+
+		.item {
+			font-family  : @font-text;
+			margin       : @triple 0;
+			padding      : 0;
+			border-bottom: none;
+			border-radius: @radius;
+			background   : @bg-light-shade;
+			box-shadow   : 0 0 1px rgba(0, 0, 0, 0.4);
+
+			.label {
+				font-size: @font-base;
+
+			}
+
+			.label+.value {
+				border-top-left-radius : 0;
+				border-top-right-radius: 0;
+			}
+		}
+
+		.sub_item {
+			padding      : 0;
+			margin-bottom: 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.label {
+				color: @text-light;
+			}
+		}
+
+		.item>.label,
+		.sub_item:first-child>.label {
+			padding                : 0.5em @double 0 @double;
+			background             : @bg-shade;
+			border-top-left-radius : @radius;
+			border-top-right-radius: @radius;
+		}
+
+		.item>.value,
+		.sub_item .value {
+			padding      : 0 @double @base @double;
+			border-radius: @radius;
+		}
+
+		// Create more light-weight headers for subsequent sub-item labels
+		.sub_item:not(:first-child) .label {
+			display         : inline-block;
+			padding         : 0.5em 0 0 0;
+			margin          : 0 @double;
+			// border-bottom: 3px solid @accent;
+		}
+
+		.cover_image {
+			background: transparent;
+			box-shadow: none;
+
+			img {
+				display      : block;
+				border-radius: @radius;
+				margin-left  : auto;
+				margin-right : auto;
+			}
+		}
+
+		.item.galleys {
+			box-shadow: none;
+
+			.galleys_links {
+				padding: 0;
+			}
+		}
+
+		.galleys_links {
+
+			>li {
+				display      : block;
+				margin-bottom: 0.5em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {
+					display: block;
+				}
+			}
+		}
+
+		.citation_display {
+			margin-bottom: 0;
+
+			.citation_formats_button {
+				font-family: @font;
+			}
+		}
+
+		.item.copyright {
+			background: transparent;
+
+			p {
+				font-size  : @font-sml;
+				line-height: @line-sml;
+				padding    : 0 @double @base @double;
+			}
+		}
+
+		@media(min-width: @screen-tablet) {
+			width      : 280px;
+			margin-left: 30px;
+		}
+	}
+}
+
+
+.item.galleys_full {
+	margin          : 0 auto 0 auto;
+	text-align      : center;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius   : 8px;
+	width           : fit-content;
+	min-width       : 240px;
+	padding         : 0px @triple @triple @triple;
+	margin          : @double auto @double auto;
+}
+
+.item.author_bios,
+.item.author_bios h3 {
+	font-size: @font-base;
+}
+</document_content>
+</document>
+
+<document index="19">
+<source>jlmTheme/styles/objects/article_summary.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/objects/article_summary.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to a summary view of an article for lists
+ * @link templates/frontend/objects/article_summary.tpl
+ */
+.obj_article_summary {
+	font-family: @font-text;
+
+	.title {
+		font-family: @font-text;
+		font-size: @font-bump;
+		font-weight: @normal;
+		letter-spacing: normal;
+		line-height: @line-bump;
+		text-transform: none;
+	}
+
+	.subtitle {
+		font-family: @font-text;
+		font-size: @font-base;
+	}
+
+	.meta {
+		font-size: @font-mid;
+		.authors {
+			font-style: italic;
+			}
+	}
+}
+
+</document_content>
+</document>
+
+<document index="20">
+<source>jlmTheme/styles/objects/galley_link.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/objects/galley_link.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to a galley link button
+ * @link templates/frontend/objects/galley_link.tpl
+ */
+.obj_galley_link {
+	&:extend(.cmp_manuscript_button all);
+
+	&.restricted {
+		border-color: @bg-shade;
+		background: @bg-shade;
+		color: @text-light;
+
+		&:before {
+			color: @text-light;
+		}
+
+		&:hover,
+		&:focus {
+			background: @text-light;
+		}
+	}
+}
+
+</document_content>
+</document>
+
+<document index="21">
+<source>jlmTheme/styles/objects/issue_summary.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/objects/issue_summary.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to an issue summary view
+ * @link templates/frontend/objects/issue_summary.tpl
+ */
+.obj_issue_summary {
+
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding      : 0 0 @half 0;
+
+	.series {
+		font-family: @font-heading;
+		font-weight: @bold;
+	}
+
+	.description {
+		font-family: @font-text;
+		font-size  : @font-bump;
+
+		p {
+			font-family: @font-text;
+			font-size  : @font-bump;
+		}
+	}
+}
+</document_content>
+</document>
+
+<document index="22">
+<source>jlmTheme/styles/objects/issue_toc.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/objects/issue_toc.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to an issue table of contents view
+ * @link templates/frontend/objects/issue_toc.tpl
+ */
+.obj_issue_toc {
+
+	font-family: @font-text;
+
+	.description {
+		font-size  : @font-bump;
+		line-height: @line-bump;
+	}
+
+	.heading .published {
+		display: none;
+	}
+
+	.heading .pub_id,
+	.heading .published {
+		font-family: @font-text;
+		font-size  : @font-base;
+	}
+
+	.heading .pub_id .type,
+	.heading .published .label {
+		font-family   : @font-heading;
+		font-weight   : @normal;
+		color         : @text-light;
+		text-transform: uppercase;
+		letter-spacing: @sc;
+	}
+
+	.heading .pub_id .id,
+	.heading .published .value {
+		margin-left: 0.5em;
+	}
+
+	.heading .pub_id .id a {
+		color          : @text;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color          : @primary-lift;
+			text-decoration: underline;
+		}
+	}
+
+	>.galleys,
+	.section {
+		margin : @triple 0 0 0;
+		padding: 0;
+		border : none;
+
+		&:before {
+			display: none;
+		}
+
+		h2 {
+			position       : relative;
+			font-size      : @font-base;
+			display        : inline-block;
+			top            : auto;
+			left           : auto;
+			padding        : 0 0 @half;
+			//border-bottom: 3px solid @accent;
+			background     : transparent;
+			text-transform : uppercase;
+			font-weight    : @normal;
+			letter-spacing : @sc;
+		}
+	}
+
+	.galleys_links li {
+		margin-bottom: 0.5em;
+	}
+
+	.pages {
+		font-family: @font-text;
+	}
+
+	.cover img {
+		margin-left : auto;
+		margin-right: auto;
+	}
+
+	.item {
+		.galleys_links {
+			margin-top: @half;
+		}
+
+		.label {
+			font-size     : @font-base;
+			font-weight   : @normal;
+			text-transform: uppercase;
+			letter-spacing: @sc;
+			margin        : 0;
+			padding-top   : @base;
+		}
+	}
+}
+</document_content>
+</document>
+
+<document index="23">
+<source>jlmTheme/styles/pages/announcement.less</source>
+<document_content>
+/*!
+ * @file  plugins/themes/jlmTheme/styles/pages/announcement.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the announcement page
+ * @link templates/frontend/pages/announcement.tpl
+ */
+.page_announcement {
+	margin-top: @triple;
+}
+
+</document_content>
+</document>
+
+<document index="24">
+<source>jlmTheme/styles/pages/contact.less</source>
+<document_content>
+/*!
+ * @file  plugins/themes/jlmTheme/styles/pages/contact.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the contact page
+ * @link templates/frontend/pages/contact.tpl
+ */
+.page_contact {
+
+    .address,
+    .phone,
+    .email {
+        margin-top: @base;
+        margin-bottom: @base;
+        font-size: @font-base;
+    }
+
+}
+
+</document_content>
+</document>
+
+<document index="25">
+<source>jlmTheme/styles/pages/indexJournal.less</source>
+<document_content>
+/*!
+ * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the front page of the journal
+ * @link templates/frontend/pages/indexJournal.tpl
+ */
+.pkp_page_index {
+
+	.homepage_image {
+		margin-top: -1px; // covers up the border
+	}
+
+	.cmp_announcements {
+		border: none;
+
+		@media(min-width: @screen-tablet) {
+
+			> .more:before,
+			> .obj_announcement_summary:before {
+				display: none; // Hide the right column border
+			}
+		}
+
+	    @media(min-width: @screen-desktop) {
+
+	        h2 + .obj_announcement_summary, // first announcement only
+	        .more {
+	            padding-top: @base;
+	            padding-bottom: @base;
+	        }
+
+	        .more .obj_announcement_summary {
+	            padding-top: 0;
+	            padding-bottom: 0;
+	            margin-bottom: @double;
+
+	            &:last-child {
+	                margin-bottom: 0;
+	            }
+	        }
+	    }
+
+		@media(min-width: @screen-lg-desktop) {
+			border-bottom: @bg-border;
+
+			> .more:before,
+			> .obj_announcement_summary:before {
+				display: block; // Show the right column border
+			}
+		}
+	}
+
+	.current_issue {
+
+		h2 {
+			display: inline-block;
+			padding-bottom: 0.5em;
+			border-bottom: none;
+			text-transform: none;
+			font-weight: @bold;
+			color: @text-light;
+		}
+
+		.current_issue_title {
+			font-family: @font-heading;
+			font-size: @font-bump;
+		}
+
+		.sections {
+			margin-top: @double;
+		}
+
+		.read_more {
+	        font-family: @font-heading;
+	        font-weight: @normal;
+			text-transform: uppercase;
+			letter-spacing: @sc;
+		}
+	}
+}
+
+// Remove borders when no sidebar is active
+.pkp_structure_main:first-child:last-child {
+
+	.cmp_announcements {
+		border-bottom: none;
+
+		> .more:before,
+		> .obj_announcement_summary:before {
+			display: none;
+		}
+	}
+
+	.additional_content {
+		border-top: none;
+	}
+}
+
+</document_content>
+</document>
+
+<document index="26">
+<source>jlmTheme/styles/pages/issueArchive.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/pages/issueArchive.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to issue archive page
+ * @link templates/frontend/pages/issueArchive.tpl
+ */
+.page_issue_archive {
+
+	.issues_archive {
+		&:extend(.pkp_unstyled_list);
+		margin-left: -@base;
+		margin-right: -@base;
+		border-top: @bg-border;
+
+		> li {
+			padding-top: 0;
+			padding-right: @base;
+			padding-bottom: @base;
+			padding-left: @base;
+			border-bottom: @bg-border;
+		}
+
+		@media(min-width: @screen-phone) {
+			margin-left: -@double;
+			margin-right: -@double;
+
+			> li {
+				padding-left: @double;
+				padding-right: @double;
+			}
+		}
+
+		@media(min-width: @screen-desktop) {
+			margin-left: -@triple;
+			margin-right: -@triple;
+
+			> li {
+				padding-left: @triple;
+				padding-right: @triple;
+			}
+		}
+	}
+
+	.issues_archive,
+	.issues_archive > li {
+		border: none;
+	}
+
+	.cmp_pagination {
+		margin-top: @double;
+	}
+}
+
+</document_content>
+</document>
+
+<document index="27">
+<source>jlmTheme/styles/pages/search.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/pages/search.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the search form and results page
+ * @link templates/frontend/pages/search.tpl
+ */
+.page_search {
+
+	.search_advanced {
+		margin-top: @base;
+
+		legend {
+			font-family: @font-heading;
+			font-size: 13px;
+			font-weight: @bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
+</document_content>
+</document>
+
+<document index="28">
+<source>jlmTheme/styles/pages/submissions.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/pages/submissions.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to submissions page
+ * @link templates/frontend/pages/submissions.tpl
+ */
+.page_submissions {
+
+	.fa-check:before {
+		position: relative;
+		right   : 48px;
+	}
+
+	font-size: @font-mid  !important;
+
+	p {
+		font-size: @font-mid  !important;
+	}
+
+	.submission_sections,
+	.submission_checklist {
+
+		ul {
+			font-size: @font-mid  !important;
+		}
+
+		li {
+			position     : relative;
+			border-bottom: none;
+		}
+	}
+
+	.submission_checklist {
+
+		li {
+			padding: 0 0 0 @base;
+		}
+	}
+
+}
+</document_content>
+</document>
+
+<document index="29">
+<source>jlmTheme/styles/pages/viewPdf.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/pages/viewPdf.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to the lightweight page for viewing PDFs
+ * @link templates/frontend/pages/viewPdf.tpl
+ */
+
+ .header_view {
+	z-index: 2;
+	position: relative;
+	background: @bg-base;
+	color: @text-bg-base;
+
+	&:hover,
+	&:focus {
+		background: @bg-base;
+		color: @text-bg-base;
+		text-decoration: underline;
+	}
+
+	a {
+		line-height: @pdf-base;
+		text-decoration: none;
+	}
+
+	.return {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: @pdf-base;
+		height: @pdf-base;
+		line-height: @pdf-base;
+		background: @bg-base;
+		color: @text-bg-base;
+		text-align: center;
+
+		&:before {
+			.fa();
+			content: @fa-var-arrow-left;
+		}
+
+		&:hover,
+		&:focus {
+			background: @accent;
+			color: #fff;
+		}
+	}
+
+	.title {
+		display: block;
+		padding-left: @double;
+		padding-left: @pdf-base + @base;
+		max-width: 100%;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: @font-sml;
+		color: @text-bg-base;
+		font-family: @font-text;
+		font-style: italic;
+
+		&:hover,
+		&:focus {
+			background: @bg-base;
+		}
+	}
+
+	.download {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: @pdf-base;
+		background: @accent;
+		color: @text-bg-base;
+		text-align: center;
+		font-weight: @bold;
+
+		&:hover,
+		&:focus {
+			background: @bg;
+			color: @primary;
+		}
+
+		&:before {
+			.fa();
+			content: @fa-var-download;
+			margin-right: 4px;
+		}
+
+		.label {
+			display: none;
+		}
+	}
+
+	@media(min-width: @screen-tablet) {
+
+		.title {
+			font-size: @font-base;
+		}
+
+		.download {
+			width: auto;
+			padding: 0 @double;
+
+			.label {
+				display: inline-block;
+			}
+
+			// Prevent duplicate download labels once the regular label is visible
+			.pkp_screen_reader {
+				display: none;
+			}
+		}
+	}
+}
+
+.galley_view {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: hidden;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		padding-top: @pdf-base;
+		border: none;
+	}
+
+	&.galley_view_with_notice {
+
+		iframe {
+			padding-top: @pdf-base * 3;
+		}
+	}
+
+	.galley_view_notice {
+		position: absolute;
+		top: @pdf-base;
+		width: 100%;
+		height: @pdf-base * 2;
+		background: @no;
+	}
+
+	.galley_view_notice_message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+		color: @text-bg-base;
+		font-weight: @bold;
+		text-align: center;
+
+		a {
+			color: @text-bg-base;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+</document_content>
+</document>
+
+<document index="30">
+<source>jlmTheme/styles/rtl.less</source>
+<document_content>
 /*!
  * @file plugins/themes/jlmTheme/rtl.less
  *
@@ -2359,9 +4266,13 @@ body[dir="rtl"] {
 		}
 	}
 }
-</file>
 
-<file path="jlmTheme/styles/sidebar.less">
+</document_content>
+</document>
+
+<document index="31">
+<source>jlmTheme/styles/sidebar.less</source>
+<document_content>
 /*!
  * @file plugins/themes/jlmTheme/styles/sidebar.less
  *
@@ -2415,9 +4326,158 @@ body[dir="rtl"] {
 		font-size: @font-base;
 	}
 }
-</file>
+</document_content>
+</document>
 
-<file path="jlmTheme/templates/frontend/objects/article_details.tpl">
+<document index="32">
+<source>jlmTheme/styles/variables.less</source>
+<document_content>
+/*!
+ * @file plugins/themes/jlmTheme/styles/variables.less
+ *
+ * Copyright (c) 2020 Adam Twardoch
+ * Copyright (c) 2014-2020 Simon Fraser University
+ * Copyright (c) 2003-2020 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Common variables used through the the theme styles. They provide a
+ *  fully separated interface for defining variables, so that changes desired on
+ *  the frontend won't impact the backend.
+ */
+//
+// Colors
+//
+
+// Background
+@bg            : #fff;
+@bg-shade      : #fff;
+@bg-light-shade: @bg-shade;
+@bg-base       : #000a41; // Accent color used in the header
+@text-bg-base  : #fff;
+@bg-gray       : #3e3e3e;
+
+// Primary 'anchor' color for links
+@primary     : #000a41;
+@primary-lift: lighten(@primary, 10%);
+
+// Yes/no, success/error, on/off, go/stop, etc. Typically green and red.
+@yes: #00b24e;
+@no : #ff4040;
+
+// Accent color
+@accent: #7d000d;
+
+// Border colors
+@bg-border-color: @bg-shade;
+
+// Text
+@text        : rgba(0, 0, 0, 0.87);
+@text-light  : @text;
+@text-bg-base: #fff;
+
+//
+// Spacing
+//
+// The baseline size should be used to achieve consistent vertical rhythm. All
+// vertical margins, padding, line-height and block heights should use a
+// multiple of this baseline (or half). Where appropriate, horizontal
+// spacings should also use this baseline. However, in some cases with inline
+// elements it is more appropriate to use an `em` spacing.
+//
+@base     : 14px;
+@bump     : @base + 6px;
+@half     : @base / 2;
+@double   : @base * 2;
+@triple   : @base * 3;
+@quadruple: @base * 4;
+@quintuple: @base * 5;
+
+// Font families
+@JLMTextFallback: "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif",
+    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia",
+    serif;
+@JLMHead : "JLMHead",
+@JLMTextFallback;
+@JLMHuge : "JLMHuge",
+@JLMTextFallback;
+@JLMText : "JLMText",
+@JLMTextFallback;
+@JLMSmall: "JLMSmall", @JLMText;
+@JLMMono : "JLMMono",
+"Consolas",
+"Andale Mono WT",
+"Andale Mono",
+"Lucida Console",
+"Lucida Sans Typewriter",
+"DejaVu Sans Mono",
+"Bitstream Vera Sans Mono",
+"Liberation Mono",
+"Nimbus Mono L",
+"Monaco",
+"Courier New",
+"Courier",
+monospace;
+@JLMSans: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
+    ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue",
+    "Lucida Grande", sans-serif;
+@JLMLogo : "JLMLogo",
+@JLMText;
+@JLMIcons: "JLMIcons", @JLMSans;
+
+//
+// Typography
+//
+
+@font                  : @JLMSans;
+@font-text             : @JLMText;
+@font-small            : @JLMSmall;
+@font-heading          : @JLMHead;
+@font-huge             : @JLMHuge;
+@font-mono             : @JLMMono;
+@font-sml              : @base;
+@line-sml              : @base * 1.4;
+@font-base             : @base; // calc(@base + 0.2vw);
+@line-base             : @double;
+@line-base-large       : @line-base + 5px; // large blocks of text
+@font-bump             : @bump; // calc(@bump + 0.2vw);
+@font-mid              : @base + 4px; // calc(@base + 0.2vw);
+@line-bump             : @double;
+@font-lead             : @double;
+@line-lead             : @triple;
+@font-header           : @double; // calc(@double + 1.1vw);
+@line-header           : @triple;
+@line-header-responsive: @triple; // calc(@triple + 0.7vw); // calc(@triple + 0.7vw);
+@font-site-title-small : @font-bump;
+@font-site-title-huge  : @font-header;
+@sc                    : 0.05em;
+@lfbd                  : -0.08em;
+@pdf-base              : @triple;
+
+// Font weights
+@normal: 400;
+@bold  : 700;
+
+//
+// Screen width breakpoints
+//
+@screen-phone               : 480px;
+@screen-tablet              : 768px;
+@screen-tablet-container    : @screen-tablet - (@double * 2);
+@screen-desktop             : 992px;
+@screen-desktop-container   : @screen-desktop - (@double * 2);
+@screen-lg-desktop          : 1200px;
+@screen-lg-desktop-container: @screen-lg-desktop - 220px;
+
+
+// Fixed widths and heights
+@sidebar-width: 100%;
+@logo-height  : @quadruple * 3;
+</document_content>
+</document>
+
+<document index="33">
+<source>jlmTheme/templates/frontend/objects/article_details.tpl</source>
+<document_content>
 {**
  * templates/frontend/objects/article_details.tpl
  *
@@ -2873,1255 +4933,154 @@ body[dir="rtl"] {
 	</div><!-- .row -->
 
 </article>
-</file>
 
-<file path="jlmTheme/index.php">
-<?php
+</document_content>
+</document>
 
-/**
- * @defgroup plugins_themes_jlmTheme JLM theme plugin
- */
-
-/**
- * @file plugins/themes/jlmTheme/index.php
+<document index="34">
+<source>jlmTheme/templates/frontend/objects/issue_toc.tpl</source>
+<document_content>
+{**
+ * templates/frontend/objects/issue_toc.tpl
  *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @ingroup plugins_themes_jlmTheme
- * @brief Wrapper for JLM theme plugin.
- *
- */
-
-ini_set('display_errors', 0); // TODO
-error_reporting(E_ERROR); // TODO
-
-require_once('JLMThemePlugin.inc.php');
-
-return new JLMThemePlugin();
-
-?>
-</file>
-
-<file path="jlmTheme/styles/objects/article_details.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/objects/article_details.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to a view of an article with all details
- * @link templates/frontend/objects/article_details.tpl
- */
-.obj_article_details {
-
-	.citation_display {
-		.value {
-			font-size  : @font-sml;
-			line-height: @line-sml;
-		}
-	}
-
-	.item {
-		@media(min-width: @screen-tablet) {
-			padding: 0 @double @base @double;
-		}
-
-		@media(min-width: @screen-desktop) {
-			padding: 0 @double @base @triple;
-		}
-
-	}
-
-	.page_title {
-		margin-left: -0.08em;
-	}
-
-	.subtitle {
-		font-family: @font;
-	}
-
-	.authors,
-	.doi {
-		font-family: @font-text;
-	}
-
-	.authors {
-		.name {
-			font-weight: @normal;
-			font-style : italic;
-			font-size  : @font-bump;
-		}
-
-		.affiliation {
-			font-size: @font-base;
-		}
-
-		.orcid {
-			font-size: @font-base;
-		}
-	}
-
-	.orcid a,
-	.doi a {
-		color          : @text;
-		text-decoration: none;
-		font-family    : @font-mono;
-		font-size      : @font-base;
-
-		&:hover,
-		&:focus {
-			color          : @primary;
-			text-decoration: underline;
-		}
-	}
-
-	.orcid a {
-		color: @text-light;
-
-		&:before {
-			font-family: 'JLMIcons';
-			content    : '\F04F';
-		}
-	}
-
-	.doi a {
-		&:before {
-			font-family: 'JLMIcons';
-			content    : '\F044';
-		}
-	}
-
-	.authors li {
-		margin-bottom: @double;
-	}
-
-	.main_entry {
-
-		.item {
-
-			.label {
-				margin       : 0 0 0 0;
-				font-family  : @font-heading;
-				font-size    : @font-base;
-				font-weight  : @normal;
-				margin-top   : @base;
-				margin-bottom: 0;
-			}
-
-			&.doi .label {
-				display  : inline;
-				font-size: @font-base;
-			}
-
-			&.keywords .label {
-				display  : block;
-				font-size: @font-base;
-			}
-		}
-
-		.sub_item {
-
-			.label {
-				font-size: @font-base;
-			}
-		}
-	}
-
-	.main_entry {
-
-		.item.doi h2.label {
-			display: none;
-		}
-
-		.item.keywords {
-			font-style: italic;
-			font-size : @font-mid;
-
-			.label {
-				font-size     : @font-base;
-				text-transform: uppercase;
-				letter-spacing: @sc;
-			}
-		}
-
-		.label {
-			display         : inline-block;
-			padding         : 0 0 @half;
-			//border-bottom : 3px solid @accent;
-			color           : @text-light;
-			text-transform  : uppercase;
-			letter-spacing  : @sc;
-		}
-
-		.doi .label {
-			display       : inline;
-			padding       : 0;
-			border        : none;
-			text-transform: none;
-		}
-
-		.keywords .label {
-			display: block;
-			padding: 0;
-			border : none;
-		}
-	}
-
-	.row,
-	.main_entry,
-	.entry_details {
-		border: none;
-	}
-
-	.row {
-		display       : flex;
-		flex-direction: column;
-
-		@media(min-width: @screen-desktop) {
-			flex-direction: row;
-		}
-
-	}
-
-	.author_bios {
-
-		.sub_item {
-
-			.label {
-				font-family   : @font-text;
-				font-weight   : @normal;
-				font-style    : italic;
-				letter-spacing: normal;
-				font-size     : @font-base;
-				border-bottom : none;
-				text-transform: none;
-
-				.affiliation {
-					font-size  : @font-base;
-					line-height: @line-base;
-					font-style : normal;
-				}
-			}
-		}
-	}
-
-	.entry_details {
-		margin-left : 0;
-		margin-right: 0;
-
-		.label {
-			font-weight   : @normal;
-			text-transform: uppercase;
-			letter-spacing: @sc;
-			font-size     : @font-base;
-		}
-
-		.item {
-			font-family  : @font-text;
-			margin       : @triple 0;
-			padding      : 0;
-			border-bottom: none;
-			border-radius: @radius;
-			background   : @bg-light-shade;
-			box-shadow   : 0 0 1px rgba(0, 0, 0, 0.4);
-
-			.label {
-				font-size: @font-base;
-
-			}
-
-			.label+.value {
-				border-top-left-radius : 0;
-				border-top-right-radius: 0;
-			}
-		}
-
-		.sub_item {
-			padding      : 0;
-			margin-bottom: 0;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-			.label {
-				color: @text-light;
-			}
-		}
-
-		.item>.label,
-		.sub_item:first-child>.label {
-			padding                : 0.5em @double 0 @double;
-			background             : @bg-shade;
-			border-top-left-radius : @radius;
-			border-top-right-radius: @radius;
-		}
-
-		.item>.value,
-		.sub_item .value {
-			padding      : 0 @double @base @double;
-			border-radius: @radius;
-		}
-
-		// Create more light-weight headers for subsequent sub-item labels
-		.sub_item:not(:first-child) .label {
-			display         : inline-block;
-			padding         : 0.5em 0 0 0;
-			margin          : 0 @double;
-			// border-bottom: 3px solid @accent;
-		}
-
-		.cover_image {
-			background: transparent;
-			box-shadow: none;
-
-			img {
-				display      : block;
-				border-radius: @radius;
-				margin-left  : auto;
-				margin-right : auto;
-			}
-		}
-
-		.item.galleys {
-			box-shadow: none;
-
-			.galleys_links {
-				padding: 0;
-			}
-		}
-
-		.galleys_links {
-
-			>li {
-				display      : block;
-				margin-bottom: 0.5em;
-
-				&:last-child {
-					margin-bottom: 0;
-				}
-
-				a {
-					display: block;
-				}
-			}
-		}
-
-		.citation_display {
-			margin-bottom: 0;
-
-			.citation_formats_button {
-				font-family: @font;
-			}
-		}
-
-		.item.copyright {
-			background: transparent;
-
-			p {
-				font-size  : @font-sml;
-				line-height: @line-sml;
-				padding    : 0 @double @base @double;
-			}
-		}
-
-		@media(min-width: @screen-tablet) {
-			width      : 280px;
-			margin-left: 30px;
-		}
-	}
-}
-
-
-.item.galleys_full {
-	margin          : 0 auto 0 auto;
-	text-align      : center;
-	background-color: rgba(0, 0, 0, 0.04);
-	border-radius   : 8px;
-	width           : fit-content;
-	min-width       : 240px;
-	padding         : 0px @triple @triple @triple;
-	margin          : @double auto @double auto;
-}
-
-.item.author_bios,
-.item.author_bios h3 {
-	font-size: @font-base;
-}
-</file>
-
-<file path="jlmTheme/styles/objects/issue_toc.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/objects/issue_toc.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to an issue table of contents view
- * @link templates/frontend/objects/issue_toc.tpl
- */
-.obj_issue_toc {
-
-	font-family: @font-text;
-
-	.description {
-		font-size  : @font-bump;
-		line-height: @line-bump;
-	}
-
-	.heading .published {
-		display: none;
-	}
-
-	.heading .pub_id,
-	.heading .published {
-		font-family: @font-text;
-		font-size  : @font-base;
-	}
-
-	.heading .pub_id .type,
-	.heading .published .label {
-		font-family   : @font-heading;
-		font-weight   : @normal;
-		color         : @text-light;
-		text-transform: uppercase;
-		letter-spacing: @sc;
-	}
-
-	.heading .pub_id .id,
-	.heading .published .value {
-		margin-left: 0.5em;
-	}
-
-	.heading .pub_id .id a {
-		color          : @text;
-		text-decoration: none;
-
-		&:hover,
-		&:focus {
-			color          : @primary-lift;
-			text-decoration: underline;
-		}
-	}
-
-	>.galleys,
-	.section {
-		margin : @triple 0 0 0;
-		padding: 0;
-		border : none;
-
-		&:before {
-			display: none;
-		}
-
-		h2 {
-			position       : relative;
-			font-size      : @font-base;
-			display        : inline-block;
-			top            : auto;
-			left           : auto;
-			padding        : 0 0 @half;
-			//border-bottom: 3px solid @accent;
-			background     : transparent;
-			text-transform : uppercase;
-			font-weight    : @normal;
-			letter-spacing : @sc;
-		}
-	}
-
-	.galleys_links li {
-		margin-bottom: 0.5em;
-	}
-
-	.pages {
-		font-family: @font-text;
-	}
-
-	.cover img {
-		margin-left : auto;
-		margin-right: auto;
-	}
-
-	.item {
-		.galleys_links {
-			margin-top: @half;
-		}
-
-		.label {
-			font-size     : @font-base;
-			font-weight   : @normal;
-			text-transform: uppercase;
-			letter-spacing: @sc;
-			margin        : 0;
-			padding-top   : @base;
-		}
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/pages/indexJournal.less">
-/*!
- * @file  plugins/themes/jlmTheme/styles/pages/indexJournal.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Styles applying to the front page of the journal
- * @link templates/frontend/pages/indexJournal.tpl
- */
-.pkp_page_index {
-
-	.homepage_image {
-		margin-top: -1px; // covers up the border
-	}
-
-	.cmp_announcements {
-		border: none;
-
-		@media(min-width: @screen-tablet) {
-
-			> .more:before,
-			> .obj_announcement_summary:before {
-				display: none; // Hide the right column border
-			}
-		}
-
-	    @media(min-width: @screen-desktop) {
-
-	        h2 + .obj_announcement_summary, // first announcement only
-	        .more {
-	            padding-top: @base;
-	            padding-bottom: @base;
-	        }
-
-	        .more .obj_announcement_summary {
-	            padding-top: 0;
-	            padding-bottom: 0;
-	            margin-bottom: @double;
-
-	            &:last-child {
-	                margin-bottom: 0;
-	            }
-	        }
-	    }
-
-		@media(min-width: @screen-lg-desktop) {
-			border-bottom: @bg-border;
-
-			> .more:before,
-			> .obj_announcement_summary:before {
-				display: block; // Show the right column border
-			}
-		}
-	}
-
-	.current_issue {
-
-		h2 {
-			display: inline-block;
-			padding-bottom: 0.5em;
-			border-bottom: none;
-			text-transform: none;
-			font-weight: @bold;
-			color: @text-light;
-		}
-
-		.current_issue_title {
-			font-family: @font-heading;
-			font-size: @font-bump;
-		}
-
-		.sections {
-			margin-top: @double;
-		}
-
-		.read_more {
-	        font-family: @font-heading;
-	        font-weight: @normal;
-			text-transform: uppercase;
-			letter-spacing: @sc;
-		}
-	}
-}
-
-// Remove borders when no sidebar is active
-.pkp_structure_main:first-child:last-child {
-
-	.cmp_announcements {
-		border-bottom: none;
-
-		> .more:before,
-		> .obj_announcement_summary:before {
-			display: none;
-		}
-	}
-
-	.additional_content {
-		border-top: none;
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/components.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/components.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Reusable components
- */
-
-// Buttons
-.cmp_manuscript_button {
-	font-family      : @font;
-	font-weight      : @bold;
-	// text-transform: uppercase;
-	background       : @bg-base;
-	color            : @text-bg-base;
-	border           : none;
-	line-height      : @line-sml;
-	padding-top      : @half;
-	padding-bottom   : @half;
-
-	&:hover,
-	&:focus {
-		background: @accent;
-	}
-}
-
-// Breadcrumb navigation
-.cmp_breadcrumbs {
-	padding       : @triple 0;
-	font-family   : @font;
-	font-weight   : @normal;
-	font-style    : normal;
-	font-size     : @font-sml;
-	color         : @text-light;
-	text-transform: none;
-
-	a {
-		text-decoration: none;
-
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
-
-	}
-
-	>ol {
-		padding  : 0;
-		margin   : 0;
-		font-size: inherit;
-	}
-
-	.current {
-
-		h1 {
-			font-family: @font-heading;
-		}
-	}
-
-	.separator {
-		padding: 0 0.1em;
-		opacity: 0.3;
-	}
-}
-
-// Pagination (eg - issue archive)
-.cmp_pagination {
-	font-family: @font-heading;
-
-	a {
-		font-weight   : @bold;
-		text-transform: uppercase;
-	}
-
-	.prev {
-
-		&:before {
-			content: '‹'; //@fa-var-chevron-left;
-		}
-	}
-
-	.next {
-
-		&:after {
-			content: '›'; // @fa-var-chevron-right;
-		}
-	}
-}
-
-
-// Announcements
-.cmp_announcements {
-	border: none;
-
-	>li {
-		border-bottom: none;
-	}
-
-	.obj_announcement_summary h2,
-	.obj_announcement_summary h3 {
-		font-family: @font-heading;
-		font-size  : @font-header;
-		font-weight: @bold;
-		text-transform: none;
-		letter-spacing: 0;
-	}
-
-	.obj_announcement_summary h4,
-	.date {
-		font-family: @font-heading;
-		font-size  : @font-sml;
-		font-weight: @normal;
-	}
-
-	.read_more {
-		font-family   : @font-heading;
-		font-size     : @font-sml;
-		font-weight   : @normal;
-		text-transform: uppercase;
-		letter-spacing: @sc;
-	}
-
-	.date {
-		font-weight: @normal;
-
-		&:before {
-			color: @accent;
-		}
-	}
-}
-
-.cmp_button_wire {
-	font-size: @font-base;
-}
-
-// List of articles
-.cmp_article_list {
-
-	>li {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-}
-</file>
-
-<file path="jlmTheme/styles/index.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/index.less
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Base stylesheet for jlmTheme, a child theme of the default theme
- *
- */
-
-@import "variables.less";
-@import "body.less";
-@import "main.less";
-@import "head.less";
-@import "components.less";
-@import "sidebar.less";
-@import "pages/indexJournal.less";
-@import "pages/announcement.less";
-@import "pages/issueArchive.less";
-@import "pages/contact.less";
-@import "pages/search.less";
-@import "pages/submissions.less";
-@import "pages/viewPdf.less";
-@import "objects/issue_toc.less";
-@import "objects/issue_summary.less";
-@import "objects/galley_link.less";
-@import "objects/article_summary.less";
-@import "objects/article_details.less";
-@import "rtl.less";
-</file>
-
-<file path="jlmTheme/styles/main.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/main.less
- *
- * Copyright (c) 2020 Adam Twardoch
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @brief Styles applying to the main content panel
- */
-
-kbd,
-code,
-tt,
-samp,
-pre {
-	font-family: @font-mono;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-	font-family: @JLMSans;
-}
-
-input,
-textarea {
-	background-color: #ecedee !important;
-}
-
-/*
-.published {
-	display: none;
-}
-*/
-
-.main_entry {
-	font-family: @font-text;
-	font-size  : @font-bump;
-}
-
-section {
-	max-width: 720px; // TODO
-}
-
-.pkp_structure_main {
-
-	font-family: @font-text;
-
-	h1 {
-		font-family: @font-huge;
-		font-size  : @font-header;
-		line-height: @line-header-responsive;
-		font-weight: @bold;
-		margin-left: @lfbd;
-	}
-
-	h2 {
-		font-family: @font-heading;
-		font-weight: @bold;
-		font-size  : @font-lead;
-		line-height: @line-lead;
-	}
-
-	h3 {
-		font-family   : @font-heading;
-		font-weight   : @normal;
-		letter-spacing: @sc;
-		text-transform: uppercase;
-		font-size     : @font-base;
-		line-height   : @line-base;
-	}
-
-	h4 {
-		font-family: @font-text;
-		font-size  : @font-bump;
-		line-height: @line-bump;
-		font-style : italic;
-		font-weight: @normal;
-	}
-
-	h5 {
-		font-family: @font-small;
-		font-size  : @font-sml;
-		line-height: @line-sml;
-		font-weight: @normal;
-	}
-
-	h6 {
-		font-size  : @font-sml;
-		line-height: @line-sml;
-		font-weight: @normal;
-	}
-
-	h1 {
-		margin: (@double * 2) 0 @double;
-	}
-
-	h2,
-	h3,
-	h4 {
-		margin: @double 0 @base;
-	}
-
-	h5,
-	h6 {
-		margin: @double 0;
-	}
-
-	p {
-		line-height: @line-base-large;
-		font-size  : @font-mid;
-		margin     : 0 0 @base 0;
-		hyphens    : auto;
-		text-align : left;
-	}
-
-	p:last-child {
-		margin-bottom: 0;
-	}
-
-	.page {
-
-		// Titles in pages
-		h1 {
-			margin-top: 0;
-		}
-
-		// Edit link that isn't nested in a section
-		>.cmp_edit_link {
-			float      : right;
-			padding    : @half 0;
-			line-height: @triple;
-		}
-
-		// Count of catalog entries on the current page
-		// used in catalog, category, series and search pages
-		.monograph_count {
-			float    : right;
-			padding  : @base 0;
-			font-size: @font-sml;
-			color    : @text-light;
-		}
-
-		// Description and image for catalog category/series
-		.about_section {
-			.pkp_helpers_clear;
-			color      : @text-light;
-			line-height: @triple;
-
-			.cover {
-				float       : right;
-				width       : 20%;
-				margin-left : 10%;
-				margin-right: 10%;
-
-				img {
-					display: block;
-					margin : 0 auto;
-				}
-			}
-
-			.description p:first-child {
-				margin-top: 0;
-			}
-
-			.description p:last-child {
-				margin-bottom: 0;
-			}
-
-			@media(min-width: @screen-phone) {
-				font-size : @font-bump;
-				font-style: italic;
-			}
-		}
-	}
-}
-
-
-.team {
-	p {
-		font-size: @font-mid;
-	}
-
-	strong {
-		font-size  : @font-bump;
-		font-weight: normal;
-		font-style : italic;
-		margin-right: @half;
-	}
-
-	em {
-		font-family   : @JLMSmall;
-		font-size     : @font-sml;
-		font-weight   : normal;
-		font-style    : normal;
-		text-transform: uppercase;
-		letter-spacing: @sc;
-	}
-}
-
-svg.orcid_icon {
-	display: none !important;
-}
-</file>
-
-<file path="jlmTheme/styles/variables.less">
-/*!
- * @file plugins/themes/jlmTheme/styles/variables.less
+ * @brief View of an Issue which displays a full table of contents.
  *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @brief Common variables used through the the theme styles. They provide a
- *  fully separated interface for defining variables, so that changes desired on
- *  the frontend won't impact the backend.
- */
-//
-// Colors
-//
+ * @uses $issue Issue The issue
+ * @uses $issueTitle string Title of the issue. May be empty
+ * @uses $issueSeries string Vol/No/Year string for the issue
+ * @uses $issueGalleys array Galleys for the entire issue
+ * @uses $hasAccess bool Can this user access galleys for this context?
+ * @uses $publishedSubmissions array Lists of articles published in this issue
+ *   sorted by section.
+ * @uses $primaryGenreIds array List of file genre ids for primary file types
+ * @uses $heading string HTML heading element, default: h2
+ *}
+{if !$heading}
+	{assign var="heading" value="h2"}
+{/if}
+{assign var="articleHeading" value="h3"}
+{if $heading == "h3"}
+	{assign var="articleHeading" value="h4"}
+{elseif $heading == "h4"}
+	{assign var="articleHeading" value="h5"}
+{elseif $heading == "h5"}
+	{assign var="articleHeading" value="h6"}
+{/if}
+<div class="obj_issue_toc">
 
-// Background
-@bg            : #fff;
-@bg-shade      : #fff;
-@bg-light-shade: @bg-shade;
-@bg-base       : #000a41; // Accent color used in the header
-@text-bg-base  : #fff;
-@bg-gray       : #3e3e3e;
+	{* Indicate if this is only a preview *}
+	{if !$issue->getPublished()}
+		{include file="frontend/components/notification.tpl" type="warning" messageKey="editor.issues.preview"}
+	{/if}
 
-// Primary 'anchor' color for links
-@primary     : #000a41;
-@primary-lift: lighten(@primary, 10%);
+	{* Issue introduction area above articles *}
+	<div class="heading">
 
-// Yes/no, success/error, on/off, go/stop, etc. Typically green and red.
-@yes: #00b24e;
-@no : #ff4040;
+		{* Issue cover image *}
+		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
+		{if $issueCover}
+			<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
+				{capture assign="defaultAltText"}
+					{translate key="issue.viewIssueIdentification" identification=$issue->getIssueIdentification()|escape}
+				{/capture}
+				<img src="{$issueCover|escape}" alt="{$issue->getLocalizedCoverImageAltText()|escape|default:$defaultAltText}">
+			</a>
+		{/if}
 
-// Accent color
-@accent: #7d000d;
+		{* Description *}
+		{if $issue->hasDescription()}
+			<div class="description">
+				{$issue->getLocalizedDescription()|strip_unsafe_html}
+			</div>
+		{/if}
 
-// Border colors
-@bg-border-color: @bg-shade;
+		{* PUb IDs (eg - DOI) *}
+		{foreach from=$pubIdPlugins item=pubIdPlugin}
+			{assign var=pubId value=$issue->getStoredPubId($pubIdPlugin->getPubIdType())}
+			{if $pubId}
+				{assign var="doiUrl" value=$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
+				<div class="pub_id {$pubIdPlugin->getPubIdType()|escape}">
+					<span class="type">
+						{$pubIdPlugin->getPubIdDisplayType()|escape}:
+					</span>
+					<span class="id">
+						{if $doiUrl}
+							<a href="{$doiUrl|escape}">
+								{$doiUrl}
+							</a>
+						{else}
+							{$pubId}
+						{/if}
+					</span>
+				</div>
+			{/if}
+		{/foreach}
 
-// Text
-@text        : rgba(0, 0, 0, 0.87);
-@text-light  : @text;
-@text-bg-base: #fff;
-
-//
-// Spacing
-//
-// The baseline size should be used to achieve consistent vertical rhythm. All
-// vertical margins, padding, line-height and block heights should use a
-// multiple of this baseline (or half). Where appropriate, horizontal
-// spacings should also use this baseline. However, in some cases with inline
-// elements it is more appropriate to use an `em` spacing.
-//
-@base     : 14px;
-@bump     : @base + 6px;
-@half     : @base / 2;
-@double   : @base * 2;
-@triple   : @base * 3;
-@quadruple: @base * 4;
-@quintuple: @base * 5;
-
-// Font families
-@JLMTextFallback: "Cambria", "Lucida Bright", "Lucidabright", "Lucida Serif",
-    Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia",
-    serif;
-@JLMHead : "JLMHead",
-@JLMTextFallback;
-@JLMHuge : "JLMHuge",
-@JLMTextFallback;
-@JLMText : "JLMText",
-@JLMTextFallback;
-@JLMSmall: "JLMSmall", @JLMText;
-@JLMMono : "JLMMono",
-"Consolas",
-"Andale Mono WT",
-"Andale Mono",
-"Lucida Console",
-"Lucida Sans Typewriter",
-"DejaVu Sans Mono",
-"Bitstream Vera Sans Mono",
-"Liberation Mono",
-"Nimbus Mono L",
-"Monaco",
-"Courier New",
-"Courier",
-monospace;
-@JLMSans: "JLMSans", "Noto Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
-    ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue",
-    "Lucida Grande", sans-serif;
-@JLMLogo : "JLMLogo",
-@JLMText;
-@JLMIcons: "JLMIcons", @JLMSans;
-
-//
-// Typography
-//
-
-@font                  : @JLMSans;
-@font-text             : @JLMText;
-@font-small            : @JLMSmall;
-@font-heading          : @JLMHead;
-@font-huge             : @JLMHuge;
-@font-mono             : @JLMMono;
-@font-sml              : @base;
-@line-sml              : @base * 1.4;
-@font-base             : @base; // calc(@base + 0.2vw);
-@line-base             : @double;
-@line-base-large       : @line-base + 5px; // large blocks of text
-@font-bump             : @bump; // calc(@bump + 0.2vw);
-@font-mid              : @base + 4px; // calc(@base + 0.2vw);
-@line-bump             : @double;
-@font-lead             : @double;
-@line-lead             : @triple;
-@font-header           : @double; // calc(@double + 1.1vw);
-@line-header           : @triple;
-@line-header-responsive: @triple; // calc(@triple + 0.7vw); // calc(@triple + 0.7vw);
-@font-site-title-small : @font-bump;
-@font-site-title-huge  : @font-header;
-@sc                    : 0.05em;
-@lfbd                  : -0.08em;
-@pdf-base              : @triple;
-
-// Font weights
-@normal: 400;
-@bold  : 700;
-
-//
-// Screen width breakpoints
-//
-@screen-phone               : 480px;
-@screen-tablet              : 768px;
-@screen-tablet-container    : @screen-tablet - (@double * 2);
-@screen-desktop             : 992px;
-@screen-desktop-container   : @screen-desktop - (@double * 2);
-@screen-lg-desktop          : 1200px;
-@screen-lg-desktop-container: @screen-lg-desktop - 220px;
+		{* Published date *}
+		{if $issue->getDatePublished()}
+			<div class="published">
+				<span class="label">
+					{translate key="submissions.published"}:
+				</span>
+				<span class="value">
+					{$issue->getDatePublished()|date_format:$dateFormatShort}
+				</span>
+			</div>
+		{/if}
+	</div>
 
 
-// Fixed widths and heights
-@sidebar-width: 100%;
-@logo-height  : @quadruple * 3;
-</file>
 
-<file path="jlmTheme/JLMThemePlugin.inc.php">
-<?php
+	{* Articles *}
+	<div class="sections">
+	{foreach name=sections from=$publishedSubmissions item=section}
+		<div class="section">
+		{if $section.articles}
+			{if $section.title}
+				<{$heading}>
+					{$section.title|escape}
+				</{$heading}>
+			{/if}
+			<ul class="cmp_article_list articles">
+				{foreach from=$section.articles item=article}
+					<li>
+						{include file="frontend/objects/article_summary.tpl" heading=$articleHeading}
+					</li>
+				{/foreach}
+			</ul>
+		{/if}
+		</div>
+	{/foreach}
+	</div><!-- .sections -->
 
-/**
- * @file plugins/themes/default/JLMThemePlugin.inc.php
- *
- * Copyright (c) 2020 Adam Twardoch
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * @class JLMThemePlugin
- * @ingroup plugins_themes_jlmTheme
- *
- * @brief JLM theme
- */
-import('lib.pkp.classes.plugins.ThemePlugin');
+	{* Full-issue galleys *}
+	{if $issueGalleys}
+		<div class="item galleys_full">
+			<{$heading} id="issueTocGalleyLabel" class="label">
+				{translate key="issue.fullIssue"}
+			</{$heading}>
+			<ul class="value galleys_links">
+				{foreach from=$issueGalleys item=galley}
+					<li>
+						{include file="frontend/objects/galley_link.tpl" parent=$issue labelledBy="issueTocGalleyLabel" purchaseFee=$currentJournal->getData('purchaseIssueFee') purchaseCurrency=$currentJournal->getData('currency')}
+					</li>
+				{/foreach}
+			</ul>
+		</div>
+	{/if}
 
-class JLMThemePlugin extends ThemePlugin {
-	/**
-	 * Initialize the theme's styles, scripts and hooks. This is only run for
-	 * the currently active theme.
-	 *
-	 * @return null
-	 */
-	public function init() {
+</div>
 
-		// Initialize the parent theme
-		$this->setParent('defaultthemeplugin');
+</document_content>
+</document>
 
-		// Start with a fresh array of additionalLessVariables so that we can
-		// ignore those added by the parent theme. This gets rid of @font
-		// variable overrides from the typography option
-		$additionalLessVariables = array();
-
-		// Remove the typography options of the parent theme.
-		// `removeOption` was introduced in OJS 3.0.2
-		if (method_exists($this, 'removeOption')) {
-			$this->removeOption('typography');
-			$this->removeOption('accentColour');
-			$this->removeOption('baseColour');
-			$this->removeOption('useHomepageImageAsHeader');
-		}
-
-		// Dequeue any fonts loaded by parent theme
-		// `removeStyle` was introduced in OJS 3.0.2
-		if (method_exists($this, 'removeStyle')) {
-			$this->removeStyle('fontNotoSans');
-			$this->removeStyle('fontNotoSerif');
-			$this->removeStyle('fontNotoSansNotoSerif');
-			$this->removeStyle('fontLato');
-			$this->removeStyle('fontLora');
-			$this->removeStyle('fontLoraOpenSans');
-			$this->removeStyle('fontNotoSerif');
-			$this->removeStyle('fontNotoSerif');
-			$this->removeStyle('fontNotoSerif');
-			$this->removeStyle('fontNotoSerif');
-			$this->removeStyle('fontNotoSerif');
-		}
-
-		$this->modifyStyle('stylesheet', array('addLessVariables' => join('', $additionalLessVariables)));
-
-		// Load jQuery from a CDN or, if CDNs are disabled, from a local copy.
-		$min = Config::getVar('general', 'enable_minified') ? '.min' : '';
-		$request = Application::getRequest();
-		if (Config::getVar('general', 'enable_cdn')) {
-			$jquery = '//ajax.googleapis.com/ajax/libs/jquery/' . CDN_JQUERY_VERSION . '/jquery' . $min . '.js';
-			$jqueryUI = '//ajax.googleapis.com/ajax/libs/jqueryui/' . CDN_JQUERY_UI_VERSION . '/jquery-ui' . $min . '.js';
-		} else {
-			// Use OJS's built-in jQuery files
-			$jquery = $request->getBaseUrl() . '/lib/pkp/lib/vendor/components/jquery/jquery' . $min . '.js';
-			$jqueryUI = $request->getBaseUrl() . '/lib/pkp/lib/vendor/components/jqueryui/jquery-ui' . $min . '.js';
-		}
-		// Use an empty `baseUrl` argument to prevent the theme from looking for
-		// the files within the theme directory
-		$this->addScript('jQuery', $jquery, array('baseUrl' => ''));
-		$this->addScript('jQueryUI', $jqueryUI, array('baseUrl' => ''));
-		$this->addScript('jQueryTagIt', $request->getBaseUrl() . '/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js', array('baseUrl' => ''));
-
-		// Load Bootstrap
-		//$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
-
-		// Determine the path to the fonts
-		$this->addStyle('jlm-fonts', 'fonts/index.less');
-		$fontPath = Application::getRequest()->getBaseUrl() . '/' . $this->getPluginPath() . '/fonts/';
-		$this->modifyStyle('jlm-fonts', ['addLessVariables' => '@font-path:"' . $fontPath . '";']);
-		//$this->modifyStyle('stylesheet', array('addLess' => array('fonts/index.less')));
-
-		// Add custom styles
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
-		//$this->addStyle('jlm-styles', 'styles/jlm/index.less');
-
-		// Add navigation menu areas for this theme
-		$this->addMenuArea(array('primary', 'user'));
-	}
-
-	/**
-	 * Get the display name of this plugin
-	 * @return string
-	 */
-	function getDisplayName() {
-		return __('plugins.themes.jlmTheme.name');
-	}
-
-	/**
-	 * Get the description of this plugin
-	 * @return string
-	 */
-	function getDescription() {
-		return __('plugins.themes.jlmTheme.description');
-	}
-}
-
-?>
-</file>
-
-<file path="jlmTheme/version.xml">
+<document index="35">
+<source>jlmTheme/version.xml</source>
+<document_content>
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE version SYSTEM "https://raw.githubusercontent.com/pkp/pkp-lib/master/dtd/pluginVersion.dtd">
 
@@ -4159,6 +5118,20 @@ class JLMThemePlugin extends ThemePlugin {
 	<!-- The class name of the plugin. See index.php -->
 	<class>JLMThemePlugin</class>
 </version>
-</file>
 
-</files>
+</document_content>
+</document>
+
+<document index="36">
+<source>ziptheme.command</source>
+<document_content>
+#!/usr/bin/env bash
+dir=${0%/*}
+if [ "$dir" = "$0" ]; then dir="."; fi
+cd "$dir" || exit
+rm jlmTheme.tar.gz
+tar -zcv --exclude='.DS_Store' -f jlmTheme.tar.gz jlmTheme
+</document_content>
+</document>
+
+</documents>
